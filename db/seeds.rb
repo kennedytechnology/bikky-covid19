@@ -1,6 +1,6 @@
-20.times do |i|
+30.times do |i|
   Restaurant.create!(
-    name: "Restaurant #{i}",
-    location: "Address for restaurant #{i}"
+    name: Faker::Restaurant.name,
+    location: Faker::Address.full_address
   )
 end
