@@ -19,6 +19,7 @@
     </div>
 
     <div class="restaurants-main-content bg-white">
+        <%= form_with url: restaurants_path, method: :get, local: true do |f| %>
         <div class="h-20 flex items-center border-b px-32">
             <div class="w-auto mr-3 border-r pr-4"> 
                 <span class="font-semibold pb-2 border-b-2 border-green-300"> Delivery </span> 
@@ -26,20 +27,19 @@
                 <span class="font-semibold pb-2"> Pickup </span>
             </div>
             <div class="w-4/12 font-semibold ml-3">
-                <%= form_with model: Restaurant.new do |f| %>
-                    <%= f.text_field :name, placeholder: 'New York City', class: "w-full focus:outline-none" %>
-                <% end %>
+                <%= f.text_field :q, placeholder: 'New York City', class: "w-full focus:outline-none" %>
             </div>
             <div class="flex-1 flex justify-end">
-                <span class="rounded-full bg-gray-700 text-white w-auto px-6 py-3"> View Map </span>
+                <%= f.submit "Search", class: "rounded-full bg-gray-700 text-white w-auto px-6 py-3 inline-block" %>
             </div>
         </div>
+        <% end %>
 
         <div class="restaurants-table-container px-32 mt-16">
             <h1 class="text-3xl mb-6 font-semibold"> <span class="pb-2 border-b pr-6"> Nearby </span> </h1>
 
             <div>
-                <% Restaurant.all.each do |restaurant| %>
+                <% @restaurants.each do |restaurant| %>
                 <div class="mb-4 flex justify-between items-center pb-4 border-b">
                     <div>
                         <h2 class="font-xl"> <%= restaurant.name %> </h2>

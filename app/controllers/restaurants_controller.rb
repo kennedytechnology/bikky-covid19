@@ -4,7 +4,11 @@ class RestaurantsController < ApplicationController
   # GET /restaurants
   # GET /restaurants.json
   def index
-    @restaurants = Restaurant.all
+    if params[:q].blank?
+      @restaurants = Restaurant.all
+    else
+      @restaurants = Restaurant.where('name ILIKE ?', "%#{params[:q]}%")
+    end
   end
 
   # GET /restaurants/1
@@ -69,6 +73,6 @@ class RestaurantsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def restaurant_params
-      params.require(:restaurant).permit(:name, :url, :location)
+      params.require(:restaurant).permit(:name, :url, :location, :q)
     end
 end
