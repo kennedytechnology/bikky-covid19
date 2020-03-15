@@ -3,7 +3,7 @@ class RestaurantsController < ApplicationController
     if params[:q].blank?
       @restaurants = Restaurant.all
     else
-      @restaurants = Restaurant.near(params[:q], 10, order: :distance)
+      @restaurants = Restaurant.near(params[:q], 2, order: :distance)
     end
   end
 end

@@ -8,7 +8,7 @@ csv.each do |row|
   t.location = row['location']
   t.address = row['address']
   t.url = row['url']
-  t.description = 
+  t.description = Faker::Lorem.paragraph(sentence_count: Faker::Number.between(from: 1, to: 6))
   t.save
 end
 
