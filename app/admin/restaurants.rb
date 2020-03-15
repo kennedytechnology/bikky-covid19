@@ -43,8 +43,8 @@ ActiveAdmin.register Restaurant do
       f.input :name, as: :string
       f.input :url, as: :string
       f.input :location, as: :string
-      f.input :description
-      f.input :address, as: :string      
+      f.input :address, as: :string 
+      f.input :description           
     end
     f.actions
   end
