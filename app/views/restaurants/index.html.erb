@@ -30,7 +30,7 @@
             <div class="cards-container">
                 <% @restaurants.each do |restaurant| %>
                 <div class="card">
-                    <div class="card-header" style="min-height: 44px;">
+                    <div class="card-header">
                         <h1> DEAL: </h1>
                         <p> 10% off Full Order</p>
                     </div>
@@ -38,7 +38,7 @@
                         <div>
                             <h1 class="card-heading"> <%= restaurant.name %> </h1>
                             <div class="card-img" style="background-image: url('https://source.unsplash.com/collection/2138688/?sig=<%=restaurant.id%>}');"> </div>
-                            <p class="card-description"> <%= restaurant.description %> </p>
+                            <p class="card-description"> <%= truncate(restaurant.description, :length => 144) %> </p>
                         </div>
                         
                         <div class="card-footer">
