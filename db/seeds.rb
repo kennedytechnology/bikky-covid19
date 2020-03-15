@@ -1,6 +1,7 @@
 30.times do |i|
   Restaurant.create!(
     name: Faker::Restaurant.name,
-    location: Faker::Address.full_address
+    location: Faker::Address.full_address,
+    description: Faker::Lorem.paragraph(sentence_count: Faker::Number.between(from: 1, to: 6))
   )
 end
