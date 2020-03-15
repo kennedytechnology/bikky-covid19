@@ -45,6 +45,6 @@
             }
         </script>
 
-        <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js?key='+'&libraries=places&callback=initAutocomplete' %>
+        <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js?key='+ENV['GOOGLE_MAPS_API_KEY']+'&libraries=places&callback=initAutocomplete' %>
     </body>
 </html>
