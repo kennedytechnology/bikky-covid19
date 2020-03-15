@@ -1,5 +1,111 @@
 @import "tailwindcss/base";
-
 @import "tailwindcss/components";
-
 @import "tailwindcss/utilities";
+
+// Disable outline effect on focus
+*:focus { @apply outline-none; }
+
+// restaurants#index
+.restaurants-container {
+    .header {
+        @apply p-5;
+        @screen lg { @apply px-32 pb-12; }
+        background-color: #f0f0f0;
+        height: 36vh;
+        @screen md { height: 50vh; }
+
+        .navbar {
+            @apply flex justify-between items-center h-12 mb-12 py-4;
+            @screen md { @apply py-12; }
+            &-link { 
+                @apply font-semibold text-xl;
+                @screen md { @apply text-3xl; }
+            }
+            &-item-container { @apply text-sm uppercase leading-none; }
+            &-item { @apply mr-6 pb-2 border-b-2 border-gray-700 px-3; }
+        }
+
+        .content {
+            .heading { 
+                @apply text-4xl leading-tight font-black;
+                @screen md { @apply text-5xl tracking-wide; }
+            }
+        }
+    }
+
+    .restaurants-main-content {
+        @apply bg-white;
+    }
+
+    .search-form {
+        @apply h-20 flex flex-col items-center border-b p-5;
+        @screen md { @apply flex-row; }
+        @screen lg { @apply px-32; }
+
+        .search-item-container {
+            @apply hidden w-auto mr-3 border-r pr-8;
+            @screen md { @apply inline; }
+
+            span { @apply font-semibold pb-2 border-b-2 border-green-300 px-2; }
+        }
+
+        .search-input-container {
+            @apply w-full font-semibold ml-3;
+            @screen md { @apply w-4/12; }
+            .input { @apply w-full; }
+        }
+
+        .seach-submit-button-container {
+            @apply flex-1 flex justify-end;
+            @screen md { @apply w-auto; }
+            .submit-button  { 
+                @apply mt-12 mb-4 rounded-full bg-gray-700 text-white w-auto px-6 py-3 inline-block;
+                @screen md { @apply my-0 w-auto; }
+            }
+            @media screen and (max-width: 768px) {
+                @apply min-w-full;
+                .submit-button { @apply min-w-full; }
+            }
+        }
+    }
+
+    .restaurants-table-container {
+        @apply p-5 mt-16;
+        @screen lg { @apply px-32; }
+        .heading { @apply text-3xl mb-6 font-semibold; }
+    }
+
+    .cards-container {
+        @apply grid grid-cols-1;
+        @screen md { @apply grid grid-cols-2 gap-4; }
+        @screen lg { @apply grid-cols-3; }
+
+        .card {
+            @apply p-4 border-2 rounded mb-4;
+            @screen md { @apply mb-0; }
+
+            .card-header { 
+                @apply flex mb-4 pb-2 border-b font-semibold justify-center;
+                h1 { @apply mr-3; }
+            }
+
+            .card-content {
+                @apply flex flex-col justify-between;
+                min-height: 350px;
+
+                .card-heading { @apply text-xl mb-2; }
+                .card-img { @apply bg-cover bg-center bg-no-repeat w-full; height: 150px; }
+                .card-description {
+                    @apply text-gray-600 text-justify mt-3 mb-4;
+                }
+            }
+
+            .card-footer{
+                @apply w-full flex justify-end;
+                .footer-item {
+                    @apply rounded-full bg-gray-700 text-white px-6 py-3 inline-block;
+                }
+            }
+        }
+    }
+}
