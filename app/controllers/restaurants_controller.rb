@@ -3,7 +3,7 @@ class RestaurantsController < ApplicationController
     if params[:q].blank?
       @restaurants = Restaurant.all
     else
-      @restaurants = Restaurant.where('name ILIKE ?', "%#{params[:q]}%")
+      @restaurants = Restaurant.near(params[:q], 10, order: :distance)
     end
   end
 end
