@@ -5,6 +5,8 @@ class CreateRestaurants < ActiveRecord::Migration[6.0]
       t.string :url
       t.string :location
       t.text :description
+      t.float :longitude
+      t.float :latitude
 
       t.timestamps
     end
