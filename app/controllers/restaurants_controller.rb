@@ -6,8 +6,4 @@ class RestaurantsController < ApplicationController
       @restaurants = Restaurant.near(params[:q], 2, order: :distance)
     end
   end
-
-  def show
-    @restaurant = Restaurant.find(params[:id])
-  end
 end
