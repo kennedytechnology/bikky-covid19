@@ -83,12 +83,13 @@
 
             .card-header { 
                 @apply flex mb-4 pb-2 border-b font-semibold justify-center;
+                min-height: 44px;
                 h1 { @apply mr-3; }
             }
 
             .card-content {
                 @apply flex flex-col justify-between;
-                min-height: 350px;
+                @screen md { min-height: 350px; }
 
                 .card-heading { @apply text-xl mb-2; }
                 .card-img { @apply bg-cover bg-center bg-no-repeat w-full; height: 150px; }
