@@ -8,11 +8,9 @@
 // restaurants#index
 .restaurants-container {
     .header {
-        @apply p-5;
+        @apply p-5 h-auto;
         @screen lg { @apply px-32 pb-12; }
         background-color: #f0f0f0;
-        height: 36vh;
-        @screen md { height: 50vh; }
 
         .navbar {
             @apply flex justify-between items-center h-12 mb-12 py-4;
@@ -59,7 +57,7 @@
             @apply flex-1 flex justify-end;
             @screen md { @apply w-auto; }
             .submit-button  { 
-                @apply mt-12 mb-4 rounded-full bg-gray-700 text-white w-auto px-6 py-3 inline-block;
+                @apply h-12 mt-12 mb-4 rounded-full bg-gray-700 text-white w-auto px-6 py-3 inline-block;
                 @screen md { @apply my-0 w-auto; }
             }
             @media screen and (max-width: 768px) {
