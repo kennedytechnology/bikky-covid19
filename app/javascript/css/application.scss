@@ -49,7 +49,6 @@
 
         .search-input-container {
             @apply w-full font-semibold ml-3;
-            @screen md { @apply w-4/12; }
             .input { @apply w-full; }
         }
 
