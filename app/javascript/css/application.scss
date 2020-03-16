@@ -23,16 +23,27 @@
             &-item { @apply mr-6 pb-2 border-b-2 border-gray-700 px-3; }
         }
 
+        .navbar-start {
+            @apply flex items-center;
+            img { @apply mr-2; max-width: 60px; }
+            .links-container { @apply flex flex-col items-end; }
+        }
+
         .content {
             .heading { 
-                @apply text-4xl leading-tight font-black;
-                @screen md { @apply text-5xl tracking-wide; }
+                @apply text-4xl leading-none font-semibold text-center uppercase;
+                @screen md { @apply text-5xl tracking-normal; }
             }
         }
     }
 
     .restaurants-main-content {
         @apply bg-white;
+
+        .long-description {
+            @apply m-5 my-4;
+            @screen md { @apply mx-32; }
+        }
     }
 
     .search-form {
