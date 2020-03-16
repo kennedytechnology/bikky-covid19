@@ -4,8 +4,12 @@ one:
   name: MyString
   url: MyString
   location: MyString
+  description: MyString
+  address: MyString
 
 two:
   name: MyString
   url: MyString
   location: MyString
+  description: MyString
+  address: MyString
