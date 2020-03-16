@@ -12,7 +12,7 @@ csv.each do |row|
   t.save
 end
 
-if ENV["DEFAULT_ADMIN_PASSWORD"]
+if ENV["DEFAULT_ADMIN_PASSWORD"] && Rails.env.production?
   AdminUser.create!(email: "admin@project-facemask.com", password: ENV["DEFAULT_ADMIN_PASSWORD"], password_confirmation: ENV["DEFAULT_ADMIN_PASSWORD"])
 else
   AdminUser.create!(email: "admin@example.com", password: "password", password_confirmation: "password")
