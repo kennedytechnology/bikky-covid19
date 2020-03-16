@@ -26,28 +26,34 @@
 
         <div class="restaurants-table-container">
             <h1 class="heading"> Here are restaurants that deliver near you </h1>
-
-            <div class="cards-container">
-                <% @restaurants.each do |restaurant| %>
-                <div class="card">
-                    <div class="card-header">
-                        <h1> DEAL: </h1>
-                        <p> 10% off Full Order</p>
-                    </div>
-                    <div class="card-content">
-                        <div>
-                            <h1 class="card-heading"> <%= restaurant.name %> </h1>
-                            <div class="card-img" style="background-image: url('https://source.unsplash.com/collection/2138688/?sig=<%=restaurant.id%>}');"> </div>
-                            <p class="card-description"> <%= truncate(restaurant.description, :length => 144) %> </p>
+            
+            <% if @restaurants.any? %>
+                <div class="cards-container">
+                    <% @restaurants.each do |restaurant| %>
+                    <div class="card">
+                        <div class="card-header">
+                            <h1> DEAL: </h1>
+                            <p> 10% off Full Order</p>
                         </div>
-                        
-                        <div class="card-footer">
-                            <%= link_to "Order Direct", restaurant.url, target: "_blank", class: "footer-item" %>
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-heading"> <%= restaurant.name %> </h1>
+                                <div class="card-img" style="background-image: url('https://source.unsplash.com/collection/2138688/?sig=<%=restaurant.id%>}');"> </div>
+                                <p class="card-description"> <%= truncate(restaurant.description, :length => 144) %> </p>
+                            </div>
+                            
+                            <div class="card-footer">
+                                <%= link_to "Order Direct", restaurant.url, target: "_blank", class: "footer-item" %>
+                            </div>
                         </div>
                     </div>
+                    <% end %>
                 </div>
+            <% else %>
+                <%= link_to "https://forms.gle/viD4gsHDrCNwxdtKA" do %>
+                        <p class="italic w-full"> Didn't find the restaurant you're looking for? <span class="font-bold"> Submit your request </span> and our team will look into publishing it soon! </p>
                 <% end %>
-            </div>
+            <% end %>
         </div>
     </div>
 </div>
