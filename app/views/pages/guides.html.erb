@@ -26,7 +26,7 @@
             <p> You’ll have to go through the absolutely excruciating challenge of creating a new account when you order...but let’s face it, you’re not really in a rush to get somewhere, are you? </p>
             <p> Start ordering and boost your local economy. Let’s goooooooo! </p>
         </div>
-        <%= form_with url: restaurants_path, method: :get, local: true, class: "search-form" do |f| %>
+        <%= form_with url: pages_guides_path, method: :get, local: true, class: "search-form" do |f| %>
             <div class="search-item-container"> <span> Search </span> </div>
             <div class="search-input-container">
                 <input type="text" name="q" onFocus="geolocate()" id="autocomplete" class="input" placeholder="123 5th Avenue New York, NY 10022" />
@@ -63,26 +63,26 @@
         <div class="restaurants-table-container">
             <% if @restaurants.any? %>
                 <% @restaurants.each do |restaurant| %>
-                    <h1 class="heading" style="margin-bottom: 8px;"> <%= find_motto(restaurant[0]) %> </h1>
-                    <div class="cards-container">
+                    <h1 class="search-guides-heading"> <%= find_motto(restaurant[0]) %> </h1>
+                    <div class="cards-container mb-8">
                         <% restaurant[1].each do |r| %>
-                        <div class="card">
-                            <div class="card-header">
-                                <h1> DEAL: </h1>
-                                <p> 10% off Full Order</p>
-                            </div>
-                            <div class="card-content">
-                                <div>
-                                    <h1 class="card-heading"> <%= r.name %> </h1>
-                                    <div class="card-img" style="background-image: url(<%= image_url(r.display_image) %>);"> </div>
-                                    <p class="card-description"> <%= truncate(r.description, :length => 144) %> </p>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h1> DEAL: </h1>
+                                    <p> 10% off Full Order</p>
                                 </div>
-                                
-                                <div class="card-footer">
-                                    <%= link_to "Order Direct", r.url, target: "_blank", class: "footer-item" %>
+                                <div class="card-content">
+                                    <div>
+                                        <h1 class="card-heading"> <%= r.name %> </h1>
+                                        <div class="card-img" style="background-image: url(<%= image_url(r.display_image) %>);"> </div>
+                                        <p class="card-description"> <%= truncate(r.description, :length => 144) %> </p>
+                                    </div>
+                                    
+                                    <div class="card-footer">
+                                        <%= link_to "Order Direct", r.url, target: "_blank", class: "footer-item" %>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         <% end %>
                     </div>
                 <% end %>

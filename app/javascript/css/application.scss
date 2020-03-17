@@ -121,7 +121,11 @@ body {
     .restaurants-table-container {
         @apply p-5 mt-16;
         @screen lg { @apply px-32; }
-        .heading { @apply text-3xl mb-6 font-semibold; }
+        .heading,
+        .search-guides-heading { @apply text-3xl font-semibold; }
+
+        .heading { @apply mb-6; }
+        .search-guides-heading { @apply mb-2; }
     }
 
     .cards-container {
