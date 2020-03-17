@@ -8,9 +8,9 @@ class GuidesController < ApplicationController
 
   def find_restaurants
     if params[:q].blank?
-      @restaurants = Restaurant.all.group_by { |r| r.name }
+      @restaurants = Restaurant.all.group_by { |r| r.brand }
     else
-      @restaurants = Restaurant.near(params[:q], 0.5, order: :distance).group_by { |r| r.name }
+      @restaurants = Restaurant.near(params[:q], 0.5, order: :distance).group_by { |r| r.brand }
     end
   end
 end

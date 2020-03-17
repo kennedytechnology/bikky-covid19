@@ -1,4 +1,14 @@
 module ApplicationHelper
+  def restaurant_description(description)
+    if description.blank?
+      return ["Well doesn't 👆look tasty? Support this restaurant by ordering now.",
+        "Deliciousness awaits you here.",
+        "You're hungry, right? Eat well & support this restaurant by ordering today."].sample
+    else
+      return description
+    end
+  end
+
   def find_motto(restaurant_name)
     case restaurant_name
     when "Dos Toros"

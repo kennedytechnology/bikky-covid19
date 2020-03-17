@@ -28,20 +28,17 @@
     <div class="restaurants-main-content">
         <div class="restaurants-table-container">
             <% if @restaurants.any? %>
-                <% @restaurants.each do |restaurant| %>
-                    <h1 class="search-guides-heading"> <%= find_motto(restaurant[0]) %> </h1>
+                <% @restaurants.each do |motto, restaurants| %>
+                    <h1 class="search-guides-heading"> <%= find_motto(motto) %> </h1>
                     <div class="cards-container mb-8">
-                        <% restaurant[1].each do |r| %>
+                        <% restaurants.each do |r| %>
                             <div class="card">
                                 <div class="card-content">
                                     <div>
-                                        <h1 class="card-heading"> <%= r.name %> </h1>
+                                        <h1 class="card-heading"> <%= r.brand %> </h1>
                                         <div class="card-img" style="background-image: url(<%= image_url(r.display_image) %>);"> </div>
                                         <div class="card-description"> 
-                                            <p class="mr-8"> <%= truncate(r.description, :length => 100) %> </p>
-                                            <div class="tag-info">
-                                                <p> 10% off <%= number_to_currency(56) %> </p>
-                                            </div>
+                                            <p class="mr-8"> <%= restaurant_description(r.description) %> </p>
                                         </div>
                                     </div>
 

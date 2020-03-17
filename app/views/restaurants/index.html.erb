@@ -50,13 +50,10 @@
                     <div class="card">
                         <div class="card-content">
                             <div>
-                                <h1 class="card-heading"> <%= restaurant.name %> </h1>
+                                <h1 class="card-heading"> <%= restaurant.brand %> </h1>
                                 <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
                                 <div class="card-description flex justify-between"> 
-                                    <p class="mr-8"> <%= truncate(restaurant.description, :length => 100) %> </p>
-                                    <div class="tag-info">
-                                        <p> 10% off <%= number_to_currency(56) %> </p>
-                                    </div>
+                                    <p class="mr-8"> <%= restaurant_description(restaurant.description) %> </p>
                                 </div>
                             </div>
                             
