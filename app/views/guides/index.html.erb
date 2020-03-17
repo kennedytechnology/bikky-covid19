@@ -19,9 +19,9 @@
             <h1 class="heading"> Your curated guide to <br /> eating during COVID </h1>
         </div>
 
-        <div class="absolute bottom-0 flex h-12 text-center font-semibold"> 
-            <div class="bg-white p-4 rounded-t-xl" style="min-width: 150px; max-width: 150px"> All Restaurants </div>
-            <div class="p-4 rounded-t-xl border-t-2 border-l-2 border-r-2 border-gray-600" style="background-color: #f0f0f0; min-width: 150px; max-width: 150px"> Guides </div>
+        <div class="tabs-container"> 
+            <%= link_to "All Restaurants", root_path, class: "tab-item #{is_tab_active?('restaurants')}" %>
+            <%= link_to "Guides", guides_path, class: "tab-item #{is_tab_active?('guides')}" %>
         </div>
     </div>
 

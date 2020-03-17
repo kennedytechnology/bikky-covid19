@@ -1,4 +1,8 @@
 module ApplicationHelper
+  def is_tab_active?(controller_name)
+    "active" if params[:controller] == controller_name
+  end
+
   def restaurant_description(description)
     if description.blank?
       return ["Well doesn't 👆look tasty? Support this restaurant by ordering now.",
