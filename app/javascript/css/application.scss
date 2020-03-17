@@ -13,25 +13,39 @@
         background-color: #f0f0f0;
 
         .navbar {
-            @apply flex justify-between items-center h-12 mb-12 py-4;
-            @screen md { @apply py-12; }
+            @apply flex justify-between items-center h-auto mb-12 py-4;
+            @screen md { @apply h-12 py-12; }
+
+            &-url { @apply italic text-sm mr-2; }
             &-link { 
                 @apply font-semibold text-xl;
-                @screen md { @apply text-3xl; }
+                @screen md { @apply text-2xl -mb-1; }
             }
-            &-item-container { @apply text-sm uppercase leading-none; }
-            &-item { @apply mr-6 pb-2 border-b border-gray-500 px-3; }
+            &-item-container {
+                @apply text-sm uppercase leading-none text-center;
+                @media screen and (max-width: 768px) {
+                    @apply flex flex-col;
+                }
+            }
+            &-item { 
+                @apply mb-4 pb-2 border-b border-gray-500 px-3;
+                &:last-child { @apply mb-0; }
+                @screen md { 
+                    @apply mb-0 mr-6;
+                    &:last-child { @apply mr-0; }
+                }
+            }
         }
 
         .navbar-start {
             @apply flex items-center;
-            img { @apply mr-2; max-width: 60px; }
+            img { @apply mr-2; max-width: 50px; }
             .links-container { @apply flex flex-col items-end; }
         }
 
         .content {
             .heading { 
-                @apply text-4xl leading-none font-semibold text-center uppercase;
+                @apply text-4xl leading-none font-semibold text-center uppercase my-6;
                 @screen md { @apply text-5xl tracking-normal; }
             }
         }
@@ -47,8 +61,8 @@
     }
 
     .search-form {
-        @apply h-20 flex flex-col items-center border-b p-5;
-        @screen md { @apply flex-row; }
+        @apply h-16 flex flex-col items-center border-b border-t p-5;
+        @screen md { @apply flex-row h-20 border-t-0; }
         @screen lg { @apply px-32; }
 
         .search-item-container {
@@ -67,7 +81,7 @@
             @apply flex-1 flex justify-end;
             @screen md { @apply w-auto; }
             .submit-button  { 
-                @apply h-12 mt-12 mb-4 rounded-full bg-gray-700 text-white w-auto px-6 py-3 inline-block;
+                @apply h-12 mt-8 mb-4 rounded-full bg-gray-700 text-white w-auto px-6 py-3 inline-block;
                 @screen md { @apply my-0 w-auto; }
             }
             @media screen and (max-width: 768px) {
