@@ -112,7 +112,8 @@ body {
             }
 
             select {
-                @apply bg-white text-base text-gray-700;
+                @apply bg-white text-base text-gray-700 appearance-none;
+                max-width: 150px;
             }
         }
     }
