@@ -17,6 +17,6 @@ class Restaurant < ApplicationRecord
   end
 
   def image_name
-    name.parameterize.underscore
+    brand.parameterize.underscore
   end
 end
