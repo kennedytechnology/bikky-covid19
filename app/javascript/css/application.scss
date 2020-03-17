@@ -20,7 +20,7 @@
                 @screen md { @apply text-3xl; }
             }
             &-item-container { @apply text-sm uppercase leading-none; }
-            &-item { @apply mr-6 pb-2 border-b-2 border-gray-700 px-3; }
+            &-item { @apply mr-6 pb-2 border-b border-gray-500 px-3; }
         }
 
         .navbar-start {
