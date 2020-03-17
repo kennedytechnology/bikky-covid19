@@ -29,13 +29,14 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 # Faker
-gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
 # Geocoder
 gem 'geocoder'
 
 # Admin panel
 gem 'activeadmin'
 gem 'devise'
+gem 'formtastic', git: 'https://github.com/justinfrench/formtastic.git', branch: 'master'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
