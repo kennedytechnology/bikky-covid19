@@ -1,4 +1,7 @@
 class Restaurant < ApplicationRecord
+  belongs_to :partner
+  has_and_belongs_to_many :guides
+
   geocoded_by :address
   after_validation :geocode
 
