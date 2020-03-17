@@ -83,8 +83,8 @@ body {
         }
 
         .seach-submit-button-container {
-            @apply flex-1 flex justify-end;
-            @screen md { @apply w-auto; }
+            @apply flex-1 flex justify-end hidden;
+            @screen md { @apply w-auto flex; }
             .submit-button  { 
                 @apply h-12 mt-8 mb-4 rounded-full bg-gray-700 text-white w-auto px-6 py-3 inline-block;
                 @screen md { @apply my-0 w-auto; }
@@ -97,10 +97,18 @@ body {
     }
 
     .filters-contaniner {
-        @apply border-b py-5 h-20 px-32 flex;
+        @apply border-b h-auto flex flex-col;
+        @screen md { @apply h-20 flex-row py-5; }
+        @screen md { @apply px-5 overflow-x-scroll; }
+        @screen lg { @apply px-32; }
         .select-container {
-            @apply border-r pr-6 mr-6 flex items-center;
-            &:last-child { @apply mr-0 border-none; }
+            @apply border-b flex items-center py-2 mb-4 px-5;
+            &:last-child { @apply border-none mb-0; }
+            @screen md {
+                @apply border-r border-b-0 mr-6 pr-6 pb-0 mb-0 pl-0;
+                &:last-child { @apply mr-0 border-none; }
+            }
+            
 
             select {
                 @apply bg-white text-base;
