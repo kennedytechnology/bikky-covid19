@@ -6,7 +6,7 @@ class Restaurant < ApplicationRecord
     if File.file?("#{Rails.root}/app/assets/images/restaurants_photos/#{image_name}.jpeg")
       return "restaurants_photos/#{image_name}.jpeg"
     else
-      return "restaurants_photos/amma.jpeg"
+      return "restaurants_photos/default.jpeg"
     end
   end
 
