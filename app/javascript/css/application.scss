@@ -33,7 +33,7 @@ body {
                 }
             }
             &-item { 
-                @apply mb-4 pb-2 border-b border-gray-500 px-3 text-xs;
+                @apply mb-4 pb-2 border-b border-gray-400 text-gray-700 px-3 text-xs;
                 &:last-child { @apply mb-0; }
                 @screen md { 
                     @apply mb-0 mr-6 text-sm;
@@ -75,7 +75,7 @@ body {
             @apply hidden w-auto mr-3 border-r pr-8;
             @screen md { @apply inline; }
 
-            span { @apply font-semibold pb-2 border-b-2 border-green-300 px-2; }
+            span { @apply font-semibold pb-2 border-b-2 border-brand-green px-2; }
         }
 
         .search-input-container {
