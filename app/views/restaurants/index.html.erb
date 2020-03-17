@@ -50,7 +50,11 @@
                         <div class="card-content">
                             <div>
                                 <h1 class="card-heading"> <%= restaurant.name %> </h1>
-                                <div class="card-img" style="background-image: url('<%= url_for(restaurant.photo) %>');"> </div>
+                                <% if File.file?("#{Rails.root}/app/assets/images/restaurants_photos/#{restaurant.name.parameterize.underscore}.jpeg") %>
+                                    <div class="card-img" style="background-image: url('<%= image_path("restaurants_photos/#{restaurant.name.parameterize.underscore}.jpeg") %>');"> </div>
+                                <% else %>
+                                    <div class="card-img" style="background-image: url('<%= image_path("restaurants_photos/amma.jpeg") %>');"> </div>
+                                <% end %>
                                 <p class="card-description"> <%= truncate(restaurant.description, :length => 144) %> </p>
                             </div>
                             
