@@ -10,31 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_17_205551) do
+ActiveRecord::Schema.define(version: 2020_03_17_210642) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "active_storage_attachments", force: :cascade do |t|
-    t.string "name", null: false
-    t.string "record_type", null: false
-    t.bigint "record_id", null: false
-    t.bigint "blob_id", null: false
-    t.datetime "created_at", null: false
-    t.index ["blob_id"], name: "index_active_storage_attachments_on_blob_id"
-    t.index ["record_type", "record_id", "name", "blob_id"], name: "index_active_storage_attachments_uniqueness", unique: true
-  end
-
-  create_table "active_storage_blobs", force: :cascade do |t|
-    t.string "key", null: false
-    t.string "filename", null: false
-    t.string "content_type"
-    t.text "metadata"
-    t.bigint "byte_size", null: false
-    t.string "checksum", null: false
-    t.datetime "created_at", null: false
-    t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
-  end
 
   create_table "guides", force: :cascade do |t|
     t.string "name"
@@ -52,14 +31,15 @@ ActiveRecord::Schema.define(version: 2020_03_17_205551) do
     t.string "brand"
     t.string "status"
     t.string "mood"
-    t.string "day_1"
-    t.string "day_2"
+    t.string "daypart_1"
+    t.string "daypart_2"
     t.string "meal_size_1"
     t.string "meal_size_2"
     t.integer "price"
     t.string "deal"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "partner"
   end
 
   create_table "restaurants", force: :cascade do |t|
@@ -72,7 +52,6 @@ ActiveRecord::Schema.define(version: 2020_03_17_205551) do
     t.text "address"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "img_url"
     t.bigint "partner_id"
     t.string "weekday_open"
     t.string "weekday_close"
@@ -81,6 +60,5 @@ ActiveRecord::Schema.define(version: 2020_03_17_205551) do
     t.index ["partner_id"], name: "index_restaurants_on_partner_id"
   end
 
-  add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "restaurants", "partners"
 end

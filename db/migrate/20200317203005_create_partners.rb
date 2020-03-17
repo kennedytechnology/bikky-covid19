@@ -4,8 +4,8 @@ class CreatePartners < ActiveRecord::Migration[6.0]
       t.string :brand
       t.string :status
       t.string :mood
-      t.string :day_1
-      t.string :day_2
+      t.string :daypart_1
+      t.string :daypart_2
       t.string :meal_size_1
       t.string :meal_size_2
       t.integer :price
