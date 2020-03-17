@@ -96,6 +96,18 @@ body {
         }
     }
 
+    .filters-contaniner {
+        @apply border-b py-5 h-20 px-32 flex;
+        .select-container {
+            @apply border-r pr-6 mr-6 flex items-center;
+            &:last-child { @apply mr-0 border-none; }
+
+            select {
+                @apply bg-white text-base;
+            }
+        }
+    }
+
     .restaurants-table-container {
         @apply p-5 mt-16;
         @screen lg { @apply px-32; }
