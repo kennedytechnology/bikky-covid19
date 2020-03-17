@@ -52,7 +52,7 @@ ActiveRecord::Schema.define(version: 2020_03_17_210642) do
     t.text "address"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "partner_id"
+    t.bigint "partner_id", null: false
     t.string "weekday_open"
     t.string "weekday_close"
     t.string "weekend_open"

@@ -4,8 +4,8 @@ one:
   brand: MyString
   status: MyString
   mood: MyString
-  day_1: MyString
-  day_2: MyString
+  daypart_1: MyString
+  daypart_2: MyString
   meal_size_1: MyString
   meal_size_2: MyString
   price: 1
@@ -15,8 +15,8 @@ two:
   brand: MyString
   status: MyString
   mood: MyString
-  day_1: MyString
-  day_2: MyString
+  daypart_1: MyString
+  daypart_2: MyString
   meal_size_1: MyString
   meal_size_2: MyString
   price: 1

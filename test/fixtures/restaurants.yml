@@ -4,8 +4,10 @@ one:
   name: MyString
   url: MyString
   location: MyString
+  partner: one
 
 two:
   name: MyString
   url: MyString
   location: MyString
+  partner: one
