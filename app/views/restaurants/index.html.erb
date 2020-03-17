@@ -54,7 +54,7 @@
                                 <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
                                 <div class="card-description flex justify-between"> 
                                     <p class="mr-8"> <%= truncate(restaurant.description, :length => 100) %> </p>
-                                    <div class="px-4 py-1 bg-red-100 text-red-500 rounded text-center" style="min-width: 150px; max-width: 150px; max-height: 30px;">
+                                    <div class="tag-info">
                                         <p> 10% off <%= number_to_currency(56) %> </p>
                                     </div>
                                 </div>

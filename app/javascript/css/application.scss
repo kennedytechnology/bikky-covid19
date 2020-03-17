@@ -150,7 +150,15 @@ body {
                 .card-heading { @apply text-xl mb-2 font-semibold; }
                 .card-img { @apply bg-cover bg-center bg-no-repeat w-full rounded-lg; height: 150px; }
                 .card-description {
-                    @apply text-gray-600 text-justify mt-3 mb-4;
+                    @apply text-gray-600 text-justify mt-3 mb-4 flex flex-col justify-between items-end;
+                    @screen md {@apply flex-row items-start;  }
+                    .tag-info { 
+                        @apply px-4 py-1 bg-red-100 text-red-500 rounded text-center mb-4;
+                        min-width: 150px;
+                        max-width: 150px;
+                        max-height: 30px;
+                        @screen md { @apply mb-0; }
+                    }
                 }
             }
 
