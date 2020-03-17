@@ -1,7 +1,7 @@
-class PagesController < ApplicationController
-  before_action :find_restaurants, only: [:guides]
+class GuidesController < ApplicationController
+  before_action :find_restaurants, only: [:index]
   
-  def guides
+  def index
   end
 
   private

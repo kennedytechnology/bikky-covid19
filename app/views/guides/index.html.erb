@@ -7,7 +7,7 @@
             <p> You’ll have to go through the absolutely excruciating challenge of creating a new account when you order...but let’s face it, you’re not really in a rush to get somewhere, are you? </p>
             <p> Start ordering and boost your local economy. Let’s goooooooo! </p>
         </div>
-        <%= form_with url: pages_guides_path, method: :get, local: true, class: "search-form" do |f| %>
+        <%= form_with url: guides_path, method: :get, local: true, class: "search-form" do |f| %>
             <div class="search-item-container"> <span> Search </span> </div>
             <div class="search-input-container">
                 <input type="text" name="q" onFocus="geolocate()" id="autocomplete" class="input" placeholder="123 5th Avenue New York, NY 10022" />
