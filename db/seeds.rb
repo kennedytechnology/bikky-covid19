@@ -1,7 +1,7 @@
 require 'csv'
 
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'restaurants.csv'))
-csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
+csv = CSV.parse(csv_text, :headers => true)
 csv.each do |row|
   t = Restaurant.new
   t.name = row['name']
