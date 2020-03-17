@@ -1,6 +1,12 @@
 module.exports = {
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'lato': [
+            'Lato', 'sans-serif'
+        ]
+      }
+    }
   },
   variants: {},
   plugins: [],

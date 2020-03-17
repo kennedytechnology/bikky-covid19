@@ -1,6 +1,11 @@
 @import "tailwindcss/base";
+@import "./fonts";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+body {
+    @apply font-lato;
+}
 
 // Disable outline effect on focus
 *:focus { @apply outline-none; }
