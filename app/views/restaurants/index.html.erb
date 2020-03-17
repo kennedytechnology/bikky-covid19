@@ -1,19 +1,31 @@
 <div class="restaurants-container">
     <div class="header">
         <div class="navbar">
-            <%= link_to "The Face Mask", root_path, class: "navbar-link" %>
+            <div class="navbar-start">
+                <%= link_to image_tag "logo.png" %>
+                <div class="links-container">
+                    <%= link_to "Project Quarantine", root_path, class: "navbar-link" %>
+                    <%= link_to "powered by Bikky", "https://bikky.com/", class: "navbar-url" %>
+                </div>
+            </div>
 
             <div class="navbar-item-container">
-                <%= link_to "Food", "" , class: "navbar-item" %>
+                <%= link_to "Submit a Restaurant", "https://forms.gle/viD4gsHDrCNwxdtKA", class: "navbar-item", target: "_blank" %>
+                <%= link_to "Guides", "", class: "navbar-item", target: "_blank" %>
             </div>
         </div>
 
         <div class="content">
-            <h1 class="heading"> Food Delivery in <br /> New York City </h1>
+            <h1 class="heading"> Your curated guide to <br /> eating during COVID </h1>
         </div>
     </div>
 
     <div class="restaurants-main-content">
+        <div class="long-description"> 
+            <p> No third-party delivery shenanigans here (unless we can confirm it’s commission-free ordering). Our restaurants need us more than ever before...and let’s face it, my kids can only handle a frozen veggie burger for maybe one more day. </p>
+            <p> You’ll have to go through the absolutely excruciating challenge of creating a new account when you order...but let’s face it, you’re not really in a rush to get somewhere, are you? </p>
+            <p> Start ordering and boost your local economy. Let’s goooooooo! </p>
+        </div>
         <%= form_with url: restaurants_path, method: :get, local: true, class: "search-form" do |f| %>
             <div class="search-item-container"> <span> Search </span> </div>
             <div class="search-input-container">
@@ -23,31 +35,61 @@
                 <%= f.submit "Find Restaurants", class: "submit-button" %>
             </div>
         <% end %>
+        <div class="filters-contaniner">
+            <div class="select-container">
+                <%= select_tag "filter1", options_for_select([
+                    "Breakfast", "Lunch", "Dinner", 
+                    "Afternoon delight"]), {prompt: "What meal?"} %>
+            </div>
+            <div class="select-container">
+                <%= select_tag "filter1", options_for_select([
+                    "Social distance (individual)", "Trapped with roommate (sharing)", 
+                    "Party indoors"]), {prompt: "How many people?"} %>
+            </div>
+            <div class="select-container">
+                <%= select_tag "filter1", options_for_select([
+                    "Chillin with homies", "TREAT YO SELF", "Too cool for school", 
+                    "It’s a family affair", "Keep grindin", "Home comfort", 
+                    "Your body is a temple", "Oh you fancy huh?"]), {prompt: "What's the mood?"} %>
+            </div> 
+            <div class="select-container">
+                <%= select_tag "filter1", options_for_select(["$", "$$"]), {prompt: "How much?"} %>
+            </div>
+            <div class="select-container">
+                <%= select_tag "filter1", options_for_select(["Yes", "No"]), {prompt: "Any deals?"} %>
+            </div> 
+        </div>
 
         <div class="restaurants-table-container">
             <h1 class="heading"> Here are restaurants that deliver near you </h1>
 
-            <div class="cards-container">
-                <% @restaurants.each do |restaurant| %>
-                <div class="card">
-                    <div class="card-header">
-                        <h1> DEAL: </h1>
-                        <p> 10% off Full Order</p>
-                    </div>
-                    <div class="card-content">
-                        <div>
-                            <h1 class="card-heading"> <%= restaurant.name %> </h1>
-                            <div class="card-img" style="background-image: url('https://source.unsplash.com/collection/2138688/?sig=<%=restaurant.id%>}');"> </div>
-                            <p class="card-description"> <%= truncate(restaurant.description, :length => 144) %> </p>
+            <% if @restaurants.any? %>
+                <div class="cards-container">
+                    <% @restaurants.each do |restaurant| %>
+                    <div class="card">
+                        <div class="card-header">
+                            <h1> DEAL: </h1>
+                            <p> 10% off Full Order</p>
                         </div>
-                        
-                        <div class="card-footer">
-                            <%= link_to "Order Direct", restaurant.url, target: "_blank", class: "footer-item" %>
+                        <div class="card-content">
+                            <div>
+                                <h1 class="card-heading"> <%= restaurant.name %> </h1>
+                                <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
+                                <p class="card-description"> <%= truncate(restaurant.description, :length => 144) %> </p>
+                            </div>
+                            
+                            <div class="card-footer">
+                                <%= link_to "Order Direct", restaurant.url, target: "_blank", class: "footer-item" %>
+                            </div>
                         </div>
                     </div>
+                    <% end %>
                 </div>
+            <% else %>
+                <%= link_to "https://forms.gle/viD4gsHDrCNwxdtKA", target: "_blank" do %>
+                        <p class="italic w-full"> Didn't find the restaurant you're looking for? <span class="font-bold"> Submit your request </span> and our team will look into publishing it soon! </p>
                 <% end %>
-            </div>
+            <% end %>
         </div>
     </div>
 </div>
