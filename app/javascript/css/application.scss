@@ -103,10 +103,10 @@ body {
         @screen lg { @apply px-32; }
         .select-container {
             @apply border-b flex items-center py-2 mb-4 px-5;
-            &:last-child { @apply border-none mb-0; }
+            &:last-child { @apply border-b-0 mb-0; }
             @screen md {
                 @apply border-r border-b-0 mr-6 pr-6 pb-0 mb-0 pl-0;
-                &:last-child { @apply mr-0 border-none; }
+                &:last-child { @apply mr-0; }
             }
 
             select {
