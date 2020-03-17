@@ -63,26 +63,7 @@
         <div class="restaurants-table-container">
             <% if @restaurants.any? %>
                 <% @restaurants.each do |restaurant| %>
-                    <h1 class="heading" style="margin-bottom: 8px;"> 
-                        <%  case restaurant[0]
-                            when "Dos Toros"
-                                motto = "Because you want an office lunch but are on your couch in your underwear"
-                            when "Stone Bridge"
-                                motto = "Because you’re streaming Twitch / eSports more than ever before"
-                            when "PB&K" || "Juice Press"
-                                motto = "Because you just gotta get back on your Peloton"
-                            when "Bareburger"
-                                motto = "Because food comas are a form of happiness"
-                            when "Happiness Foods"
-                                motto = "Because this quarantine ain’t getting me down"
-                            when "test"
-                                motto = ""
-                            else
-                                motto = restaurant[0]
-                            end
-                        %> 
-                        <%= motto %>
-                    </h1>
+                    <h1 class="heading" style="margin-bottom: 8px;"> <%= find_motto(restaurant[0]) %> </h1>
                     <div class="cards-container">
                         <% restaurant[1].each do |r| %>
                         <div class="card">
