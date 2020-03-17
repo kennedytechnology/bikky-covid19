@@ -13,8 +13,9 @@ csv.each do |row|
 end
 
 Restaurant.all.each do |restaurant|
-  restaurant.photo.attach(io: File.open(Rails.root.join("app",
-    "assets", "images", "restaurants_photos", "Amma.jpeg")), filename: "Amma.jpeg",
+  restaurant.photo.attach(
+    io: File.open(Rails.root.join("app", "assets", "images", "restaurants_photos", "amma.jpeg")),
+    filename: "amma.jpeg",
     content_type: "image/jpeg")
 end
 
