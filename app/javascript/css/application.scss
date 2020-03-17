@@ -144,7 +144,7 @@ body {
                 @screen md { min-height: 350px; }
 
                 .card-heading { @apply text-xl mb-2; }
-                .card-img { @apply bg-cover bg-center bg-no-repeat w-full; height: 150px; }
+                .card-img { @apply bg-cover bg-center bg-no-repeat w-full rounded-lg; height: 150px; }
                 .card-description {
                     @apply text-gray-600 text-justify mt-3 mb-4;
                 }
