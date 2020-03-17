@@ -5,13 +5,13 @@
                 <%= link_to image_tag "logo.png" %>
                 <div class="links-container">
                     <%= link_to "The Face Mask", root_path, class: "navbar-link" %>
-                    <%= link_to "powered by Bikky", "https://bikky.com/", class: "italic mr-2" %>
+                    <%= link_to "powered by Bikky", "https://bikky.com/", class: "navbar-url" %>
                 </div>
             </div>
 
             <div class="navbar-item-container">
-                <%= link_to "Submit a Restaurant", "https://forms.gle/viD4gsHDrCNwxdtKA", class: "navbar-item" %>
-                <%= link_to "Guides", "", class: "navbar-item" %>
+                <%= link_to "Submit a Restaurant", "https://forms.gle/viD4gsHDrCNwxdtKA", class: "navbar-item", target: "_blank" %>
+                <%= link_to "Guides", "", class: "navbar-item", target: "_blank" %>
             </div>
         </div>
 
@@ -38,7 +38,7 @@
 
         <div class="restaurants-table-container">
             <h1 class="heading"> Here are restaurants that deliver near you </h1>
-            
+
             <% if @restaurants.any? %>
                 <div class="cards-container">
                     <% @restaurants.each do |restaurant| %>
@@ -62,7 +62,7 @@
                     <% end %>
                 </div>
             <% else %>
-                <%= link_to "https://forms.gle/viD4gsHDrCNwxdtKA" do %>
+                <%= link_to "https://forms.gle/viD4gsHDrCNwxdtKA", target: "_blank" do %>
                         <p class="italic w-full"> Didn't find the restaurant you're looking for? <span class="font-bold"> Submit your request </span> and our team will look into publishing it soon! </p>
                 <% end %>
             <% end %>
