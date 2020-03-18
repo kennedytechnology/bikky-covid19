@@ -99,7 +99,7 @@ body {
 
         .seach-submit-button-container {
             @apply flex-1 flex justify-end;
-            margin-top: 270px;
+            margin-top: 210px;
             @screen md { @apply w-auto mt-0; }
             .submit-button  { 
                 @apply h-12 mt-8 mb-4 rounded-full bg-gray-700 text-white w-auto px-6 py-3 inline-block;
