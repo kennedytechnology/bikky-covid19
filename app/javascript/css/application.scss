@@ -65,7 +65,7 @@ body {
 
         .content {
             .heading { 
-                @apply text-4xl leading-none font-semibold text-center uppercase my-6;
+                @apply text-4xl leading-none font-semibold text-center italic;
                 @screen md { @apply text-5xl tracking-normal; }
             }
         }
