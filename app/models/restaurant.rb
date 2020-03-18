@@ -3,7 +3,6 @@ class Restaurant < ApplicationRecord
   has_and_belongs_to_many :guides
 
   geocoded_by :address
-  after_validation :geocode
 
   delegate :brand, to: :partner
   delegate :deal, to: :partner
