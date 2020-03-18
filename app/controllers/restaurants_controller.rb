@@ -1,7 +1,7 @@
 class RestaurantsController < ApplicationController
   def index
     if params[:q].blank?
-      @restaurants = Restaurant.all.shuffle
+      @restaurants = Restaurant.near("67.244.2.125", 100, order: :distance) #.shuffle
     else
       @restaurants = Restaurant.near(params[:q], 0.5, order: :distance)
     end

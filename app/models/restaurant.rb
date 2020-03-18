@@ -19,4 +19,8 @@ class Restaurant < ApplicationRecord
   def image_name
     brand.parameterize.underscore
   end
+
+  def tags
+    [partner.mood, partner.daypart_1, partner.daypart_2, partner.meal_size_1, partner.meal_size_2, "$" * partner.price].reject(&:blank?)
+  end
 end
