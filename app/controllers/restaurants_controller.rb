@@ -1,9 +1,31 @@
 class RestaurantsController < ApplicationController
   def index
-    if params[:q].blank?
-      @restaurants = Restaurant.near("67.244.2.125", 100, order: :distance).limit(50)
+    if search_tags.any?
+      @restaurants = Restaurant.where(partner_id: matching_partners.collect(&:id))
     else
-      @restaurants = Restaurant.near(params[:q], 0.5, order: :distance)
+      @restaurants = Restaurant.all
     end
+
+    if params[:q].blank?
+      @restaurants = @restaurants.near("67.244.2.125", 100, order: :distance).limit(50)
+    else
+      @restaurants = @restaurants.near(params[:q], 0.5, order: :distance)
+    end
+  end
+  
+  def search_params
+    params.permit(:q, :filter0, :filter1, :filter2, :filter3, :commit)
+  end
+
+  def search_tags
+    search_params.to_h.collect{|k,v| v if k.include?("filter")}.reject(&:blank?)
+  end
+
+  def matching_partners
+    Partner.all.select{|p|
+      puts [p.mood, p.daypart_1, p.daypart_2, p.meal_size_1, p.meal_size_2, p.price]
+    
+      search_tags.all?{|tag| [p.mood, p.daypart_1, p.daypart_2, p.meal_size_1, p.meal_size_2, p.price.to_s].include?(tag)}
+    }
   end
 end
