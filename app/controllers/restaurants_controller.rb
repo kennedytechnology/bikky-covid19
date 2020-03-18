@@ -1,13 +1,12 @@
 class RestaurantsController < ApplicationController
   def index
-    if search_tags.any?
-      @restaurants = Restaurant.where(partner_id: matching_partners.collect(&:id))
-    else
-      @restaurants = Restaurant.all
-    end
+    
+    @restaurants = Restaurant.where(partner_id: matching_partners.collect(&:id))
+    @restaurants = Restaurant.all if @restaurants.empty?
 
     if params[:q].blank?
       @restaurants = @restaurants.near(remote_ip, 100000, order: :distance).limit(50)
+      @restaurants = Restaurant.order("RANDOM()").limit(50) if @restaurants.empty?
     else
       @restaurants = @restaurants.near(params[:q], 1.5, order: :distance)
     end
