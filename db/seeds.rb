@@ -9,7 +9,7 @@ end
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'restaurants.csv'))
 csv = CSV.parse(csv_text, headers: true)
 csv.each do |row|
-  row['partner'] = Partner.find_by_brand(row.delete('brand'))
+  row['partner_id'] = Partner.find_by_brand(row.delete('brand')).id
   Restaurant.create!(row.to_h)
 end
 
