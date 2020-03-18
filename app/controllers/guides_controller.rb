@@ -1,5 +1,5 @@
 class GuidesController < ApplicationController
   def index
-    @guides = Guide.includes(:restaurants).all
+    @guides = Guide.includes(:partners).all
   end
 end

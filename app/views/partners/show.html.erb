@@ -1,0 +1,13 @@
+<div class="restaurants-container">
+    <%= render partial: "layouts/header" %>
+
+    <div class="restaurants-main-content">
+        <div class="restaurants-table-container">
+            <h1 class="heading"> All locations for <%= @partner.brand %> </h1>
+
+            <div class="cards-container">
+                <%= render @partner.restaurants %>
+            </div>
+        </div>
+    </div>
+</div>

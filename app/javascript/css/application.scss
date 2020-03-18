@@ -78,7 +78,7 @@ body {
         @apply bg-white;
 
         .long-description {
-            @apply m-5 my-4 text-center;
+            @apply mx-5 my-4;
             @screen md { @apply mx-32; }
         }
     }
