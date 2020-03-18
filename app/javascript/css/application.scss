@@ -16,12 +16,13 @@ body {
         @apply p-5;
         @media screen and (max-width: 767px) { min-height: 450px; }
         @media screen and (min-width: 768px) and (max-width: 1023px) { min-height: 400px; }
-        @screen lg { @apply px-32 pb-12; min-height: 370px;}
+        @screen lg { @apply px-24 pb-12; min-height: 370px; }
+        @screen xl { @apply px-32; }
         background-color: #f0f0f0;
 
         .navbar {
-            @apply flex justify-between items-center h-auto mb-12 py-4;
-            @screen md { @apply h-12 py-12; }
+            @apply flex justify-between items-start h-auto mb-12 py-4;
+            @screen md { @apply h-12 py-12 items-center; }
 
             &-url { @apply italic text-sm; }
             &-link { 
@@ -30,14 +31,16 @@ body {
             }
             &-item-container {
                 @apply text-sm uppercase leading-none text-center;
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 1023px) {
                     @apply flex flex-col;
                 }
+                @screen md { @apply mt-16; }
+                @screen lg { @apply mt-0; }
             }
             &-item { 
                 @apply mb-4 pb-2 border-b border-gray-400 text-gray-700 px-3 text-xs;
                 &:last-child { @apply mb-0; }
-                @screen md { 
+                @screen lg { 
                     @apply mb-0 mr-6 text-sm;
                     &:last-child { @apply mr-0; }
                 }
@@ -57,8 +60,8 @@ body {
         }
 
         .navbar-start {
-            @apply flex items-center mr-4;
-            @screen md { @apply mr-0; }
+            @apply flex items-start mr-4;
+            @screen md { @apply mr-0 items-center; }
             img { @apply mr-2; max-width: 50px; }
             .links-container { @apply flex flex-col items-end; }
         }
@@ -83,6 +86,7 @@ body {
     .search-form {
         @apply h-16 flex flex-col items-center border-b border-t p-5;
         @screen md { @apply flex-row h-20 border-t-0; }
+        @screen lg { @apply px-24; }
         @screen lg { @apply px-32; }
 
         .search-item-container {
@@ -116,6 +120,7 @@ body {
         @apply border-b h-auto flex flex-col;
         @screen md { @apply h-20 flex-row py-5; }
         @screen md { @apply px-5 overflow-x-scroll; }
+        @screen lg { @apply px-24; }
         @screen lg { @apply px-32; }
         .select-container {
             @apply border-b flex items-center py-2 mb-4 px-5;
@@ -134,6 +139,7 @@ body {
 
     .restaurants-table-container {
         @apply p-5 mt-16;
+        @screen lg { @apply px-24; }
         @screen lg { @apply px-32; }
         .heading,
         .search-guides-heading { @apply text-3xl font-semibold italic; }
