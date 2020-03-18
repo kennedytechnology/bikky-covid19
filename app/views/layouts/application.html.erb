@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Project Quarantine </title>
-        <%= csrf_meta_tags %>
-        <%= csp_meta_tag %>
-        <%= favicon_link_tag asset_path('logo.png') %>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name='turbolinks-visit-control' content='reload'>
+<head>
+    <title> Bikky: Order Direct from Local Restaurants </title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= favicon_link_tag asset_path('logo.png') %>
 
-        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='turbolinks-visit-control' content='reload'>
 
-        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-        <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    </head>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <body>
-        <%= yield %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-        <script>
-            var autocomplete;
+<body>
+    <%= yield %>
 
-            function initAutocomplete() {
+    <script>
+        var autocomplete;
+
+        function initAutocomplete() {
             // Create the autocomplete object, restricting the search predictions to
             // geographical location types. 
-                autocomplete = new google.maps.places.Autocomplete(
-                document.getElementById('autocomplete'), {types: ['geocode']});
-            }
+            autocomplete = new google.maps.places.Autocomplete(
+                document.getElementById('autocomplete'), {
+                    types: ['geocode']
+                });
+        }
 
-            // Bias the autocomplete object to the user's geographical location,
-            // as supplied by the browser's 'navigator.geolocation' object.
-            function geolocate() {
-                if (navigator.geolocation) {
-                    navigator.geolocation.getCurrentPosition(function(position) {
+        // Bias the autocomplete object to the user's geographical location,
+        // as supplied by the browser's 'navigator.geolocation' object.
+        function geolocate() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
                     var geolocation = {
                         lat: position.coords.latitude,
                         lng: position.coords.longitude
                     };
-                    var circle = new google.maps.Circle(
-                        {center: geolocation, radius: position.coords.accuracy});
-                    autocomplete.setBounds(circle.getBounds());
+                    var circle = new google.maps.Circle({
+                        center: geolocation,
+                        radius: position.coords.accuracy
                     });
-                }
+                    autocomplete.setBounds(circle.getBounds());
+                });
             }
-        </script>
+        }
+    </script>
 
-        <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_MAPS_API_KEY']}&libraries=places&callback=initAutocomplete" %>
-    </body>
+    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_MAPS_API_KEY']}&libraries=places&callback=initAutocomplete" %>
+</body>
+
 </html>

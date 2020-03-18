@@ -7,12 +7,14 @@ class RestaurantsController < ApplicationController
     end
 
     if params[:q].blank?
-      @restaurants = @restaurants.near("67.244.2.125", 100, order: :distance).limit(50)
+      @restaurants = @restaurants.near(remote_ip, 100, order: :distance).limit(50)
     else
       @restaurants = @restaurants.near(params[:q], 0.5, order: :distance)
     end
   end
   
+  private
+
   def search_params
     params.permit(:q, :filter0, :filter1, :filter2, :filter3, :commit)
   end
@@ -27,5 +29,13 @@ class RestaurantsController < ApplicationController
     
       search_tags.all?{|tag| [p.mood, p.daypart_1, p.daypart_2, p.meal_size_1, p.meal_size_2, p.price.to_s].include?(tag)}
     }
+  end
+
+  def remote_ip
+    if forwarded = request.env["HTTP_X_FORWARDED_FOR"]
+      forwarded.split(",").first
+    elsif addr = request.env["REMOTE_ADDR"]
+      addr
+    end
   end
 end
