@@ -38,10 +38,11 @@ body {
                 @screen lg { @apply mt-0; }
             }
             &-item { 
-                @apply mb-4 pb-2 border-b border-gray-400 text-gray-700 px-3 text-xs;
+                @apply mb-4 pb-2 border-b border-gray-400 text-gray-600 px-3 text-xs;
                 &:last-child { @apply mb-0; }
+                &:hover { @apply border-gray-600 text-gray-900; }
                 @screen lg { 
-                    @apply mb-0 mr-6 text-sm;
+                    @apply mb-0 mr-3 text-sm;
                     &:last-child { @apply mr-0; }
                 }
             }
@@ -106,7 +107,8 @@ body {
             margin-top: 210px;
             @screen md { @apply w-auto mt-0; }
             .submit-button  { 
-                @apply h-12 mt-8 mb-4 rounded-full bg-gray-700 text-white w-auto px-6 py-3 inline-block;
+                @apply h-12 mt-8 mb-4 rounded-full bg-gray-700 text-white w-auto px-6 py-3 inline-block cursor-pointer;
+                &:hover { @apply opacity-85; }
                 @screen md { @apply my-0 w-auto; }
             }
             @media screen and (max-width: 768px) {
@@ -123,7 +125,7 @@ body {
         @screen lg { @apply px-24; }
         @screen lg { @apply px-32; }
         .select-container {
-            @apply border-b flex items-center py-2 mb-4 px-5;
+            @apply border-b flex items-center py-2 mb-4 px-5 relative;
             &:last-child { @apply border-b-0 mb-0; }
             @screen md {
                 @apply border-r border-b-0 mr-6 pr-6 pb-0 mb-0 pl-0;
@@ -131,7 +133,7 @@ body {
             }
 
             select {
-                @apply bg-white text-base text-gray-700 appearance-none;
+                @apply bg-white text-base text-gray-700 appearance-none cursor-pointer;
                 max-width: 150px;
             }
         }
@@ -167,11 +169,15 @@ body {
                 @apply flex flex-col justify-between;
                 @screen md { min-height: 350px; }
 
-                .card-heading { @apply text-xl mb-2 font-semibold overflow-hidden; max-height: 37px; }
+                .card-heading { 
+                    @apply text-xl mb-2 font-semibold overflow-hidden; max-height: 37px;
+                }
                 .card-img { @apply bg-cover bg-center bg-no-repeat w-full rounded-lg; height: 150px; max-height: 150px; min-height: 150px; }
                 .card-description {
-                    @apply text-gray-600 text-justify mt-3 mb-4 flex flex-col justify-between items-end;
+                    @apply text-gray-600 mt-3 mb-4 flex italic;
                     @screen md {@apply flex-row items-start;  }
+                    img { @apply mr-3; }
+                    .currentColor { fill: red; }
                     .tag-info { 
                         @apply px-4 py-1 bg-red-100 text-red-500 rounded text-center mb-4;
                         min-width: 150px;
@@ -186,6 +192,7 @@ body {
                 @apply w-full flex justify-end;
                 .footer-item {
                     @apply rounded-full bg-gray-700 text-white px-6 py-1 text-lg inline-block;
+                    &:hover { @apply opacity-85; }
                 }
             }
         }

@@ -23,20 +23,24 @@
                 <%= select_tag "filter0", options_for_select([
                     "Breakfast", "Lunch", "Dinner", "Dessert", 
                     "Afternoon delight"], params[:filter0]), {prompt: "What meal?"} %>
+                <%= image_tag "arrow_down.svg", class: "absolute", style: "max-width: 10px; right: 30%;" %>
             </div>
             <div class="select-container">
                 <%= select_tag "filter1", options_for_select([
                     "Social distance", "Trapped with roommate", 
                     "Party indoors"], params[:filter1]), {prompt: "How many people?"} %>
+                <%= image_tag "arrow_down.svg", class: "absolute", style: "max-width: 10px; right: 10%;" %>
             </div>
             <div class="select-container">
                 <%= select_tag "filter2", options_for_select([
                     "Chillin with homies", "TREAT YO SELF", "Too cool for school", 
                     "It's a family affair", "Keep grindin", "Home comfort", 
                     "Your body is a temple", "Oh you fancy huh?"], params[:filter2]), {prompt: "What's the mood?"} %>
+                <%= image_tag "arrow_down.svg", class: "absolute", style: "max-width: 10px; right: 10%;" %>
             </div>
             <div class="select-container">
                 <%= select_tag "filter3", options_for_select([["$", 1], ["$$", 2], ["$$$", 3]], params[:filter3]), {prompt: "How much?"} %>
+                <%= image_tag "arrow_down.svg", class: "absolute", style: "max-width: 10px; right: 10px;" %>
             </div>
 
             <!-- 
