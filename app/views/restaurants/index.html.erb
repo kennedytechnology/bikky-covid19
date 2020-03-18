@@ -2,19 +2,21 @@
     <%= render partial: "layouts/header" %>
 
     <div class="restaurants-main-content">
-        <div class="long-description">
-            <p> No third-party delivery shenanigans here (unless we can confirm it’s commission-free ordering). Our restaurants need us more than ever before...and let’s face it, my kids can only handle a frozen veggie burger for maybe one more day. </p>
-            <p> You’ll have to go through the absolutely excruciating challenge of creating a new account when you order...but let’s face it, you’re not really in a rush to get somewhere, are you? </p>
-            <p> Start ordering and boost your local economy. Let’s goooooooo! </p>
+        <div class="long-description"> 
+            <p class="mb-2"> No third-party delivery shenanigans here (unless the restaurant prefers it or we can confirm it’s commission-free). </p>
+            <p class="mb-2"> Our restaurants need us more than ever before...and let’s face it, my kids can only handle a frozen veggie burger for maybe one more day. </p>
+            <p class="mb-2 font-semibold"> Start ordering and boost your local economy. Let’s goooooooo! </p>
         </div>
-        <%= form_with url: restaurants_path, method: :get, local: true, class: "search-form" do |f| %>
-        <div class="search-item-container"> <span> Search </span> </div>
-        <div class="search-input-container">
-            <input type="text" name="q" onFocus="geolocate()" id="autocomplete" class="input" value="<%= params[:q] %>" placeholder="123 5th Avenue New York, NY 10022" />
-        </div>
-        <div class="seach-submit-button-container">
-            <%= f.submit "Find Restaurants", class: "submit-button" %>
-        </div>
+        <%= form_with url: restaurants_path, method: :get, local: true do |f| %>
+            <div class="search-form">
+                <div class="search-item-container"> <span> Search </span> </div>
+                <div class="search-input-container">
+                    <input type="text" name="q" onFocus="geolocate()" id="autocomplete" class="input" value="<%= params[:q] %>" placeholder="123 5th Avenue New York, NY 10022" />
+                </div>
+                <div class="seach-submit-button-container">
+                    <%= f.submit "Find Restaurants", class: "submit-button" %>
+                </div>
+            </div>
 
         <div class="filters-contaniner">
             <div class="select-container">
