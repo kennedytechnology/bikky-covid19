@@ -25,8 +25,6 @@ class RestaurantsController < ApplicationController
 
   def matching_partners
     Partner.all.select{|p|
-      puts [p.mood, p.daypart_1, p.daypart_2, p.meal_size_1, p.meal_size_2, p.price]
-    
       search_tags.all?{|tag| [p.mood, p.daypart_1, p.daypart_2, p.meal_size_1, p.meal_size_2, p.price.to_s].include?(tag)}
     }
   end
