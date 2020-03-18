@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_17_210642) do
+ActiveRecord::Schema.define(version: 2020_03_18_135208) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,10 +53,20 @@ ActiveRecord::Schema.define(version: 2020_03_17_210642) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "partner_id", null: false
-    t.string "weekday_open"
-    t.string "weekday_close"
-    t.string "weekend_open"
-    t.string "weekend_close"
+    t.string "mon_open"
+    t.string "mon_close"
+    t.string "tue_open"
+    t.string "tue_close"
+    t.string "wed_open"
+    t.string "wed_close"
+    t.string "thur_open"
+    t.string "thur_close"
+    t.string "fri_open"
+    t.string "fri_close"
+    t.string "sat_open"
+    t.string "sat_close"
+    t.string "sun_open"
+    t.string "sun_close"
     t.index ["partner_id"], name: "index_restaurants_on_partner_id"
   end
 
