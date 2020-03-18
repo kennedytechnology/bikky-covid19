@@ -1,13 +1,13 @@
 <div class="header relative">
     <div class="navbar">
         <div class="navbar-start">
-            <%= link_to image_tag "logo.png" %>
+            <%= link_to image_tag "logo.png", alt: "Logo", title: "Home" %>
             <div class="links-container">
                 <%= link_to "Project Quarantine", root_path, class: "navbar-link" %>
                 <div>
-                    <%= link_to "powered by Bikky", "https://bikky.com/", class: "navbar-url", target: "_blank" %>
-                    </span class="navbar-link mx-1"> & </span>
-                    <%= link_to "FoodtoEat", "https://www.foodtoeat.com/", class: "navbar-url", target: "_blank" %>
+                    <%= link_to "powered by Bikky", "https://bikky.com/", class: "navbar-url", title: "Visit bikky.com", target: "_blank" %>
+                    &amp;
+                    <%= link_to "FoodtoEat", "https://www.foodtoeat.com/", class: "navbar-url", title: "Visit foodtoeat.com", target: "_blank" %>
                 </div>
             </div>
         </div>

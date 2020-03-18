@@ -35,10 +35,10 @@
             <h1 class="heading"> If that's not enough, here's what others are saying... </h1>
             <div class="flex my-8 flex-wrap">
                 <%= link_to "https://www.eater.com/2020/3/16/21182291/restaurants-wont-survive-coronavirus-pandemic-without-bail-out", target: "_blank", class: "mr-12" do %>
-                    <%= image_tag "eater_logo.png", style:"max-width: 100px;" %>
+                    <%= image_tag "eater_logo.png", style:"max-width: 100px;", alt: "Eater Logo" %>
                 <% end %>
                 <%= link_to "https://www.nytimes.com/2020/03/16/dining/restaurants-coronavirus.html", target: "_blank" do %>
-                    <%= image_tag "new_york_times_logo.png", style: "max-width: 250px;" %>
+                    <%= image_tag "new_york_times_logo.png", style: "max-width: 250px;", alt: "New York Times Logo" %>
                 <% end %>
             </div>
 
@@ -71,7 +71,7 @@
 
             <h1 class="heading"> Acknowledgments </h1>
             <p class="mb-4"> This effort wouldn’t be possible without (of course) the operators. We owe you our daily sustenance, and hope this plays even a small part in helping you recover.</p>
-            <p class="mb-4"> <span class="mr-4"> Built by: <%= link_to "Bikky", "https://bikky.com/", class: "pb-1 border-b-2 border-brand-green font-semibold" %> + <%= link_to "FoodtoEat", "https://www.foodtoeat.com/", class: "pb-1 border-b-2 border-brand-green font-semibold" %> </p>
+            <p class="mb-4">  Built by: <%= link_to "Bikky", "https://bikky.com/", class: "pb-1 border-b-2 border-brand-green font-semibold" %> + <%= link_to "FoodtoEat", "https://www.foodtoeat.com/", class: "pb-1 border-b-2 border-brand-green font-semibold" %> </p>
             <p class="mb-4">  Inspired by: a Friday night conversation with 
                 <%= link_to "Scott Landers", "https://www.linkedin.com/in/scottlanders/", class: "font-semibold pb-1 border-b-2 border-brand-green" %> @ <%= link_to "Figure8 Logistics", "https://figure8.delivery/", class: "font-semibold pb-1 border-b-2 border-brand-green" %> </p>
 
