@@ -23,7 +23,7 @@ body {
             @apply flex justify-between items-center h-auto mb-12 py-4;
             @screen md { @apply h-12 py-12; }
 
-            &-url { @apply italic text-sm mr-2; }
+            &-url { @apply italic text-sm; }
             &-link { 
                 @apply font-semibold text-xl italic;
                 @screen md { @apply text-2xl -mb-1; }

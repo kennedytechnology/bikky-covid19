@@ -4,7 +4,11 @@
             <%= link_to image_tag "logo.png" %>
             <div class="links-container">
                 <%= link_to "Project Quarantine", root_path, class: "navbar-link" %>
-                <%= link_to "powered by Bikky", "https://bikky.com/", class: "navbar-url" %>
+                <div>
+                    <%= link_to "powered by Bikky", "https://bikky.com/", class: "navbar-url", target: "_blank" %>
+                    </span class="navbar-link mx-1"> & </span>
+                    <%= link_to "foodtoeat", "https://www.foodtoeat.com/", class: "navbar-url", target: "_blank" %>
+                </div>
             </div>
         </div>
 
