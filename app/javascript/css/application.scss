@@ -14,7 +14,7 @@ body {
 .restaurants-container {
     .header {
         @apply p-5;
-        @media screen and (max-width: 767px) { min-height: 370px; }
+        @media screen and (max-width: 767px) { min-height: 450px; }
         @media screen and (min-width: 768px) and (max-width: 1023px) { min-height: 400px; }
         @screen lg { @apply px-32 pb-12; min-height: 370px;}
         background-color: #f0f0f0;
