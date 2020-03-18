@@ -10,10 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_14_214717) do
+ActiveRecord::Schema.define(version: 2020_03_17_210642) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "guides", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "guides_restaurants", id: false, force: :cascade do |t|
+    t.bigint "guide_id", null: false
+    t.bigint "restaurant_id", null: false
+  end
+
+  create_table "partners", force: :cascade do |t|
+    t.string "brand"
+    t.string "status"
+    t.string "mood"
+    t.string "daypart_1"
+    t.string "daypart_2"
+    t.string "meal_size_1"
+    t.string "meal_size_2"
+    t.integer "price"
+    t.string "deal"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "partner"
+  end
 
   create_table "restaurants", force: :cascade do |t|
     t.string "name"
@@ -25,6 +52,13 @@ ActiveRecord::Schema.define(version: 2020_03_14_214717) do
     t.text "address"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "partner_id", null: false
+    t.string "weekday_open"
+    t.string "weekday_close"
+    t.string "weekend_open"
+    t.string "weekend_close"
+    t.index ["partner_id"], name: "index_restaurants_on_partner_id"
   end
 
+  add_foreign_key "restaurants", "partners"
 end

@@ -1,0 +1,60 @@
+<div class="restaurants-container">
+    <div class="header relative">
+        <div class="navbar">
+            <div class="navbar-start">
+                <%= link_to image_tag "logo.png" %>
+                <div class="links-container">
+                    <%= link_to "Project Quarantine", root_path, class: "navbar-link" %>
+                    <%= link_to "powered by Bikky", "https://bikky.com/", class: "navbar-url" %>
+                </div>
+            </div>
+
+            <div class="navbar-item-container">
+                <%= link_to "Submit a Restaurant", "https://forms.gle/viD4gsHDrCNwxdtKA", class: "navbar-item", target: "_blank" %>
+                <%= link_to "Guides", guides_path, class: "navbar-item" %>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1 class="heading"> Your curated guide to <br /> eating during COVID </h1>
+        </div>
+
+        <div class="tabs-container"> 
+            <%= link_to "All Restaurants", root_path, class: "tab-item #{is_tab_active?('restaurants')}" %>
+            <%= link_to "Guides", guides_path, class: "tab-item #{is_tab_active?('guides')}" %>
+        </div>
+    </div>
+
+    <div class="restaurants-main-content">
+        <div class="restaurants-table-container">
+            <% if @restaurants.any? %>
+                <% @restaurants.each do |motto, restaurants| %>
+                    <h1 class="search-guides-heading"> <%= find_motto(motto) %> </h1>
+                    <div class="cards-container mb-8">
+                        <% restaurants.each do |r| %>
+                            <div class="card">
+                                <div class="card-content">
+                                    <div>
+                                        <h1 class="card-heading"> <%= r.brand %> </h1>
+                                        <div class="card-img" style="background-image: url(<%= image_url(r.display_image) %>);"> </div>
+                                        <div class="card-description"> 
+                                            <p class="mr-8"> <%= restaurant_description(r.description) %> </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-footer">
+                                        <%= link_to "Order Direct", r.url, target: "_blank", class: "footer-item" %>
+                                    </div>
+                                </div>
+                            </div>
+                        <% end %>
+                    </div>
+                <% end %>
+            <% else %>
+                <%= link_to "https://forms.gle/viD4gsHDrCNwxdtKA", target: "_blank" do %>
+                        <p class="italic w-full"> Didn't find the restaurant you're looking for? <span class="font-bold"> Submit your request </span> and our team will look into publishing it soon! </p>
+                <% end %>
+            <% end %>
+        </div>
+    </div>
+</div>

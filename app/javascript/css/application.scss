@@ -13,8 +13,10 @@ body {
 // restaurants#index
 .restaurants-container {
     .header {
-        @apply p-5 h-auto;
-        @screen lg { @apply px-32 pb-12; }
+        @apply p-5;
+        @media screen and (max-width: 767px) { min-height: 370px; }
+        @media screen and (min-width: 768px) and (max-width: 1023px) { min-height: 400px; }
+        @screen lg { @apply px-32 pb-12; min-height: 370px;}
         background-color: #f0f0f0;
 
         .navbar {
@@ -23,7 +25,7 @@ body {
 
             &-url { @apply italic text-sm mr-2; }
             &-link { 
-                @apply font-semibold text-xl;
+                @apply font-semibold text-xl italic;
                 @screen md { @apply text-2xl -mb-1; }
             }
             &-item-container {
@@ -33,12 +35,24 @@ body {
                 }
             }
             &-item { 
-                @apply mb-4 pb-2 border-b border-gray-500 px-3 text-xs;
+                @apply mb-4 pb-2 border-b border-gray-400 text-gray-700 px-3 text-xs;
                 &:last-child { @apply mb-0; }
                 @screen md { 
                     @apply mb-0 mr-6 text-sm;
                     &:last-child { @apply mr-0; }
                 }
+            }
+        }
+
+        .tabs-container {
+            @apply absolute bottom-0 flex h-12 text-center font-semibold;
+
+            .tab-item {
+                @apply p-4 rounded-t-xl border-t-2 border-l-2 border-r-2 border-gray-600;
+                min-width: 150px;
+                max-width: 150px; 
+                transition: background-color 0.5 ease;
+                &.active { @apply bg-white border-none; }
             }
         }
 
@@ -75,7 +89,7 @@ body {
             @apply hidden w-auto mr-3 border-r pr-8;
             @screen md { @apply inline; }
 
-            span { @apply font-semibold pb-2 border-b-2 border-green-300 px-2; }
+            span { @apply font-semibold pb-2 border-b-2 border-brand-green px-2; }
         }
 
         .search-input-container {
@@ -121,7 +135,11 @@ body {
     .restaurants-table-container {
         @apply p-5 mt-16;
         @screen lg { @apply px-32; }
-        .heading { @apply text-3xl mb-6 font-semibold; }
+        .heading,
+        .search-guides-heading { @apply text-3xl font-semibold italic; }
+
+        .heading { @apply mb-6; }
+        .search-guides-heading { @apply mb-2; }
     }
 
     .cards-container {
@@ -143,10 +161,18 @@ body {
                 @apply flex flex-col justify-between;
                 @screen md { min-height: 350px; }
 
-                .card-heading { @apply text-xl mb-2; }
-                .card-img { @apply bg-cover bg-center bg-no-repeat w-full; height: 150px; }
+                .card-heading { @apply text-xl mb-2 font-semibold; }
+                .card-img { @apply bg-cover bg-center bg-no-repeat w-full rounded-lg; height: 150px; }
                 .card-description {
-                    @apply text-gray-600 text-justify mt-3 mb-4;
+                    @apply text-gray-600 text-justify mt-3 mb-4 flex flex-col justify-between items-end;
+                    @screen md {@apply flex-row items-start;  }
+                    .tag-info { 
+                        @apply px-4 py-1 bg-red-100 text-red-500 rounded text-center mb-4;
+                        min-width: 150px;
+                        max-width: 150px;
+                        max-height: 30px;
+                        @screen md { @apply mb-0; }
+                    }
                 }
             }
 
