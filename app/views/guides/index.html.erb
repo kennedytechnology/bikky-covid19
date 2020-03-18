@@ -29,7 +29,7 @@
         <div class="restaurants-table-container">
             <% if @restaurants.any? %>
                 <% @restaurants.each do |motto, restaurants| %>
-                    <h1 class="search-guides-heading"> <%= find_motto(motto) %> </h1>
+                    <h1 class="search-guides-heading"> <%= motto %> </h1>
                     <div class="cards-container mb-8">
                         <% restaurants.each do |r| %>
                             <div class="card">
