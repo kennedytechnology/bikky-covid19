@@ -133,8 +133,8 @@ body {
             }
 
             select {
-                @apply bg-white text-base text-gray-700 appearance-none cursor-pointer;
-                max-width: 150px;
+                @apply bg-white text-base text-gray-700 appearance-none cursor-pointer w-full max-w-full;
+                padding-right: 2rem;
             }
 
             .arrow-icon {
