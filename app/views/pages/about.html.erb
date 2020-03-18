@@ -4,7 +4,7 @@
     <div class="restaurants-main-content">
         <div class="restaurants-table-container">
             <h1 class="heading"> The only way we defeat COVID-19 is to STAY AWAY FROM EACH OTHER </h1>
-            <p> 
+            <p class="mb-4"> 
                 But that’s the conundrum - distance can heal us, but it absolutely 
                 crushes the local businesses that nourish our body, mind, and soul.
             </p>
@@ -18,7 +18,7 @@
             </p>
 
             <h1 class="heading"> Our motivation </h1>
-            <p> 
+            <p class="mb-4"> 
                 The restaurant industry is in the midst of an existential crisis. 
                 Many brands - small and large - filled with people who have spent their 
                 lives ensuring we are fed and happy now face an uncertain future.
@@ -30,15 +30,13 @@
             </p>
 
             <h1 class="heading"> If that’s not motivation enough, here’s a collection of other things we’ve gathered as the potential impact starts to sink in… </h1>
-            <div class="flex flex-col mb-8 font-semibold">
-                <%= link_to "Eater", "https://www.eater.com/2020/3/16/21182291/restaurants-wont-survive-coronavirus-pandemic-without-bail-out", target: "_blank" %>
-                <%= link_to "New York Times", "https://www.nytimes.com/2020/03/16/dining/restaurants-coronavirus.html", target: "_blank" %>
-                <%# link_to "Eater Food Critic", "https://twitter.com/qualityrye/status/1240071005005066240?s=20", target: "_blank" %>
-                <%# link_to "David Chang (Momofuku)", "https://twitter.com/davidchang/status/1239628790227238915", target: "_blank" %>
-                <%# link_to "Andrew Rigie (NYC Hospitality Alliance)", "https://twitter.com/AndrewRigie/status/1239283605219749889", target: "_blank" %>
-                <%# link_to "OpenTable restaurant graphic", "https://twitter.com/ShaiDardashti/status/1238642577873596417", target: "_blank" %>
-                <%# link_to "Pity insight on impact to industry", "https://twitter.com/McD_Truth/status/1238621627333726208", target: "_blank" %>
-                <%# link_to "Preach", "https://twitter.com/kh/status/1240064407343755264", target: "_blank" %>
+            <div class="flex my-8 flex-wrap">
+                <%= link_to "https://www.eater.com/2020/3/16/21182291/restaurants-wont-survive-coronavirus-pandemic-without-bail-out", target: "_blank", class: "mr-12" do %>
+                    <%= image_tag "eater_logo.png", style:"max-width: 100px;" %>
+                <% end %>
+                <%= link_to "https://www.nytimes.com/2020/03/16/dining/restaurants-coronavirus.html", target: "_blank" do %>
+                    <%= image_tag "new_york_times_logo.png", style: "max-width: 250px;" %>
+                <% end %>
             </div>
 
             <%# Tweets %>
@@ -77,11 +75,11 @@
             <div>
                 <p class="mb-2"> Other contributors: </p>
                     <div class="flex flex-col pl-2">
-                        <div class="mb-1"> <%= link_to "Steve Simoni", "https://www.linkedin.com/in/stevensimoni/", class: "font-semibold" %> @ <%=link_to "Bbot", "https://bbot.menu/", class: "font-semibold" %> </div>
-                        <div class="mb-1"> <%= link_to "Krystle Mobayeni", "https://www.linkedin.com/in/krystlemobayeni/", class: "font-semibold"%> @ <%= link_to "BentoBox", "https://getbento.com/", class: "font-semibold" %> </div>
-                        <div class="mb-1"> <%= link_to "Nabeel Alamgir", "https://www.linkedin.com/in/nabeeleats/", class: "font-semibold"%> @ <%= link_to "Lunchbox", "https://lunchbox.io/", class: "font-semibold" %> </div>
-                        <div class="mb-1"> <%= link_to "Amina Gilani", "https://www.linkedin.com/in/aminagilani/", class: "font-semibold"%> + <%= link_to "Thusenth Dhavaloganathan", "https://www.linkedin.com/in/thusenth/", class: "font-semibold" %> @ <%= link_to "Sociavore", "https://www.sociavore.co/", class: "font-semibold" %> </div>
-                        <div class="mb-1"> <%= link_to "Alex Beltrani", "https://www.linkedin.com/in/alex-beltrani-414b9312/", class: "font-semibold"%> @ <%= link_to "Tattle", "https://get.tattleapp.com/", class: "font-semibold" %> </div>
+                        <div class="mb-4"> <%= link_to "Steve Simoni", "https://www.linkedin.com/in/stevensimoni/", class: "font-semibold pb-1 border-b-2 border-brand-green" %> @ <%=link_to "Bbot", "https://bbot.menu/", class: "font-semibold pb-1 border-b-2 border-brand-green" %> </div>
+                        <div class="mb-4"> <%= link_to "Krystle Mobayeni", "https://www.linkedin.com/in/krystlemobayeni/", class: "font-semibold pb-1 border-b-2 border-brand-green"%> @ <%= link_to "BentoBox", "https://getbento.com/", class: "font-semibold pb-1 border-b-2 border-brand-green" %> </div>
+                        <div class="mb-4"> <%= link_to "Nabeel Alamgir", "https://www.linkedin.com/in/nabeeleats/", class: "font-semibold pb-1 border-b-2 border-brand-green"%> @ <%= link_to "Lunchbox", "https://lunchbox.io/", class: "font-semibold pb-1 border-b-2 border-brand-green" %> </div>
+                        <div class="mb-4"> <%= link_to "Amina Gilani", "https://www.linkedin.com/in/aminagilani/", class: "font-semibold pb-1 border-b-2 border-brand-green"%> + <%= link_to "Thusenth Dhavaloganathan", "https://www.linkedin.com/in/thusenth/", class: "font-semibold pb-1 border-b-2 border-brand-green" %> @ <%= link_to "Sociavore", "https://www.sociavore.co/", class: "font-semibold pb-1 border-b-2 border-brand-green" %> </div>
+                        <div class="mb-4"> <%= link_to "Alex Beltrani", "https://www.linkedin.com/in/alex-beltrani-414b9312/", class: "font-semibold pb-1 border-b-2 border-brand-green"%> @ <%= link_to "Tattle", "https://get.tattleapp.com/", class: "font-semibold pb-1 border-b-2 border-brand-green" %> </div>
                     </div>
 
             </div>
