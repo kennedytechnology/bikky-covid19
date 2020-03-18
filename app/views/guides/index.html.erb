@@ -3,11 +3,11 @@
 
     <div class="restaurants-main-content">
         <div class="restaurants-table-container">
-            <% if @restaurants.any? %>
-                <% @restaurants.each do |motto, restaurants| %>
-                    <h1 class="search-guides-heading"> <%= motto %> </h1>
+            <% if @guides.any? %>
+                <% @guides.each do |guide| %>
+                    <h1 class="search-guides-heading"> <%= guide.name %> </h1>
                     <div class="cards-container mb-8">
-                        <%= render restaurants %>
+                        <%= render guide.restaurants %>
                     </div>
                 <% end %>
             <% else %>
