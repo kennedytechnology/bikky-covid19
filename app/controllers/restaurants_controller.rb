@@ -7,7 +7,7 @@ class RestaurantsController < ApplicationController
     end
 
     if params[:q].blank?
-      @restaurants = @restaurants.near(remote_ip, 100, order: :distance).limit(50)
+      @restaurants = @restaurants.near(remote_ip, 100000, order: :distance).limit(50)
     else
       @restaurants = @restaurants.near(params[:q], 0.5, order: :distance)
     end
