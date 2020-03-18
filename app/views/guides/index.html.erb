@@ -31,23 +31,7 @@
                 <% @restaurants.each do |motto, restaurants| %>
                     <h1 class="search-guides-heading"> <%= motto %> </h1>
                     <div class="cards-container mb-8">
-                        <% restaurants.each do |r| %>
-                            <div class="card">
-                                <div class="card-content">
-                                    <div>
-                                        <h1 class="card-heading"> <%= r.brand %> </h1>
-                                        <div class="card-img" style="background-image: url(<%= image_url(r.display_image) %>);"> </div>
-                                        <div class="card-description"> 
-                                            <p class="mr-8"> <%= restaurant_description(r.description) %> </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="card-footer">
-                                        <%= link_to "Order Direct", r.url, target: "_blank", class: "footer-item" %>
-                                    </div>
-                                </div>
-                            </div>
-                        <% end %>
+                        <%= render restaurants %>
                     </div>
                 <% end %>
             <% else %>

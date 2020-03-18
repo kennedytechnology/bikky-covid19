@@ -48,23 +48,7 @@
 
             <% if @restaurants.any? %>
                 <div class="cards-container">
-                    <% @restaurants.each do |restaurant| %>
-                    <div class="card">
-                        <div class="card-content">
-                            <div>
-                                <h1 class="card-heading"> <%= restaurant.brand %> </h1>
-                                <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
-                                <div class="card-description flex justify-between"> 
-                                    <p class="mr-8"> <%= restaurant_description(restaurant.description) %> </p>
-                                </div>
-                            </div>
-                            
-                            <div class="card-footer">
-                                <%= link_to "Order Direct", restaurant.url, target: "_blank", class: "footer-item" %>
-                            </div>
-                        </div>
-                    </div>
-                    <% end %>
+                    <%= render @restaurants %>
                 </div>
             <% else %>
                 <%= link_to "https://forms.gle/viD4gsHDrCNwxdtKA", target: "_blank" do %>
