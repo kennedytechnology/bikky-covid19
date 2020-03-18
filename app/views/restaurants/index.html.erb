@@ -2,19 +2,19 @@
     <%= render partial: "layouts/header" %>
 
     <div class="restaurants-main-content">
-        <div class="long-description"> 
+        <div class="long-description">
             <p> No third-party delivery shenanigans here (unless we can confirm it’s commission-free ordering). Our restaurants need us more than ever before...and let’s face it, my kids can only handle a frozen veggie burger for maybe one more day. </p>
             <p> You’ll have to go through the absolutely excruciating challenge of creating a new account when you order...but let’s face it, you’re not really in a rush to get somewhere, are you? </p>
             <p> Start ordering and boost your local economy. Let’s goooooooo! </p>
         </div>
         <%= form_with url: restaurants_path, method: :get, local: true, class: "search-form" do |f| %>
-            <div class="search-item-container"> <span> Search </span> </div>
-            <div class="search-input-container">
-                <input type="text" name="q" onFocus="geolocate()" id="autocomplete" class="input" placeholder="123 5th Avenue New York, NY 10022" />
-            </div>
-            <div class="seach-submit-button-container">
-                <%= f.submit "Find Restaurants", class: "submit-button" %>
-            </div>
+        <div class="search-item-container"> <span> Search </span> </div>
+        <div class="search-input-container">
+            <input type="text" name="q" onFocus="geolocate()" id="autocomplete" class="input" value="<%= params[:q] %>" placeholder="123 5th Avenue New York, NY 10022" />
+        </div>
+        <div class="seach-submit-button-container">
+            <%= f.submit "Find Restaurants", class: "submit-button" %>
+        </div>
         <% end %>
         <div class="filters-contaniner">
             <div class="select-container">
@@ -32,7 +32,7 @@
                     "Chillin with homies", "TREAT YO SELF", "Too cool for school", 
                     "It’s a family affair", "Keep grindin", "Home comfort", 
                     "Your body is a temple", "Oh you fancy huh?"]), {prompt: "What's the mood?"} %>
-            </div> 
+            </div>
             <div class="select-container">
                 <%= select_tag "filter1", options_for_select(["$", "$$"]), {prompt: "How much?"} %>
             </div>
@@ -47,13 +47,13 @@
             <h1 class="heading"> Here are restaurants that deliver near you </h1>
 
             <% if @restaurants.any? %>
-                <div class="cards-container">
-                    <%= render @restaurants %>
-                </div>
+            <div class="cards-container">
+                <%= render @restaurants %>
+            </div>
             <% else %>
-                <%= link_to "https://forms.gle/viD4gsHDrCNwxdtKA", target: "_blank" do %>
-                        <p class="italic w-full"> Didn't find the restaurant you're looking for? <span class="font-bold"> Submit your request </span> and our team will look into publishing it soon! </p>
-                <% end %>
+            <%= link_to "https://forms.gle/viD4gsHDrCNwxdtKA", target: "_blank" do %>
+            <p class="italic w-full"> Didn't find the restaurant you're looking for? <span class="font-bold"> Submit your request </span> and our team will look into publishing it soon! </p>
+            <% end %>
             <% end %>
         </div>
     </div>
