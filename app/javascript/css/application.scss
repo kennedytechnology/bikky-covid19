@@ -136,6 +136,16 @@ body {
                 @apply bg-white text-base text-gray-700 appearance-none cursor-pointer;
                 max-width: 150px;
             }
+
+            .arrow-icon {
+                @apply absolute;
+                max-width: 10px;
+                right: 10%;
+                @screen md {
+                    &:first-child { right: 30%; }
+                    &:last-child { right: 10px; }
+                }
+            }
         }
     }
 
