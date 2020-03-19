@@ -15,8 +15,27 @@
         <div class="navbar-item-container">
             <%= link_to "All restaurants", root_path, class: "navbar-item" %>
             <%= link_to "About", pages_about_path, class: "navbar-item" %>
-            <%= link_to "Suggest a Restaurant", "https://forms.gle/viD4gsHDrCNwxdtKA", class: "navbar-item", target: "_blank" %>
             <%= link_to "Diner Guides", guides_path, class: "navbar-item" %>
+            <a class="typeform-share button px-6 py-2 text-white bg-brand-green rounded-lg text-white" 
+                href="https://bikkyinc.typeform.com/to/qg3FJC" 
+                data-mode="popup" target="_blank"> 
+                Suggest a Restaurant
+                <%# data-auto-open=true %>
+            </a> 
+            <script> 
+                (function() { 
+                    var qs,js,q,s,d=document, 
+                        gi=d.getElementById, ce=d.createElement, 
+                        gt=d.getElementsByTagName, 
+                        id="typef_orm_share", 
+                        b="https://embed.typeform.com/"; 
+                    
+                    if(!gi.call(d,id)){ js=ce.call(d,"script");
+                    js.id=id; js.src=b+"embed.js"; 
+                    q=gt.call(d,"script")[0]; 
+                    q.parentNode.insertBefore(js,q) } 
+                })()
+            </script>
         </div>
     </div>
 
