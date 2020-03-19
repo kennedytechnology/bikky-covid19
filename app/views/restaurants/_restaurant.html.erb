@@ -9,7 +9,7 @@
             <% end %>
             <p class="card-description"> 
                 <%= image_tag "marker.svg", style: "min-width: 22px; max-width: 30px; min-height: 22px; max-height: 22px;" %> 
-                <span class="text-sm"> <%= restaurant.address.titleize %> </span>
+                <span class="text-sm"> <%= restaurant.address %> </span>
             </p>
             <div class="flex flex-wrap w-full mb-3">
             <% restaurant.tags.each do |tag| %>
@@ -17,12 +17,13 @@
             <% end %>
             </div>
         </div>
-    </div>
-    <div class="card-footer">
-        <% if restaurant.url[0..3] == "http"  %>
-            <%= link_to "Order Direct", restaurant.url, target: "_blank", class: "footer-item" %>
-        <% else %>
-            <p class="footer-item"> <%= restaurant.url %> </p>
-        <% end %>
+
+        <div class="card-footer">
+            <% if restaurant.url[0..3] == "http"  %>
+                <%= link_to "Order Direct", restaurant.url, target: "_blank", class: "footer-item" %>
+            <% else %>
+                <p class="footer-item"> <%= restaurant.url %> </p>
+            <% end %>
+        </div>
     </div>
 </div>
