@@ -1,15 +1,8 @@
 <div class="card">
         <div class="card-content">
             <div>
-                <h1 class="card-heading">
-                    <%= link_to restaurant.partner do %>
-                        <%= restaurant.brand %> 
-                        <% unless params[:controller] == "guides" && params[:action] == "index" %>
-                            &ndash; <%= restaurant.name %>
-                        <% end %>
-                    <% end %>
-                </h1>
-                <%= link_to restaurant.url do %>
+                <%= link_to restaurant.url, target: "_blank" do %>
+                    <h1 class="card-heading"> <%= restaurant.brand %> </h1>
                     <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
                 <% end %>
                 <p class="card-description text-sm"> <%= image_tag "marker.svg", style: "max-width: 16px; max-height: 16px;" %> <%= restaurant.address %> </p>
@@ -24,7 +17,6 @@
                 <% if restaurant.url[0..3] == "http"  %>
                     <%= link_to "Order Direct", restaurant.url, target: "_blank", class: "footer-item" %>
                 <% else %>
-                    <%# link_to restaurant.url, "tel:#{restaurant.url}", target: "_blank", class: "footer-item" %>
                     <p class="footer-item"> <%= restaurant.url %> </p>
                 <% end %>
             </div>
