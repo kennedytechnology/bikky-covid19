@@ -127,6 +127,7 @@ body {
             &:last-child { @apply border-b-0; }
             @screen md {
                 @apply border-r border-b-0 mr-6 pr-6 pb-0 mb-0 pl-0;
+                max-width: 190px;
                 &:last-child { @apply mr-0; }
             }
 
