@@ -5,7 +5,7 @@
             <h1 class="card-heading"> <%= restaurant.brand %> </h1>
             <p class="card-description text-xs"> 
                 <%= image_tag "marker.svg", style: "min-width: 22px; max-width: 22px; min-height: 22px; max-height: 22px;" %>
-                <span> <%= restaurant.address %> </span>
+                <span> <%= restaurant.address.try(:titleize) %> </span>
             </p>
             <div class="flex flex-wrap w-full mb-3">
             <% restaurant.tags.each do |tag| %>
