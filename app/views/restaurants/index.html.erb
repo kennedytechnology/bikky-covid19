@@ -18,6 +18,7 @@
             </div>
         </div>
 
+
         <div class="filters-contaniner">
             <div class="select-container">
                 <%= select_tag "filter0", options_for_select([
@@ -26,8 +27,10 @@
             </div>
             <div class="select-container">
                 <%= select_tag "filter1", options_for_select([
-                    "Social distance", "Trapped with roommate", 
-                    "Party indoors"], params[:filter1]), {prompt: "How many people?", onchange: "this.form.submit();"} %>
+                    ["Social distance (individual)", "Social distance"],
+                    ["Trapped with roommate (sharing)", "Trapped with roommate"], 
+                    ["Party indoors (group)", "Party indoors"]
+                    ], params[:filter1]), {prompt: "Good for?", onchange: "this.form.submit();"} %>
             </div>
             <div class="select-container">
                 <%= select_tag "filter2", options_for_select([
@@ -38,6 +41,7 @@
             <div class="select-container">
                 <%= select_tag "filter3", options_for_select([["$", 1], ["$$", 2], ["$$$", 3], ["$$$$", 4]], params[:filter3]), {prompt: "How much?", onchange: "this.form.submit();"} %>
             </div>
+
             <script>
                 function resetFilters() {
                     var elements = document.getElementsByTagName('select');
@@ -48,14 +52,9 @@
             </script>
 
             <div class="seach-submit-button-container">
-                <input type="button" name="commit" value="Reset Search" class="submit-button" data-disable-with="Reset Search" onclick="resetFilters(); this.form.submit();">
+                <input type="button" name="commit" value="Reset Filters" class="reset-button" data-disable-with="Reset Search" onclick="resetFilters(); this.form.submit();">
             </div>
 
-            <!-- 
-            <div class="select-container">
-                <%# select_tag "filter1", options_for_select(["Yes", "No"]), {prompt: "Any deals?"} %>
-            </div> 
-            -->
         </div>
         <% end %>
         <div class="restaurants-table-container">
@@ -66,7 +65,7 @@
             </div>
             <% else %>
             <p class="italic w-full mb-12 text-xl"> Didn't find the restaurant you're looking for?
-                <a class="typeform-share button font-semibold bg-brand-green rounded-full px-6 py-2 text-white mx-4" href="https://bikkyinc.typeform.com/to/qg3FJC" data-mode="popup" target="_blank"> Suggest a Restaurant here! </a>
+                <a class="typeform-share button font-semibold bg-brand-green rounded-full px-6 py-2 text-white mx-4 hover:opacity-85 shadow" href="https://bikkyinc.typeform.com/to/qg3FJC" data-mode="popup" target="_blank"> Suggest a Restaurant here! </a>
                 <%# data-auto-open=true %>
             </p>
             <script>
