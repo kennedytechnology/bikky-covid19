@@ -145,6 +145,10 @@ body {
                 }
             }
         }
+
+        .reset-button {
+            @apply h-full bg-gray-200 text-gray-700 px-4 cursor-pointer; 
+        }
     }
 
     .restaurants-table-container {
