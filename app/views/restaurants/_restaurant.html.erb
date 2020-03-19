@@ -16,7 +16,12 @@
         </div>
 
         <div class="card-footer">
-            <%= link_to "Order Direct", restaurant.url, target: "_blank", class: "footer-item" %>
+            <% if restaurant.url[0..3] == "http"  %>
+                <%= link_to "Order Direct", restaurant.url, target: "_blank", class: "footer-item" %>
+            <% else %>
+                <%# link_to restaurant.url, "tel:#{restaurant.url}", target: "_blank", class: "footer-item" %>
+                <p class="footer-item"> <%= restaurant.url %> </p>
+            <% end %>
         </div>
     </div>
 </div>
