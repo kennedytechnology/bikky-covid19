@@ -3,7 +3,10 @@
         <div>
             <h1 class="card-heading"> 
             <%= link_to restaurant.partner do %>
-                <%= restaurant.brand %> &ndash; <%= restaurant.name %>
+                <%= restaurant.brand %> 
+                <% unless params[:controller] == "guides" && params[:action] == "index" %>
+                    &ndash; <%= restaurant.name %>
+                <% end %>
             <% end %>
             </h1>
             <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
