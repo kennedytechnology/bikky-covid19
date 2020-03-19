@@ -36,7 +36,7 @@
                     "Your body is a temple", "Oh you fancy huh?"], params[:filter2]), {prompt: "What's the mood?", onchange: "this.form.submit();"} %>
             </div>
             <div class="select-container">
-                <%= select_tag "filter3", options_for_select([["$", 1], ["$$", 2], ["$$$", 3]], params[:filter3]), {prompt: "How much?", onchange: "this.form.submit();"} %>
+                <%= select_tag "filter3", options_for_select([["$", 1], ["$$", 2], ["$$$", 3], ["$$$$", 4]], params[:filter3]), {prompt: "How much?", onchange: "this.form.submit();"} %>
             </div>
             <script>
                 function resetFilters() {
