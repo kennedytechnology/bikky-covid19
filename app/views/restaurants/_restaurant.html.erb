@@ -1,9 +1,11 @@
 <div class="card">
+    <%= link_to restaurant.url, target: "_blank" do %>
+        <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
+    <% end %>
     <div class="card-content">
         <div>
             <%= link_to restaurant.url, target: "_blank" do %>
                 <h1 class="card-heading"> <%= restaurant.brand %> </h1>
-                <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
             <% end %>
             <p class="card-description text-sm"> <%= image_tag "marker.svg", style: "max-width: 16px; max-height: 16px;" %> <%= restaurant.address %> </p>
             <div class="flex flex-wrap w-full mb-3">

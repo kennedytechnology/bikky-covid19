@@ -168,10 +168,10 @@ body {
         @screen lg { @apply grid-cols-3; }
 
         .card {
-            @apply p-4 border-2 rounded mb-4 flex flex-col justify-between;
+            @apply pb-4 mb-4 flex flex-col justify-between shadow;
             @screen md { 
                 @apply mb-0;
-                min-height: 400px;
+                min-height: 370px;
             }
 
             .card-header { 
@@ -179,16 +179,16 @@ body {
                 min-height: 44px;
                 h1 { @apply mr-3; }
             }
+            .card-img { @apply bg-cover bg-center bg-no-repeat w-full border border-gray-100; height: 150px; max-height: 150px; min-height: 150px; }
 
             .card-content {
-                @apply flex flex-col justify-between;
+                @apply flex flex-col justify-between px-4;
 
                 .card-heading { 
                     @apply text-xl mb-2 font-semibold overflow-hidden; max-height: 37px;
                 }
-                .card-img { @apply bg-cover bg-center bg-no-repeat w-full rounded-lg border border-gray-100; height: 150px; max-height: 150px; min-height: 150px; }
                 .card-description {
-                    @apply text-gray-600 mt-3 mb-4 flex italic overflow-hidden;
+                    @apply text-gray-600 mb-2 flex italic overflow-hidden;
                     @screen md {@apply flex-row items-start;  }
                     img { @apply mr-3; }
                     .currentColor { fill: red; }
@@ -203,7 +203,7 @@ body {
             }
 
             .card-footer{
-                @apply w-full flex justify-end;
+                @apply w-full flex justify-end px-4;
                 .footer-item {
                     @apply rounded-full bg-gray-700 text-white px-6 py-1 text-lg inline-block;
                     &:hover { @apply opacity-85; }
