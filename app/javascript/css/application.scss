@@ -13,7 +13,7 @@ body {
 // restaurants#index
 .restaurants-container {
     .header {
-        @apply p-5;
+        @apply p-5 shadow;
         @screen lg { @apply px-20 pb-12; }
         @screen xl { @apply px-32; }
         background-color: #f0f0f0;
