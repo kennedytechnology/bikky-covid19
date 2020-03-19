@@ -14,7 +14,7 @@ body {
 .restaurants-container {
     .header {
         @apply p-5;
-        @screen lg { @apply px-24 pb-12; }
+        @screen lg { @apply px-20 pb-12; }
         @screen xl { @apply px-32; }
         background-color: #f0f0f0;
 
@@ -85,8 +85,8 @@ body {
     .search-form {
         @apply h-16 flex flex-col items-center border-b border-t p-5;
         @screen md { @apply flex-row h-20 border-t-0; }
-        @screen lg { @apply px-24; }
-        @screen lg { @apply px-32; }
+        @screen lg { @apply px-20; }
+        @screen xl { @apply px-32; }
 
         .search-item-container {
             @apply hidden w-auto mr-3 border-r pr-8;
@@ -120,8 +120,8 @@ body {
         @apply border-b h-auto flex flex-col;
         @screen md { @apply h-20 flex-row py-5; }
         @screen md { @apply px-5 overflow-x-scroll; }
-        @screen lg { @apply px-24; }
-        @screen lg { @apply px-32; }
+        @screen lg { @apply px-20; }
+        @screen xl { @apply px-32; }
         .select-container {
             @apply border-b flex items-center py-2 mb-4 px-5 relative;
             &:last-child { @apply border-b-0 mb-0; }
@@ -150,8 +150,8 @@ body {
     .restaurants-table-container {
         @apply p-5 mt-16;
         @screen md { @apply mt-8; }
-        @screen lg { @apply px-24; }
-        @screen lg { @apply px-32; }
+        @screen lg { @apply px-20; }
+        @screen xl { @apply px-32; }
         .heading,
         .search-guides-heading { @apply text-3xl font-semibold italic; }
 
@@ -168,8 +168,11 @@ body {
         @screen lg { @apply grid-cols-3; }
 
         .card {
-            @apply p-4 border-2 rounded mb-4;
-            @screen md { @apply mb-0; }
+            @apply p-4 border-2 rounded mb-4 flex flex-col justify-between;
+            @screen md { 
+                @apply mb-0;
+                min-height: 400px;
+            }
 
             .card-header { 
                 @apply flex mb-4 pb-2 border-b font-semibold justify-center;
@@ -179,7 +182,6 @@ body {
 
             .card-content {
                 @apply flex flex-col justify-between;
-                @screen md { min-height: 370px; max-height: 370px; }
 
                 .card-heading { 
                     @apply text-xl mb-2 font-semibold overflow-hidden; max-height: 37px;
