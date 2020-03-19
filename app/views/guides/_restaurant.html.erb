@@ -1,10 +1,8 @@
 <div class="card">
     <div class="card-content">
         <div>
-            <%= link_to restaurant.url, target: "_blank" do %>
-                <h1 class="card-heading"> <%= restaurant.brand %> </h1>
-                <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
-            <% end %>
+            <h1 class="card-heading"> <%= restaurant.brand %> </h1>
+            <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
             <p class="card-description text-sm"> <%= image_tag "marker.svg", style: "max-width: 16px; max-height: 16px;" %> <%= restaurant.address %> </p>
             <div class="flex flex-wrap w-full mb-3">
             <% restaurant.tags.each do |tag| %>
@@ -14,11 +12,7 @@
         </div>
 
         <div class="card-footer">
-            <% if restaurant.url[0..3] == "http"  %>
-                <%= link_to "Order Direct", restaurant.url, target: "_blank", class: "footer-item" %>
-            <% else %>
-                <p class="footer-item"> <%= restaurant.url %> </p>
-            <% end %>
+            <%= link_to "See all locations", restaurant.partner, class: "footer-item" %>
         </div>
     </div>
 </div>

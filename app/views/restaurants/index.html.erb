@@ -3,9 +3,15 @@
 
     <div class="restaurants-main-content">
         <div class="long-description"> 
-            <p class="mb-2"> No third-party delivery shenanigans here (unless the restaurant prefers it or we can confirm it’s commission-free). </p>
-            <p class="mb-2"> Our restaurants need us more than ever before...and let’s face it, my kids can only handle a frozen veggie burger for maybe one more day. </p>
-            <p class="mb-2 font-semibold"> Start ordering and boost your local economy. Let’s goooooooo! </p>
+            <p class="mb-2 font-semibold">The restaurant industry is in the midst of an existential crisis.  </p>
+            <p class="mb-2"> People who have spent their lives ensuring we are fed and happy now face an uncertain future. </p>
+            <p class="mb-2"> But it’s all good since third-party delivery companies are just waiving fees en masse to protect the very industry that’s helped them generate billions of dollars in shareholder value...right? </p>
+            <p class="mb-2"> 
+                <%= link_to "https://twitter.com/davidchang/status/1240477281484750848?s=20", target: "_blank" do %>
+                    <q class="italic" cite="https://twitter.com/davidchang/status/1240477281484750848?s=20">Our restaurants need us more than ever before - and they need us to order directly. No commissions, no delivery charges, just straight coinage for their hard service. </q>
+                <% end %>
+            </p>
+            <p class="mb-2 font-semibold"> So put away the delivery app (seriously, delete it), order direct, and boost your local economy. Let’s gooooooo! </p>
         </div>
         <%= form_with url: restaurants_path, method: :get, local: true do |f| %>
             <div class="search-form">
@@ -23,24 +29,20 @@
                 <%= select_tag "filter0", options_for_select([
                     "Breakfast", "Lunch", "Dinner", "Dessert", 
                     "Afternoon delight"], params[:filter0]), {prompt: "What meal?"} %>
-                <%# image_tag "arrow_down.svg", class: "arrow-icon" %>
             </div>
             <div class="select-container">
                 <%= select_tag "filter1", options_for_select([
                     "Social distance", "Trapped with roommate", 
                     "Party indoors"], params[:filter1]), {prompt: "How many people?"} %>
-                <%# image_tag "arrow_down.svg", class: "arrow-icon" %>
             </div>
             <div class="select-container">
                 <%= select_tag "filter2", options_for_select([
                     "Chillin with homies", "TREAT YO SELF", "Too cool for school", 
                     "It's a family affair", "Keep grindin", "Home comfort", 
                     "Your body is a temple", "Oh you fancy huh?"], params[:filter2]), {prompt: "What's the mood?"} %>
-                <%# image_tag "arrow_down.svg", class: "arrow-icon" %>
             </div>
             <div class="select-container">
                 <%= select_tag "filter3", options_for_select([["$", 1], ["$$", 2], ["$$$", 3]], params[:filter3]), {prompt: "How much?"} %>
-                <%# image_tag "arrow_down.svg", class: "arrow-icon" %>
             </div>
 
             <!-- 
@@ -52,15 +54,24 @@
         <% end %>
         <div class="restaurants-table-container">
             <h1 class="heading"> Here are restaurants that deliver near you </h1>
-
             <% if @restaurants.any? %>
-            <div class="cards-container">
-                <%= render @restaurants %>
-            </div>
+                <div class="cards-container">
+                    <%= render @restaurants %>
+                </div>
             <% else %>
-            <%= link_to "https://forms.gle/viD4gsHDrCNwxdtKA", target: "_blank" do %>
-            <p class="italic w-full"> Didn't find the restaurant you're looking for? <span class="font-bold"> Submit your request </span> and our team will look into publishing it soon! </p>
-            <% end %>
+                <p class="italic w-full mb-12"> Didn't find the restaurant you're looking for?
+                    <a class="typeform-share button font-semibold bg-brand-green rounded-lg px-6 py-2 text-white mx-4" href="https://bikkyinc.typeform.com/to/qg3FJC"
+                    data-mode="popup" target="_blank"> Suggest a Restaurant here! </a>
+                    <%# data-auto-open=true %>
+                </p>
+                    <script> 
+                        (function() { var qs,js,q,s,d=document, gi=d.getElementById, 
+                        ce=d.createElement, gt=d.getElementsByTagName, 
+                        id="typef_orm_share", b="https://embed.typeform.com/"; 
+                        if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; 
+                        js.src=b+"embed.js"; q=gt.call(d,"script")[0];
+                        q.parentNode.insertBefore(js,q) } })()
+                    </script>
             <% end %>
         </div>
     </div>
