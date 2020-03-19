@@ -3,15 +3,9 @@
 
     <div class="restaurants-main-content">
         <div class="long-description"> 
-            <p class="mb-2 font-semibold">The restaurant industry is in the midst of an existential crisis.  </p>
-            <p class="mb-2"> People who have spent their lives ensuring we are fed and happy now face an uncertain future. </p>
-            <p class="mb-2"> But it’s all good since third-party delivery companies are just waiving fees en masse to protect the very industry that’s helped them generate billions of dollars in shareholder value...right? </p>
-            <p class="mb-2"> 
-                <%= link_to "https://twitter.com/davidchang/status/1240477281484750848?s=20", target: "_blank" do %>
-                    <q class="italic" cite="https://twitter.com/davidchang/status/1240477281484750848?s=20">Our restaurants need us more than ever before - and they need us to order directly. No commissions, no delivery charges, just straight coinage for their hard service. </q>
-                <% end %>
-            </p>
-            <p class="mb-2 font-semibold"> So put away the delivery app (seriously, delete it), order direct, and boost your local economy. Let’s gooooooo! </p>
+            <p class="mb-2"> With everyone staying home, our restaurants need us more than ever before - and they need us to order <span class="italic"> directly </span>. </p>
+            <p class="mb-2"> Because as people stay home and restaurants struggle to stay open, third-party delivery companies are boldly (lol) "deferring" fees instead of simply waiving them. </p>
+            <p class="mb-2 font-semibold"> So put away the delivery app (seriously, delete it), search below for your favorite restaurant, order direct, and boost your local economy. Let's gooooooo! </p>
         </div>
         <%= form_with url: restaurants_path, method: :get, local: true do |f| %>
             <div class="search-form">
