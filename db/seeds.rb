@@ -30,7 +30,7 @@ Guide.find_by_name("BECAUSE THIS IS NEW YORK").partners << partners
 partners = Partner.where(brand: ["Amma", "Mexicue", "Chez Nick", "I Sodi"])
 Guide.find_by_name("Because date night CAN happen in your kitchen").partners << partners
 
-partners = Partner.where(brand: ["Sweetberry" "Pure Green", "Juice Press"])
+partners = Partner.where(brand: ["Sweetberry", "Pure Green", "Juice Press"])
 Guide.find_by_name("Because you don’t need the gym to keep lookin fly").partners << partners
 
 partners = Partner.where(brand: ["The Meatball Shop", "Poulet Sans Tete", "Maison Yaki"])
