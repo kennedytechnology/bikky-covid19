@@ -2,41 +2,41 @@
     <%= render partial: "layouts/header" %>
 
     <div class="restaurants-main-content">
-        <div class="long-description"> 
+        <div class="long-description">
             <p class="mb-2"> No third-party delivery shenanigans here (unless the restaurant prefers it or we can confirm it’s commission-free). </p>
             <p class="mb-2"> Our restaurants need us more than ever before...and let’s face it, my kids can only handle a frozen veggie burger for maybe one more day. </p>
             <p class="mb-2 font-semibold"> Start ordering and boost your local economy. Let’s goooooooo! </p>
         </div>
         <%= form_with url: restaurants_path, method: :get, local: true do |f| %>
-            <div class="search-form">
-                <div class="search-item-container"> <span> Search </span> </div>
-                <div class="search-input-container">
-                    <input type="text" name="q" onFocus="geolocate()" id="autocomplete" class="input" value="<%= params[:q] %>" placeholder="123 5th Avenue New York, NY 10022" />
-                </div>
-                <div class="seach-submit-button-container">
-                    <%= f.submit "Find Restaurants", class: "submit-button" %>
-                </div>
+        <div class="search-form">
+            <div class="search-item-container"> <span> Search </span> </div>
+            <div class="search-input-container">
+                <input type="text" name="q" onFocus="geolocate()" id="autocomplete" class="input" value="<%= params[:q] %>" placeholder="123 5th Avenue New York, NY 10022" />
             </div>
+            <div class="seach-submit-button-container">
+                <%= f.submit "Find Restaurants", class: "submit-button" %>
+            </div>
+        </div>
 
         <div class="filters-contaniner">
             <div class="select-container">
                 <%= select_tag "filter0", options_for_select([
                     "Breakfast", "Lunch", "Dinner", "Dessert", 
-                    "Afternoon delight"], params[:filter0]), {prompt: "What meal?"} %>
+                    "Afternoon delight"], params[:filter0]), {prompt: "What meal?", onchange: "this.form.submit();"} %>
             </div>
             <div class="select-container">
                 <%= select_tag "filter1", options_for_select([
                     "Social distance", "Trapped with roommate", 
-                    "Party indoors"], params[:filter1]), {prompt: "How many people?"} %>
+                    "Party indoors"], params[:filter1]), {prompt: "How many people?", onchange: "this.form.submit();"} %>
             </div>
             <div class="select-container">
                 <%= select_tag "filter2", options_for_select([
                     "Chillin with homies", "TREAT YO SELF", "Too cool for school", 
                     "It's a family affair", "Keep grindin", "Home comfort", 
-                    "Your body is a temple", "Oh you fancy huh?"], params[:filter2]), {prompt: "What's the mood?"} %>
+                    "Your body is a temple", "Oh you fancy huh?"], params[:filter2]), {prompt: "What's the mood?", onchange: "this.form.submit();"} %>
             </div>
             <div class="select-container">
-                <%= select_tag "filter3", options_for_select([["$", 1], ["$$", 2], ["$$$", 3]], params[:filter3]), {prompt: "How much?"} %>
+                <%= select_tag "filter3", options_for_select([["$", 1], ["$$", 2], ["$$$", 3]], params[:filter3]), {prompt: "How much?", onchange: "this.form.submit();"} %>
             </div>
 
             <!-- 
