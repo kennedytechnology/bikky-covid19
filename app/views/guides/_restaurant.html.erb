@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="card-content">
+        <div>
+            <h1 class="card-heading"> <%= restaurant.brand %> </h1>
+            <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
+            <p class="card-description text-sm"> <%= image_tag "marker.svg", style: "max-width: 16px; max-height: 16px;" %> <%= restaurant.address %> </p>
+            <div class="flex flex-wrap w-full mb-3">
+            <% restaurant.tags.each do |tag| %>
+                <p class="tag-infos border bg-gray-100 text-gray-600 mr-1 my-1 rounded px-4 py-1 text-xs"> <%= tag %> </p>
+            <% end %>
+            </div>
+        </div>
+
+        <div class="card-footer">
+            <%= link_to "See all locations", restaurant.partner, class: "footer-item" %>
+        </div>
+    </div>
+</div>

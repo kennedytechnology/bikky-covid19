@@ -1,14 +1,17 @@
 <div class="card">
-    <%= link_to restaurant.partner do %>
         <div class="card-content">
             <div>
-                <h1 class="card-heading"> 
-                    <%= restaurant.brand %> 
-                    <% unless params[:controller] == "guides" && params[:action] == "index" %>
-                        &ndash; <%= restaurant.name %>
+                <h1 class="card-heading">
+                    <%= link_to restaurant.partner do %>
+                        <%= restaurant.brand %> 
+                        <% unless params[:controller] == "guides" && params[:action] == "index" %>
+                            &ndash; <%= restaurant.name %>
+                        <% end %>
                     <% end %>
                 </h1>
-                <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
+                <%= link_to restaurant.url do %>
+                    <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
+                <% end %>
                 <p class="card-description text-sm"> <%= image_tag "marker.svg", style: "max-width: 16px; max-height: 16px;" %> <%= restaurant.address %> </p>
                 <div class="flex flex-wrap w-full mb-3">
                 <% restaurant.tags.each do |tag| %>
@@ -26,5 +29,5 @@
                 <% end %>
             </div>
         </div>
-    <% end %>
+    
 </div>
