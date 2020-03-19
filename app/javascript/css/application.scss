@@ -179,7 +179,7 @@ body {
                 min-height: 44px;
                 h1 { @apply mr-3; }
             }
-            .card-img { @apply bg-cover bg-center bg-no-repeat w-full border border-gray-100; height: 150px; max-height: 150px; min-height: 150px; }
+            .card-img { @apply mb-1 bg-cover bg-center bg-no-repeat w-full border border-gray-100; height: 150px; max-height: 150px; min-height: 150px; }
 
             .card-content {
                 @apply flex flex-col justify-between px-4;
