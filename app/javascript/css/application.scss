@@ -102,7 +102,7 @@ body {
 
         .seach-submit-button-container {
             @apply flex-1 flex justify-end;
-            margin-top: 210px;
+            margin-top: 270px;
             @screen md { @apply w-auto mt-0; }
             .submit-button  { 
                 @apply h-12 mt-8 mb-4 rounded-full bg-gray-700 text-white w-auto px-6 py-3 inline-block cursor-pointer;
@@ -117,14 +117,14 @@ body {
     }
 
     .filters-contaniner {
-        @apply border-b h-auto flex flex-col;
-        @screen md { @apply h-20 flex-row py-5; }
+        @apply h-auto flex flex-col;
+        @screen md { @apply border-b h-20 flex-row py-5; }
         @screen md { @apply px-5 overflow-x-scroll; }
         @screen lg { @apply px-20; }
         @screen xl { @apply px-32; }
         .select-container {
             @apply border-b flex items-center py-2 mb-4 px-5 relative;
-            &:last-child { @apply border-b-0 mb-0; }
+            &:last-child { @apply border-b-0; }
             @screen md {
                 @apply border-r border-b-0 mr-6 pr-6 pb-0 mb-0 pl-0;
                 &:last-child { @apply mr-0; }
@@ -147,7 +147,8 @@ body {
         }
 
         .reset-button {
-            @apply h-full bg-gray-200 text-gray-700 px-4 cursor-pointer; 
+            @apply h-12 bg-gray-200 text-gray-700 px-4 cursor-pointer -mt-3;
+            @screen md { @apply h-full mt-0; }
         }
     }
 
