@@ -2,10 +2,10 @@
     <%= render partial: "layouts/header" %>
 
     <div class="restaurants-main-content">
-        <div class="long-description">
-            <p class="mb-2"> No third-party delivery shenanigans here (unless the restaurant prefers it or we can confirm it’s commission-free). </p>
-            <p class="mb-2"> Our restaurants need us more than ever before...and let’s face it, my kids can only handle a frozen veggie burger for maybe one more day. </p>
-            <p class="mb-2 font-semibold"> Start ordering and boost your local economy. Let’s goooooooo! </p>
+        <div class="long-description text-base">
+            <p class="mb-2"> With everyone staying home, our restaurants need us more than ever before - and they need us to order <span class="italic"> directly </span>. </p>
+            <p class="mb-2"> Because as people stay home and restaurants struggle to stay open, third-party delivery companies are boldly (lol) "deferring" fees instead of simply waiving them. </p>
+            <p class="mb-2 font-semibold"> So put away the delivery app (seriously, delete it), search below for your favorite restaurant, order direct, and boost your local economy. Let's gooooooo! </p>
         </div>
         <%= form_with url: restaurants_path, method: :get, local: true do |f| %>
         <div class="search-form">
@@ -48,15 +48,32 @@
         <% end %>
         <div class="restaurants-table-container">
             <h1 class="heading"> Here are restaurants that deliver near you </h1>
-
             <% if @restaurants.any? %>
             <div class="cards-container">
                 <%= render @restaurants %>
             </div>
             <% else %>
-            <%= link_to "https://forms.gle/viD4gsHDrCNwxdtKA", target: "_blank" do %>
-            <p class="italic w-full"> Didn't find the restaurant you're looking for? <span class="font-bold"> Submit your request </span> and our team will look into publishing it soon! </p>
-            <% end %>
+            <p class="italic w-full mb-12 text-xl"> Didn't find the restaurant you're looking for?
+                <a class="typeform-share button font-semibold bg-brand-green rounded-full px-6 py-2 text-white mx-4" href="https://bikkyinc.typeform.com/to/qg3FJC" data-mode="popup" target="_blank"> Suggest a Restaurant here! </a>
+                <%# data-auto-open=true %>
+            </p>
+            <script>
+                (function() {
+                    var qs, js, q, s, d = document,
+                        gi = d.getElementById,
+                        ce = d.createElement,
+                        gt = d.getElementsByTagName,
+                        id = "typef_orm_share",
+                        b = "https://embed.typeform.com/";
+                    if (!gi.call(d, id)) {
+                        js = ce.call(d, "script");
+                        js.id = id;
+                        js.src = b + "embed.js";
+                        q = gt.call(d, "script")[0];
+                        q.parentNode.insertBefore(js, q)
+                    }
+                })()
+            </script>
             <% end %>
         </div>
     </div>
