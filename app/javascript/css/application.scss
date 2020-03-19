@@ -185,19 +185,13 @@ body {
                 @apply flex flex-col justify-between px-4;
 
                 .card-heading { 
-                    @apply text-xl mb-1 font-semibold overflow-hidden; max-height: 37px;
+                    @apply text-xl mb-1 font-semibold overflow-hidden;
+                    max-height: 37px;
                 }
                 .card-description {
-                    @apply text-gray-600 mb-4 flex italic overflow-hidden;
-                    @screen md {@apply flex-row items-start;  }
-                    img { @apply mr-3; }
-                    // .tag-info { 
-                    //     @apply px-4 py-1 bg-red-100 text-red-500 rounded text-center mb-4;
-                    //     min-width: 150px;
-                    //     max-width: 150px;
-                    //     max-height: 30px;
-                    //     @screen md { @apply mb-0; }
-                    // }
+                    @apply text-gray-600 mb-4 flex italic;
+                    @screen md { @apply flex-row items-center;  }
+                    img { @apply mr-2; }
                 }
             }
 
