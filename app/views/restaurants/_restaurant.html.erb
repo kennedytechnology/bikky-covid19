@@ -1,28 +1,28 @@
 <div class="card">
     <%= link_to restaurant.url, target: "_blank" do %>
-        <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
+    <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
     <% end %>
     <div class="card-content">
         <div>
             <%= link_to restaurant.url, target: "_blank" do %>
-                <h1 class="card-heading"> <%= restaurant.brand %> </h1>
+            <h1 class="card-heading"> <%= restaurant.brand %> </h1>
             <% end %>
-            <p class="card-description"> 
-                <%= image_tag "marker.svg", style: "min-width: 22px; max-width: 30px; min-height: 22px; max-height: 22px;" %> 
+            <p class="card-description">
+                <%= image_tag "marker.svg", style: "min-width: 22px; max-width: 30px; min-height: 22px; max-height: 22px;" %>
                 <span class="text-sm"> <%= restaurant.address.try(:titleize) %> </span>
             </p>
             <div class="flex flex-wrap w-full mb-3">
-            <% restaurant.tags.each do |tag| %>
+                <% restaurant.tags.each do |tag| %>
                 <p class="tag-info"> <%= tag %> </p>
-            <% end %>
+                <% end %>
             </div>
         </div>
 
         <div class="card-footer">
-            <% if restaurant.url[0..3] == "http"  %>
-                <%= link_to "Order Direct", restaurant.url, target: "_blank", class: "footer-item" %>
+            <% if restaurant.url.strip[0..3] == "http"  %>
+            <%= link_to "Order Direct", restaurant.url, target: "_blank", class: "footer-item" %>
             <% else %>
-                <p class="footer-item"> <%= restaurant.url %> </p>
+            <p class="footer-item"> <%= restaurant.url %> </p>
             <% end %>
         </div>
     </div>
