@@ -9,7 +9,7 @@ class RestaurantsController < ApplicationController
     if params[:q].present?
       @restaurants = @restaurants.near(params[:q], 1.5, order: :distance)
     else
-      if Geocoder.search(remote_ip).first.coordinates.any?
+      if Geocoder.search(remote_ip).first && Geocoder.search(remote_ip).first.coordinates.any?
         @restaurants = @restaurants.near(remote_ip, 100000, order: :distance)
       else
         @restaurants = @restaurants.order("RANDOM()")
