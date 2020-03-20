@@ -37,6 +37,7 @@ gem 'geocoder'
 gem 'devise'
 gem 'activeadmin'
 gem 'formtastic', git: 'https://github.com/justinfrench/formtastic.git', branch: 'master'
+gem 'active_admin_theme'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
