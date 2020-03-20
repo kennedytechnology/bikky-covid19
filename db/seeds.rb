@@ -43,3 +43,4 @@ partners = Partner.where(brand: ["Raku", "Brodo Broth", "Ivan Ramen", "Springbon
 Guide.find_by_name("Because you really need a cuddle").partners << partners
 
 puts "Done"
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
