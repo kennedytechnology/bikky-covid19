@@ -24,7 +24,7 @@ body {
 
             &-url { @apply italic text-sm; }
             &-link { 
-                @apply font-semibold text-xl italic;
+                @apply font-semibold text-xl;
                 @screen md { @apply text-2xl -mb-1; }
             }
             &-item-container {
