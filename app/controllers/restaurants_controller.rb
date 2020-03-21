@@ -17,6 +17,11 @@ class RestaurantsController < ApplicationController
     end
 
     @restaurants = @restaurants.includes(:partner).limit(50)
+
+    respond_to do |format|
+      format.html
+      format.js { render "restaurants/index.js.erb" }
+    end
   end
   
   private
