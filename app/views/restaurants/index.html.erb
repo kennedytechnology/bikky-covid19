@@ -11,7 +11,7 @@
         <div class="search-form">
             <div class="search-item-container"> <span> Search </span> </div>
             <div class="search-input-container">
-                <input type="text" name="q" onFocus="geolocate()" id="autocomplete" class="input" value="<%= params[:q] %>" placeholder="123 5th Avenue New York, NY 10022" />
+                <input type="text" name="q" onFocus="geolocate()" id="autocomplete" class="input" value="<%= params[:q] %>" placeholder="Enter an address, neighborhood, city, or ZIP code" />
             </div>
             <div class="seach-submit-button-container">
                 <%= f.submit "Find Restaurants", class: "submit-button" %>
