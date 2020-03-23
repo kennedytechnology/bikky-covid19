@@ -61,7 +61,7 @@ body {
         .navbar-start {
             @apply flex mr-4;
             @screen md { @apply mr-0; }
-            img { @apply mr-2; max-width: 20px; margin-top: 6px; }
+            img { @apply mr-2; max-width: 30px; margin-top: 6px; }
             .links-container { @apply flex flex-col; }
         }
 
