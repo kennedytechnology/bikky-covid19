@@ -230,3 +230,18 @@ body {
         &:hover { @apply opacity-85; }
     }
 }
+
+// About Page
+.about-page-content {
+    .articles-container { @apply flex my-8 flex-wrap; }
+
+    .tweets-container {
+        @apply flex flex-wrap grid grid-cols-1;
+        @screen md { @apply grid-cols-2 gap-4; }
+        @screen lg { @apply grid-cols-3; }
+    }
+
+    .contributors-container { @apply flex flex-col pl-2;  }
+
+    .acknowledgement-item { @apply pb-1 border-b-2 border-brand-green font-semibold; }
+}
