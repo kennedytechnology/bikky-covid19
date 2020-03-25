@@ -1,10 +1,10 @@
 <div class="restaurants-table-container">
     <% @guides.each do |guide| %>
-    <h1 class="search-guides-heading"> <%= guide.name %> </h1>
-    <div class="cards-container mb-8">
-        <% guide.partners.each do |partner| %>
-        <%= render partial: "guides/restaurant", locals: { restaurant: partner.restaurants.first } %>
-        <% end %>
-    </div>
+        <h1 class="search-guides-heading"> <%= guide.name %> </h1>
+        <div class="cards-container mb-8">
+            <% guide.partners.each do |partner| %>
+                <%= render partial: "guides/restaurant", locals: { restaurant: partner.restaurants.first } %>
+            <% end %>
+        </div>
     <% end %>
 </div>
