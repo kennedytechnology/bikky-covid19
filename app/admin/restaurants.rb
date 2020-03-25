@@ -1,15 +1,19 @@
 ActiveAdmin.register Restaurant do
   menu priority: 1
 
+  permit_params :name, :address, :longitude, :latitude, :partner_id, :url
+
   # Index
   index do
     selectable_column
     id_column
-    column :name
+    column "Location", :name do |restaurant|
+      restaurant.name
+    end
     column :address
-    column :partner
-    column :created_at
-    column :updated_at
+    column "Brand", :partner do |restaurant|
+      link_to(restaurant.partner.brand, admin_partner_path(restaurant.partner))
+    end
 
     actions
   end
@@ -25,13 +29,13 @@ ActiveAdmin.register Restaurant do
       row :name
       row :url
       row :address
-      row :location
-      row :description
       row :latitude
       row :longitude
       row :created_at
       row :updated_at
-      row :partner
+      row "Brand", :partner do 
+        link_to(restaurant.partner.brand, admin_partner_path(restaurant.partner))
+      end
     end
 
     panel "Working Hours" do
@@ -111,16 +115,12 @@ ActiveAdmin.register Restaurant do
     tabs do
       tab "General Information" do
         f.inputs do
-          f.input :partner
+          f.input :partner_id, label: "Choose Brand", as: :select, collection: Partner.all.collect {|p| [ p.brand, p.id ] }
           f.input :name, as: :string
-          f.input :url
+          f.input :url, label: "URL"
+          f.input :longitude
+          f.input :latitude
           f.input :address, as: :string
-        end
-      end
-      tab "Additional Information" do
-        f.inputs do
-          f.input :location
-          f.input :description
         end
       end
 

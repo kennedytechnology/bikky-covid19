@@ -20,6 +20,10 @@ $sidebar-background: #FFFFFF;
 //
 //   .status_tag { background: #6090DB; }
 
+#site_title > a {
+    color: #323537 !important;
+}
+
 @media screen and (min-width: 576px){
     .header .site_title {
         text-align: left;
