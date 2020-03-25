@@ -1,6 +1,7 @@
 ActiveAdmin.register Partner do
   menu priority: 2
 
+  permit_params :brand, :mood, :daypart_1, :daypart_2, :meal_size_1, :meal_size_2, :price
 
   index do
     selectable_column

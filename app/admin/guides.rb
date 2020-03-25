@@ -1,6 +1,8 @@
 ActiveAdmin.register Guide do
   menu priority: 3
 
+  permit_params :name
+
   index do
     selectable_column
     id_column
