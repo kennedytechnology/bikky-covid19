@@ -36,7 +36,7 @@ gem 'geocoder'
 # Active Admin with Devise and Formtastic
 gem 'devise'
 gem 'activeadmin'
-gem 'formtastic', git: 'https://github.com/justinfrench/formtastic.git', branch: 'master'
+gem 'formtastic', '~> 3.0'
 gem 'arctic_admin'
 
 group :development, :test do
