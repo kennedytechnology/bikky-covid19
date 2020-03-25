@@ -1,96 +1,89 @@
-<div class="restaurants-container">
-    <%= render partial: "layouts/header" %>
+<div class="restaurants-table-container">
+    <h1 class="heading"> The only way we defeat COVID-19 is to STAY AWAY FROM EACH OTHER </h1>
+    <p class="mb-4"> 
+        But that’s the conundrum - distance can heal us, but it absolutely 
+        crushes the local businesses that nourish our body, mind, and soul.
+    </p>
+    <p class="mb-4"> 
+        And let’s face it - I’m a millennial living in a major metro. I can’t cook 
+        and am totally spoiled by my smartphone. So how will I navigate the painful 
+        challenge of figuring out what to eat???
+    </p>
 
-    <div class="restaurants-main-content">
-        <div class="restaurants-table-container">
-            <h1 class="heading"> The only way we defeat COVID-19 is to STAY AWAY FROM EACH OTHER </h1>
-            <p class="mb-4"> 
-                But that’s the conundrum - distance can heal us, but it absolutely 
-                crushes the local businesses that nourish our body, mind, and soul.
-            </p>
-            <p class="mb-4"> 
-                And let’s face it - I’m a millennial living in a major metro. I can’t cook 
-                and am totally spoiled by my smartphone. So how will I navigate the painful 
-                challenge of figuring out what to eat???
-            </p>
+    <p class="mb-8">
+        For those of you like me - who want to support local restaurants
+        and aren’t on 100% Soylent diets (I am actually 90% bread and cheese, so...), 
+        we put together this curated guide to ordering directly from local restaurants.
+    </p>
 
-            <p class="mb-8">
-                For those of you like me - who want to support local restaurants
-                and aren’t on 100% Soylent diets (I am actually 90% bread and cheese, so...), 
-                we put together this curated guide to ordering directly from local restaurants.
-            </p>
+    <h1 class="heading"> Our motivation </h1>
+    <p class="mb-4"> 
+        The restaurant industry is in the midst of an existential crisis. 
+        Many brands - small and large - filled with people who have spent their 
+        lives ensuring we are fed and happy now face an uncertain future.
+    </p>
+    <p class="mb-8"> 
+        Our family’s restaurant went through 9/11 and the worst recession since the 
+        Great Depression, and only now, facing the repercussions of COVID-19, 
+        have we actually seen them scared for the future.
+    </p>
 
-            <h1 class="heading"> Our motivation </h1>
-            <p class="mb-4"> 
-                The restaurant industry is in the midst of an existential crisis. 
-                Many brands - small and large - filled with people who have spent their 
-                lives ensuring we are fed and happy now face an uncertain future.
-            </p>
-            <p class="mb-8"> 
-                Our family’s restaurant went through 9/11 and the worst recession since the 
-                Great Depression, and only now, facing the repercussions of COVID-19, 
-                have we actually seen them scared for the future.
-            </p>
+    <h1 class="heading"> If that's not enough, here's what others are saying... </h1>
+    <div class="flex my-8 flex-wrap">
+        <%= link_to "https://www.eater.com/2020/3/16/21182291/restaurants-wont-survive-coronavirus-pandemic-without-bail-out", target: "_blank", class: "mr-12" do %>
+            <%= image_tag "eater_logo.png", class:"mb-4 md:mb-0", style:"max-width: 100px;", alt: "Eater Logo" %>
+        <% end %>
+        <%= link_to "https://www.nytimes.com/2020/03/16/dining/restaurants-coronavirus.html", target: "_blank" do %>
+            <%= image_tag "new_york_times_logo.png", style: "max-width: 250px;", alt: "New York Times Logo" %>
+        <% end %>
+    </div>
 
-            <h1 class="heading"> If that's not enough, here's what others are saying... </h1>
-            <div class="flex my-8 flex-wrap">
-                <%= link_to "https://www.eater.com/2020/3/16/21182291/restaurants-wont-survive-coronavirus-pandemic-without-bail-out", target: "_blank", class: "mr-12" do %>
-                    <%= image_tag "eater_logo.png", class:"mb-4 md:mb-0", style:"max-width: 100px;", alt: "Eater Logo" %>
-                <% end %>
-                <%= link_to "https://www.nytimes.com/2020/03/16/dining/restaurants-coronavirus.html", target: "_blank" do %>
-                    <%= image_tag "new_york_times_logo.png", style: "max-width: 250px;", alt: "New York Times Logo" %>
-                <% end %>
-            </div>
+    <%# Tweets %>
+    <div class="flex flex-wrap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4">
+        <div class="">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">grubhub&#39;s near-criminal fees and absurd fee deferment are so offensive one wonders if they plan on simply shuttering in a few months b/c i&#39;m not sure how they could conduct business with a straight face after this is all over: <a href="https://t.co/yUQYG0INsS">https://t.co/yUQYG0INsS</a></p>&mdash; ryan sutton (@qualityrye) <a href="https://twitter.com/qualityrye/status/1240071005005066240?ref_src=twsrc%5Etfw">March 18, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
 
-            <%# Tweets %>
-            <div class="flex flex-wrap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4">
-                <div class="">
-                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">grubhub&#39;s near-criminal fees and absurd fee deferment are so offensive one wonders if they plan on simply shuttering in a few months b/c i&#39;m not sure how they could conduct business with a straight face after this is all over: <a href="https://t.co/yUQYG0INsS">https://t.co/yUQYG0INsS</a></p>&mdash; ryan sutton (@qualityrye) <a href="https://twitter.com/qualityrye/status/1240071005005066240?ref_src=twsrc%5Etfw">March 18, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
+        <div class="">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">We are so fucked if the federal government doesn’t immediately pass a massive stimulus bill for the hospitality sector and small business in general. <br><br>Too many livelihoods at stake for partisan politics and ego to interfere with doing the right thing <a href="https://twitter.com/hashtag/toosmalltofail?src=hash&amp;ref_src=twsrc%5Etfw">#toosmalltofail</a> <a href="https://t.co/WCvj8yT5np">https://t.co/WCvj8yT5np</a></p>&mdash; Dave Chang (@davidchang) <a href="https://twitter.com/davidchang/status/1239628790227238915?ref_src=twsrc%5Etfw">March 16, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
 
-                <div class="">
-                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">We are so fucked if the federal government doesn’t immediately pass a massive stimulus bill for the hospitality sector and small business in general. <br><br>Too many livelihoods at stake for partisan politics and ego to interfere with doing the right thing <a href="https://twitter.com/hashtag/toosmalltofail?src=hash&amp;ref_src=twsrc%5Etfw">#toosmalltofail</a> <a href="https://t.co/WCvj8yT5np">https://t.co/WCvj8yT5np</a></p>&mdash; Dave Chang (@davidchang) <a href="https://twitter.com/davidchang/status/1239628790227238915?ref_src=twsrc%5Etfw">March 16, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
+        <div class="">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">.<a href="https://twitter.com/Grubhub?ref_src=twsrc%5Etfw">@Grubhub</a> must stop with this nonsense. They’ve been horrible to restaurants for too long. Since last week they are creating more confusion &amp; not being straight. When restaurants contact their customer service they can’t give straight answers! This is no time for PR &amp; politics. <a href="https://t.co/E7muWVRltL">https://t.co/E7muWVRltL</a></p>&mdash; Andrew Rigie (@AndrewRigie) <a href="https://twitter.com/AndrewRigie/status/1239283605219749889?ref_src=twsrc%5Etfw">March 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
 
-                <div class="">
-                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">.<a href="https://twitter.com/Grubhub?ref_src=twsrc%5Etfw">@Grubhub</a> must stop with this nonsense. They’ve been horrible to restaurants for too long. Since last week they are creating more confusion &amp; not being straight. When restaurants contact their customer service they can’t give straight answers! This is no time for PR &amp; politics. <a href="https://t.co/E7muWVRltL">https://t.co/E7muWVRltL</a></p>&mdash; Andrew Rigie (@AndrewRigie) <a href="https://twitter.com/AndrewRigie/status/1239283605219749889?ref_src=twsrc%5Etfw">March 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
+        <div class="">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Picture worth a thousand words... <a href="https://t.co/13AcEvzVOA">pic.twitter.com/13AcEvzVOA</a></p>&mdash; Shai Dardashti (@ShaiDardashti) <a href="https://twitter.com/ShaiDardashti/status/1238642577873596417?ref_src=twsrc%5Etfw">March 14, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
 
-                <div class="">
-                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Picture worth a thousand words... <a href="https://t.co/13AcEvzVOA">pic.twitter.com/13AcEvzVOA</a></p>&mdash; Shai Dardashti (@ShaiDardashti) <a href="https://twitter.com/ShaiDardashti/status/1238642577873596417?ref_src=twsrc%5Etfw">March 14, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
+        <div class="">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I’m under the opinion that there will be more food establishment closures/bankruptcies during this “brief” COVID-19 crises vs those unfortunate individuals that will pass away from their illness. <a href="https://t.co/3NqIkWryVA">https://t.co/3NqIkWryVA</a></p>&mdash; McD Truth (@McD_Truth) <a href="https://twitter.com/McD_Truth/status/1238621627333726208?ref_src=twsrc%5Etfw">March 14, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
 
-                <div class="">
-                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I’m under the opinion that there will be more food establishment closures/bankruptcies during this “brief” COVID-19 crises vs those unfortunate individuals that will pass away from their illness. <a href="https://t.co/3NqIkWryVA">https://t.co/3NqIkWryVA</a></p>&mdash; McD Truth (@McD_Truth) <a href="https://twitter.com/McD_Truth/status/1238621627333726208?ref_src=twsrc%5Etfw">March 14, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
+        <div class="">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Waive the fees <a href="https://t.co/rm23l60KsF">pic.twitter.com/rm23l60KsF</a></p>&mdash; Kristen Hawley (@kh) <a href="https://twitter.com/kh/status/1240064407343755264?ref_src=twsrc%5Etfw">March 17, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
 
-                <div class="">
-                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Waive the fees <a href="https://t.co/rm23l60KsF">pic.twitter.com/rm23l60KsF</a></p>&mdash; Kristen Hawley (@kh) <a href="https://twitter.com/kh/status/1240064407343755264?ref_src=twsrc%5Etfw">March 17, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-            </div>
+    <h1 class="heading"> Acknowledgments </h1>
+    <p class="mb-4"> This effort wouldn’t be possible without (of course) the operators. We owe you our daily sustenance, and hope this plays even a small part in helping you recover.</p>
+    <p class="mb-4">  Built by: 
+        <%= link_to "Bikky", "https://bikky.com/", class: "pb-1 border-b-2 border-brand-green font-semibold", target:"_blank" %> 
+        + <%= link_to "FoodtoEat", "https://www.foodtoeat.com/", class: "pb-1 border-b-2 border-brand-green font-semibold", target:"_blank" %>
+    </p>
+    <p class="mb-4">  Inspired by: a Friday night conversation with 
+        <%= link_to "Scott Landers", "https://www.linkedin.com/in/scottlanders/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> 
+        @ <%= link_to "Figure 8 Logistics", "https://figure8.delivery/", class: "font-semibold pb-1 border-b-2 border-brand-green" %> </p>
 
-            <h1 class="heading"> Acknowledgments </h1>
-            <p class="mb-4"> This effort wouldn’t be possible without (of course) the operators. We owe you our daily sustenance, and hope this plays even a small part in helping you recover.</p>
-            <p class="mb-4">  Built by: 
-                <%= link_to "Bikky", "https://bikky.com/", class: "pb-1 border-b-2 border-brand-green font-semibold", target:"_blank" %> 
-                + <%= link_to "FoodtoEat", "https://www.foodtoeat.com/", class: "pb-1 border-b-2 border-brand-green font-semibold", target:"_blank" %>
-            </p>
-            <p class="mb-4">  Inspired by: a Friday night conversation with 
-                <%= link_to "Scott Landers", "https://www.linkedin.com/in/scottlanders/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> 
-                @ <%= link_to "Figure 8 Logistics", "https://figure8.delivery/", class: "font-semibold pb-1 border-b-2 border-brand-green" %> </p>
-
-            <div>
-                <p class="mb-2"> Other contributors: </p>
-                    <div class="flex flex-col pl-2">
-                        <div class="mb-4"> <%= link_to "Joe Lonigro", "https://www.linkedin.com/in/joseph-lonigro-3165a793/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> @ <%=link_to "Brine Chicken", "https://www.brinechicken.com/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> </div>
-                        <div class="mb-4"> <%= link_to "Steve Simoni", "https://www.linkedin.com/in/stevensimoni/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> @ <%=link_to "Bbot", "https://bbot.menu/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> </div>
-                        <div class="mb-4"> <%= link_to "Krystle Mobayeni", "https://www.linkedin.com/in/krystlemobayeni/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> @ <%= link_to "BentoBox", "https://getbento.com/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> </div>
-                        <div class="mb-4"> <%= link_to "Nabeel Alamgir", "https://www.linkedin.com/in/nabeeleats/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> @ <%= link_to "Lunchbox", "https://lunchbox.io/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> </div>
-                        <div class="mb-4"> <%= link_to "Amina Gilani", "https://www.linkedin.com/in/aminagilani/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> + <%= link_to "Thusenth Dhavaloganathan", "https://www.linkedin.com/in/thusenth/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> @ <%= link_to "Sociavore", "https://www.sociavore.co/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> </div>
-                        <div class="mb-4"> <%= link_to "Alex Beltrani", "https://www.linkedin.com/in/alex-beltrani-414b9312/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> @ <%= link_to "Tattle", "https://get.tattleapp.com/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> </div>
-                    </div>
-
-            </div>
+    <div>
+        <p class="mb-2"> Other contributors: </p>
+        <div class="flex flex-col pl-2">
+            <div class="mb-4"> <%= link_to "Joe Lonigro", "https://www.linkedin.com/in/joseph-lonigro-3165a793/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> @ <%=link_to "Brine Chicken", "https://www.brinechicken.com/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> </div>
+            <div class="mb-4"> <%= link_to "Steve Simoni", "https://www.linkedin.com/in/stevensimoni/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> @ <%=link_to "Bbot", "https://bbot.menu/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> </div>
+            <div class="mb-4"> <%= link_to "Krystle Mobayeni", "https://www.linkedin.com/in/krystlemobayeni/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> @ <%= link_to "BentoBox", "https://getbento.com/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> </div>
+            <div class="mb-4"> <%= link_to "Nabeel Alamgir", "https://www.linkedin.com/in/nabeeleats/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> @ <%= link_to "Lunchbox", "https://lunchbox.io/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> </div>
+            <div class="mb-4"> <%= link_to "Amina Gilani", "https://www.linkedin.com/in/aminagilani/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> + <%= link_to "Thusenth Dhavaloganathan", "https://www.linkedin.com/in/thusenth/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> @ <%= link_to "Sociavore", "https://www.sociavore.co/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> </div>
+            <div class="mb-4"> <%= link_to "Alex Beltrani", "https://www.linkedin.com/in/alex-beltrani-414b9312/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> @ <%= link_to "Tattle", "https://get.tattleapp.com/", class: "font-semibold pb-1 border-b-2 border-brand-green", target:"_blank" %> </div>
         </div>
     </div>
 </div>

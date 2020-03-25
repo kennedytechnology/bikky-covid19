@@ -18,7 +18,13 @@
 </head>
 
 <body>
-    <%= yield %>
+    <div class="restaurants-container">
+        <%= render partial: "layouts/header" %>
+
+        <div class="restaurants-main-content">
+            <%= yield %>
+        </div>
+    </div>
 
     <%= yield :google_maps_script if content_for?(:google_maps_script) %>
 </body>

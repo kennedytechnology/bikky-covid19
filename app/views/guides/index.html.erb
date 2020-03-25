@@ -1,24 +1,10 @@
-<div class="restaurants-container">
-    <%= render partial: "layouts/header" %>
-
-    <div class="restaurants-main-content">
-        <!-- 
-        <div class="long-description border-b py-6 flex items-center justify-center"> 
-            <p class="text-center text-xl"> 
-                <span> Have a suggestion for a guide? </span> <%# link_to "Click here", "https://forms.gle/fpBDr3BC8rgwoHop9", class: "pb-1 border-b-2 border-brand-green font-semibold px-3", target: "_blank" %>
-                <span> Have a suggestion for a guide? </span> <%# link_to "Click here", "", class: "pb-1 border-b-2 border-brand-green font-semibold px-3", target: "_blank" %>
-            </p>
-        </div>
-        -->
-        <div class="restaurants-table-container">
-            <% @guides.each do |guide| %>
-            <h1 class="search-guides-heading"> <%= guide.name %> </h1>
-            <div class="cards-container mb-8">
-                <% guide.partners.each do |partner| %>
-                <%= render partial: "guides/restaurant", locals: { restaurant: partner.restaurants.first } %>
-                <% end %>
-            </div>
-            <% end %>
-        </div>
+<div class="restaurants-table-container">
+    <% @guides.each do |guide| %>
+    <h1 class="search-guides-heading"> <%= guide.name %> </h1>
+    <div class="cards-container mb-8">
+        <% guide.partners.each do |partner| %>
+        <%= render partial: "guides/restaurant", locals: { restaurant: partner.restaurants.first } %>
+        <% end %>
     </div>
+    <% end %>
 </div>
