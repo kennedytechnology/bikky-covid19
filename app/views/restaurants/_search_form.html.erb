@@ -1,0 +1,54 @@
+<%= form_with url: restaurants_path, method: :get, local: true do |f| %>
+    <div class="search-form">
+        <div class="search-item-container"> <span> Search </span> </div>
+        <div class="search-input-container">
+            <%= f.text_field :q, value: params[:q], onFocus: "geolocate()",
+            id: "autocomplete", placeholder: "Enter an address, neighborhood, city, or ZIP code", 
+            class: "input" %>
+        </div>
+        <div class="seach-submit-button-container">
+            <%= f.submit "Find Restaurants", class: "submit-button" %>
+        </div>
+    </div>
+
+    <div class="filters-contaniner">
+        <div class="select-container">
+            <%= select_tag "filter0", options_for_select([
+                "Breakfast", "Lunch", "Dinner", "Dessert", 
+                "Afternoon Delight"], params[:filter0]), {prompt: "What meal?", onchange: "this.form.submit();"} %>
+        </div>
+        <div class="select-container">
+            <%= select_tag "filter1", options_for_select([
+                ["Social distance (individual)", "Social distance"],
+                ["Trapped with roommate (sharing)", "Trapped with roommate"], 
+                ["Full House (group)", "Full House"]
+                ], params[:filter1]), {prompt: "Good for?", onchange: "this.form.submit();"} %>
+        </div>
+        <div class="select-container">
+            <%= select_tag "filter2", options_for_select([
+                "Chillin with homies", "TREAT YO SELF", "Too cool for school", 
+                "It's a family affair", "Keep grindin", "Home comfort", 
+                "Your body is a temple", "Oh you fancy huh?"], params[:filter2]), 
+                {prompt: "What's the mood?", onchange: "this.form.submit();"} %>
+        </div>
+        <div class="select-container">
+            <%= select_tag "filter3", options_for_select([["$", 1], ["$$", 2], ["$$$", 3], ["$$$$", 4]], 
+            params[:filter3]), {prompt: "How much?", onchange: "this.form.submit();"} %>
+        </div>
+
+        <script>
+            function resetFilters() {
+                var elements = document.getElementsByTagName('select');
+                for (var i = 0; i < elements.length; i++) {
+                    elements[i].selectedIndex = 0;
+                }
+            }
+        </script>
+
+        <div class="seach-submit-button-container">
+            <input type="button" name="commit" value="Reset Filters" 
+            class="reset-button" data-disable-with="Reset Search" 
+            onclick="resetFilters(); this.form.submit();">
+        </div>
+    </div>
+<% end %>

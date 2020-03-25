@@ -1,86 +1,52 @@
 <%= render partial: "restaurants/google_maps_script" %>
 
 <div class="long-description text-base">
-    <p class="mb-2"> With everyone staying home, our restaurants need us more than ever before - and they need us to order <span class="italic"> directly </span>. </p>
-    <p class="mb-2"> Because as people stay home and restaurants struggle to stay open, third-party delivery companies are boldly (lol) "deferring" fees instead of simply waiving them. </p>
-    <p class="mb-2 font-semibold"> So put away the delivery app (seriously, delete it), search below for your favorite restaurant, order direct, and boost your local economy. Let's gooooooo! </p>
+    <p class="mb-2"> 
+        With everyone staying home, our restaurants need us more than ever before 
+        - and they need us to order <span class="italic"> directly </span>.
+    </p>
+    <p class="mb-2">
+        Because as people stay home and restaurants struggle to stay open,
+        third-party delivery companies are boldly (lol) "deferring" fees instead of simply waiving them.
+    </p>
+    <p class="mb-2 font-semibold"> 
+        So put away the delivery app (seriously, delete it), search 
+        below for your favorite restaurant, order direct, and boost your local economy. 
+        Let's gooooooo!
+    </p>
 </div>
-<%= form_with url: restaurants_path, method: :get, local: true do |f| %>
-<div class="search-form">
-    <div class="search-item-container"> <span> Search </span> </div>
-    <div class="search-input-container">
-        <input type="text" name="q" onFocus="geolocate()" id="autocomplete" class="input" value="<%= params[:q] %>" placeholder="Enter an address, neighborhood, city, or ZIP code" />
-    </div>
-    <div class="seach-submit-button-container">
-        <%= f.submit "Find Restaurants", class: "submit-button" %>
-    </div>
-</div>
 
-<div class="filters-contaniner">
-    <div class="select-container">
-        <%= select_tag "filter0", options_for_select([
-            "Breakfast", "Lunch", "Dinner", "Dessert", 
-            "Afternoon Delight"], params[:filter0]), {prompt: "What meal?", onchange: "this.form.submit();"} %>
-    </div>
-    <div class="select-container">
-        <%= select_tag "filter1", options_for_select([
-            ["Social distance (individual)", "Social distance"],
-            ["Trapped with roommate (sharing)", "Trapped with roommate"], 
-            ["Full House (group)", "Full House"]
-            ], params[:filter1]), {prompt: "Good for?", onchange: "this.form.submit();"} %>
-    </div>
-    <div class="select-container">
-        <%= select_tag "filter2", options_for_select([
-            "Chillin with homies", "TREAT YO SELF", "Too cool for school", 
-            "It's a family affair", "Keep grindin", "Home comfort", 
-            "Your body is a temple", "Oh you fancy huh?"], params[:filter2]), {prompt: "What's the mood?", onchange: "this.form.submit();"} %>
-    </div>
-    <div class="select-container">
-        <%= select_tag "filter3", options_for_select([["$", 1], ["$$", 2], ["$$$", 3], ["$$$$", 4]], params[:filter3]), {prompt: "How much?", onchange: "this.form.submit();"} %>
-    </div>
+<%= render partial: "restaurants/search_form" %>
 
-    <script>
-        function resetFilters() {
-            var elements = document.getElementsByTagName('select');
-            for (var i = 0; i < elements.length; i++) {
-                elements[i].selectedIndex = 0;
-            }
-        }
-    </script>
-
-    <div class="seach-submit-button-container">
-        <input type="button" name="commit" value="Reset Filters" class="reset-button" data-disable-with="Reset Search" onclick="resetFilters(); this.form.submit();">
-    </div>
-
-</div>
-<% end %>
 <div class="restaurants-table-container">
     <h1 class="heading"> Here are restaurants that deliver near you </h1>
+
     <% if @restaurants.any? %>
-    <div class="cards-container">
-        <%= render @restaurants %>
-    </div>
+        <div class="cards-container">
+            <%= render @restaurants %>
+        </div>
     <% else %>
-    <p class="italic w-full mb-12 text-xl"> Didn't find the restaurant you're looking for?
-        <a class="typeform-share button font-semibold bg-brand-green rounded-full px-6 py-2 text-white mx-4 hover:opacity-85 shadow" href="https://bikkyinc.typeform.com/to/qg3FJC" data-mode="popup" target="_blank"> Suggest a Restaurant here! </a>
-        <%# data-auto-open=true %>
-    </p>
-    <script>
-        (function() {
-            var qs, js, q, s, d = document,
-                gi = d.getElementById,
-                ce = d.createElement,
-                gt = d.getElementsByTagName,
-                id = "typef_orm_share",
-                b = "https://embed.typeform.com/";
-            if (!gi.call(d, id)) {
-                js = ce.call(d, "script");
-                js.id = id;
-                js.src = b + "embed.js";
-                q = gt.call(d, "script")[0];
-                q.parentNode.insertBefore(js, q)
-            }
-        })()
-    </script>
+        <p class="italic w-full mb-12 text-xl"> Didn't find the restaurant you're looking for?
+            <a class="typeform-share button interactive-button" 
+            href="https://bikkyinc.typeform.com/to/qg3FJC" 
+            data-mode="popup" target="_blank"> Suggest a Restaurant here! </a>
+        </p>
+        <script>
+            (function() {
+                var qs, js, q, s, d = document,
+                    gi = d.getElementById,
+                    ce = d.createElement,
+                    gt = d.getElementsByTagName,
+                    id = "typef_orm_share",
+                    b = "https://embed.typeform.com/";
+                if (!gi.call(d, id)) {
+                    js = ce.call(d, "script");
+                    js.id = id;
+                    js.src = b + "embed.js";
+                    q = gt.call(d, "script")[0];
+                    q.parentNode.insertBefore(js, q)
+                }
+            })()
+        </script>
     <% end %>
 </div>

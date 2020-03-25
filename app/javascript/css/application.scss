@@ -44,6 +44,11 @@ body {
                     &:last-child { @apply mr-0; }
                 }
             }
+
+            &-interactive-button {
+                @apply shadow px-6 py-2 text-white bg-brand-green rounded-full text-white;
+                &:hover { @apply opacity-85; }
+            }
         }
 
         .tabs-container {
@@ -212,5 +217,10 @@ body {
                 }
             }
         }
+    }
+
+    .interactive-button {
+        @apply font-semibold bg-brand-green rounded-full px-6 py-2 text-white mx-4 shadow;
+        &:hover { @apply opacity-85; }
     }
 }
