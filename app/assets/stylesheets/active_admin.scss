@@ -11,6 +11,8 @@
 @import "active_admin/mixins";
 
 $primary-color: #18a89e; // Arctic Admin Theme primary color
+$sidebar-background: #FFFFFF;
+$text-color: #4D4F5C;
 
 @import "arctic_admin/base";
 
@@ -18,3 +20,10 @@ $primary-color: #18a89e; // Arctic Admin Theme primary color
 // For example, to change the default status-tag color:
 //
 //   .status_tag { background: #6090DB; }
+
+@media screen and (min-width: 576px){
+    .header .site_title {
+        text-align: left;
+        padding-left: 20px;
+    }
+}
