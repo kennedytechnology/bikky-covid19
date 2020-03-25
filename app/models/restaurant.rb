@@ -5,7 +5,7 @@ class Restaurant < ApplicationRecord
   delegate :brand, to: :partner
   delegate :deal, to: :partner
 
-  validates_presence_of :name, :address
+  # validates_presence_of :name, :address
 
   def display_image
     if File.file?("#{Rails.root}/app/assets/images/restaurants_photos/#{image_name}.jpeg")

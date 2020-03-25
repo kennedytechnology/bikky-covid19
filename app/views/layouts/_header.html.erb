@@ -15,11 +15,10 @@
         <div class="navbar-item-container">
             <%= link_to "About", pages_about_path, class: "navbar-item" %>
             <%= link_to "Diner Guides", guides_path, class: "navbar-item" %>
-            <a class="typeform-share button shadow px-6 py-2 text-white bg-brand-green rounded-full text-white hover:opacity-85" 
+            <a class="typeform-share button navbar-interactive-button" 
                 href="https://bikkyinc.typeform.com/to/qg3FJC" 
                 data-mode="popup" target="_blank"> 
                 Submit your Restaurant
-                <%# data-auto-open=true %>
             </a> 
             <script> 
                 (function() { 
@@ -41,11 +40,4 @@
     <div class="content">
         <h1 class="heading"> Order directly from <br /> local restaurants during COVID-19 </h1>
     </div>
-    
-    <!-- 
-    <div class="tabs-container"> 
-        <%# link_to "All Restaurants", root_path, class: "tab-item #{is_tab_active?('restaurants')}" %>
-        <%# link_to "Guides", guides_path, class: "tab-item #{is_tab_active?('guides')}" %>
-    </div>
-    -->
 </div>

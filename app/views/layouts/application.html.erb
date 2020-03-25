@@ -15,43 +15,38 @@
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%# Google Tag Manager %>
+    <% if Rails.env.production? %>
+        <script>
+            document.addEventListener('turbolinks:load', function(event) {
+            var url = event.data.url;  dataLayer.push({
+                'event':'pageView',
+                'virtualUrl': url
+            });
+            });(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-<%= ENV['GOOGLE_TAG_MANAGER_KEY'] %>');
+        </script>
+    <% end %>
 </head>
 
 <body>
-    <%= yield %>
+    <%# Google Tag Manager (noscript) %>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-<%= ENV['GOOGLE_TAG_MANAGER_KEY'] %>"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <script>
-        var autocomplete;
+    <div class="restaurants-container">
+        <%= render partial: "layouts/header" %>
 
-        function initAutocomplete() {
-            // Create the autocomplete object, restricting the search predictions to
-            // geographical location types. 
-            autocomplete = new google.maps.places.Autocomplete(
-                document.getElementById('autocomplete'), {
-                    types: ['geocode']
-                });
-        }
+        <div class="restaurants-main-content">
+            <%= yield %>
+        </div>
+    </div>
 
-        // Bias the autocomplete object to the user's geographical location,
-        // as supplied by the browser's 'navigator.geolocation' object.
-        function geolocate() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function(position) {
-                    var geolocation = {
-                        lat: position.coords.latitude,
-                        lng: position.coords.longitude
-                    };
-                    var circle = new google.maps.Circle({
-                        center: geolocation,
-                        radius: position.coords.accuracy
-                    });
-                    autocomplete.setBounds(circle.getBounds());
-                });
-            }
-        }
-    </script>
-
-    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_MAPS_API_KEY']}&libraries=places&callback=initAutocomplete" %>
+    <%= yield :google_maps_script if content_for?(:google_maps_script) %>
 </body>
 
 </html>
