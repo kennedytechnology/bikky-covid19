@@ -200,8 +200,14 @@ body {
                     max-height: 37px;
                 }
                 .card-description {
-                    @apply text-gray-600 mb-4 flex items-center italic;
-                    img { @apply mr-2; }
+                    @apply text-gray-600 mb-4 flex items-center italic text-xs;
+                    img { 
+                        @apply mr-2;
+                        min-width: 22px;
+                        max-width: 22px;
+                        min-height: 22px;
+                        max-height: 22px;
+                    }
                 }
 
                 .tag-info {
