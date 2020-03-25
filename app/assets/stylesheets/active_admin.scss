@@ -9,11 +9,10 @@
 
 // Active Admin's got SASS!
 @import "active_admin/mixins";
-@import "active_admin/base";
-// $skinMainFirstColor: #A5A7AA!default;
-// $skinMainSecondColor: #0066CC!default;
-// $skinBorderWindowColor: #B8BABE!default;
-@import "wigu/active_admin_theme";
+
+$primary-color: #18a89e; // Arctic Admin Theme primary color
+
+@import "arctic_admin/base";
 
 // Overriding any non-variable SASS must be done after the fact.
 // For example, to change the default status-tag color:
