@@ -1,12 +1,13 @@
 ActiveAdmin.register Guide do
   menu priority: 3
 
-  permit_params :name
+  permit_params :name, partner_ids: []
 
-  index do
+  index download_links: [:csv]  do
     selectable_column
     id_column
     column :name
+    column :partners
     column :created_at
     column :updated_at
     actions
@@ -17,13 +18,13 @@ ActiveAdmin.register Guide do
       row :name
       row :created_at
       row :updated_at
-      row "Restaurants" do |guide|
-        guide.partners.each do |p|
-          div do
-            link_to p.brand, admin_partner_path(p)
-          end
-        end
-      end
+      row :partners
     end
   end
+
+  form do |f|
+    f.input :name
+    f.input :partner_ids, as: :check_boxes, collection: Partner.all
+  end
+
 end

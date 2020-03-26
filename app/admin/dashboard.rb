@@ -5,7 +5,7 @@ ActiveAdmin.register_page "Dashboard" do
   content title: proc { I18n.t("active_admin.dashboard") } do
     div class: "blank_slate_container", id: "dashboard_default_message" do
       span class: "blank_slate" do
-        span "Welcome to Admin Panel for Project Quarantine."
+        span "Welcome to the admin. Some day, some nice graphs and latest details will be shown here, but for now, check the links over 👈"
       end
     end
 

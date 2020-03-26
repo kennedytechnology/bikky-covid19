@@ -4,7 +4,7 @@ ActiveAdmin.register Restaurant do
   permit_params :name, :address, :longitude, :latitude, :partner_id, :url
 
   # Index
-  index do
+  index download_links: [:csv] do
     selectable_column
     id_column
     column "Location", :name do |restaurant|
