@@ -42,9 +42,14 @@ Guide.find_by_name("Because this quarantine ain’t getting me down").partners <
 partners = Partner.where(brand: ["Raku", "Brodo Broth", "Ivan Ramen", "Springbone Kitchen"])
 Guide.find_by_name("Because you really need a cuddle").partners << partners
 
-if ENV["DEFAULT_ADMIN_PASSWORD"] && Rails.env.production?
-  AdminUser.create!(email: "admin@project-facemask.com", password: ENV["DEFAULT_ADMIN_PASSWORD"], password_confirmation: ENV["DEFAULT_ADMIN_PASSWORD"])
-else
+if Rails.env.production?
+  admins = ENV["ADMINS"].split(",")
+  admins.each do |admin|
+    AdminUser.create!(email: admin, password: ENV["DEFAULT_ADMIN_PASSWORD"], password_confirmation: ENV["DEFAULT_ADMIN_PASSWORD"])
+  end
+end
+
+if Rails.env.development?
   AdminUser.create!(email: "admin@example.com", password: "password", password_confirmation: "password")
 end
 
