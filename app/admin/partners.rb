@@ -21,13 +21,13 @@ ActiveAdmin.register Partner do
   end
 
   # Filters
-  filter :brand, as: :select, collection: proc { Partner.all.collect{|partner| partner.brand}.uniq}
-  filter :mood, as: :select, collection: proc { Partner.all.collect{|partner| partner.mood}.uniq}
-  filter :daypart_1, as: :select, collection: proc { Partner.all.collect{|partner| partner.daypart_1}.uniq}
-  filter :daypart_2, as: :select, collection: proc { Partner.all.collect{|partner| partner.daypart_2}.uniq.compact}
-  filter :meal_size_1, as: :select, collection: proc { Partner.all.collect{|partner| partner.meal_size_1}.uniq}
-  filter :meal_size_2, as: :select, collection: proc { Partner.all.collect{|partner| partner.meal_size_2}.uniq.compact}
-  filter :price, as: :select, collection: {'$' => 1, '$$' => 2, '$$$' => 3, '$$$$' => 4, '$$$$$' => 5}
+  filter :brand, as: :select, collection: proc { Partner.all.collect{|partner| partner.brand}.uniq.sort }
+  filter :mood, as: :select, collection: proc { Partner.all.collect{|partner| partner.mood}.uniq.sort }
+  filter :daypart_1, as: :select, collection: proc { Partner.all.collect{|partner| partner.daypart_1}.uniq }
+  filter :daypart_2, as: :select, collection: proc { Partner.all.collect{|partner| partner.daypart_2}.uniq.compact }
+  filter :meal_size_1, as: :select, collection: proc { Partner.all.collect{|partner| partner.meal_size_1}.uniq }
+  filter :meal_size_2, as: :select, collection: proc { Partner.all.collect{|partner| partner.meal_size_2}.uniq.compact }
+  filter :price, as: :select, collection: { '$' => 1, '$$' => 2, '$$$' => 3, '$$$$' => 4, '$$$$$' => 5 }
 
   # Show
   show do
