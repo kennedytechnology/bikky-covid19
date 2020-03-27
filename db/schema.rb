@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_26_225931) do
+ActiveRecord::Schema.define(version: 2020_03_27_153932) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -99,6 +99,7 @@ ActiveRecord::Schema.define(version: 2020_03_26_225931) do
     t.string "sun_open"
     t.string "sun_close"
     t.boolean "currently_open"
+    t.bigint "bikky_location_id"
     t.index ["partner_id"], name: "index_restaurants_on_partner_id"
   end
 
