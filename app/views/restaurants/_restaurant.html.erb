@@ -1,10 +1,18 @@
 <div class="card">
-    <%= link_to restaurant.url, target: "_blank" do %>
+    <% if restaurant.url.strip[0..3] == "http"  %>
+        <%= link_to restaurant.url, target: "_blank" do %>
+            <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
+        <% end %>
+    <% else %>
         <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
     <% end %>
     <div class="card-content">
         <div>
-            <%= link_to restaurant.url, target: "_blank" do %>
+            <% if restaurant.url.strip[0..3] == "http"  %>
+                <%= link_to restaurant.url, target: "_blank" do %>
+                    <h1 class="card-heading"> <%= restaurant.brand %> </h1>
+                <% end %>
+            <% else %>
                 <h1 class="card-heading"> <%= restaurant.brand %> </h1>
             <% end %>
             <p class="card-description">
