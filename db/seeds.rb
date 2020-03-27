@@ -3,7 +3,7 @@ require 'csv'
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'partners_updates.csv'))
 CSV.parse(csv_text, headers: true).each do |row|
   row['price'] = row['price'].length if row['price']
-  Partner.create!(row.to_h) if row['price']
+  Partner.create!(row.to_h) if row['mood']
 end
 
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'restaurants_updates.csv'))
