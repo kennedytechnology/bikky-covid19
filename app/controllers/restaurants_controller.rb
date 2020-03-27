@@ -17,6 +17,7 @@ class RestaurantsController < ApplicationController
     end
 
     @restaurants = @restaurants.includes(:partner).limit(50)
+    @restaurants = Restaurant.all
   end
   
   private

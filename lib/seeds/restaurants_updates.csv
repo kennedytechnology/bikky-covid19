@@ -1214,8 +1214,7 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1127,Super Pollo,Ridgewood,"865 Woodward Ave, Ridgewood, NY 11385",https://eat.9fold.me/index.html#/369,40.703667,-73.902007,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,23:00,11:00,23:00,11:00,23:00,1
 1128,5B2F Akira Sushi,,"143 Skokie Blvd. Wilmette, IL 60091",https://www.5b2fakirasushi.com/,42.0662379,-87.7469809,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,,,1
 1129,8A5E Coffee,,"1200 West 35th Street, Chicago, IL 60609",Call: (773)609-2347,41.831092,-87.656537,7:30,16:00,7:30,16:00,7:30,16:00,7:30,16:00,7:30,16:00,,,,,1
-1130,"Steak Burrito
-",,"84 Stratford Dr, Bloomingdale, Illinois 60108",https://direct.chownow.com/direct/7500/locations/10043,41.9527691,-88.1180032,10:00,22:00,10:00,22:00,10:00,22:00,10:00,22:00,10:00,23:00,10:00,23:00,10:00,23:00,1
+1130,Steak Burrito,,"84 Stratford Dr, Bloomingdale, Illinois 60108",https://direct.chownow.com/direct/7500/locations/10043,41.9527691,-88.1180032,10:00,22:00,10:00,22:00,10:00,22:00,10:00,22:00,10:00,23:00,10:00,23:00,10:00,23:00,1
 1131,Amore,,"1 Kent Place, Armonk, NY 10504",https://direct.chownow.com/order/5346/locations/7005,41.1249538,-73.7148489,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,23:00,11:00,23:00,12:00,21:00,1
 1132,Uncle Linny's Food & Brew,,"3901 Pontoon Rd. Granite City, IL 62040",https://direct.chownow.com/order/18162/locations/26052,38.7319368,-90.0826715,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,1
 1133,Jarabe in Chicago,,2255 WEST TAYLOR STREET,https://direct.chownow.com/order/15776/locations/22303,41.8688365,-87.6833496,9:00,21:00,9:00,21:00,9:00,21:00,9:00,21:00,9:00,21:00,9:00,17:00,,,1
@@ -1252,8 +1251,7 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1162,Bacci Pizzeria,Lincoln Park,"2557 N. Halsted, Chicago IL",https://orders.imenu360.us/baccipizza/Halsted/,41.928956,-87.648704,11:00,0:00,11:00,0:00,11:00,0:00,11:00,2:00,11:00,4:00,11:00,5:00,11:00,0:00,1
 1163,Baci Amore,,"321 S Jefferson St, Chicago, IL 60661",https://www.restaurantcateringsystems.com/baciamore/,41.8773244,-87.6421767,11:00,15:00,11:00,15:00,11:00,15:00,11:00,15:00,11:00,15:00,,,,,0
 1164,Bacino's,,"2204 N Lincoln Ave, Chicago, IL 60614",https://www.bacinosoflincolnpark.com/#/,41.922076,-87.644482,11:00,21:30,11:00,21:30,11:00,21:30,11:00,21:30,11:00,22:30,11:00,22:30,11:00,21:30,1
-1165,"Bella Bacinos
-",,"66 E Wacker Pl, Chicago, IL 60601",Call: (312) 263-2350,41.8869594,-87.6255927,6:30,22:00,6:30,22:00,6:30,22:00,6:30,22:00,6:30,22:00,8:00,23:00,8:00,22:00,1
+1165,Bella Bacinos,,"66 E Wacker Pl, Chicago, IL 60601",Call: (312) 263-2350,41.8869594,-87.6255927,6:30,22:00,6:30,22:00,6:30,22:00,6:30,22:00,6:30,22:00,8:00,23:00,8:00,22:00,1
 1166,Back of the Yards Coffee House,,"2059 W 47th St, Chicago, IL 60609",https://backoftheyardscoffee.square.site/,41.80831,-87.676946,6:00,19:00,6:00,19:00,6:00,19:00,6:00,19:00,6:00,19:00,8:00,15:00,8:00,15:00,1
 1167,The Bad Apple,,"4300 N Lincoln Ave, Chicago, IL 60618",Call: 773-360-8406,41.959756,-87.682822,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,1
 1168,Angela's Burrito Style,,"2556 N Clark St, Chicago, IL 60614",https://themenustar1.com/webspace/menus.php?code=orderangelasburritostyle.com,41.9292194,-87.6449652,10:00,3:00,10:00,3:00,10:00,3:00,10:00,3:00,10:00,5:00,10:00,5:00,10:00,3:00,1
@@ -1274,15 +1272,11 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1183,Aurelio's Pizza,South Loop,"1212 S. Michigan Ave., Chicago",https://www.aureliospizza.com/location/chicago-south-loop/#,41.8669892,-87.6267614,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,23:00,11:00,23:00,11:00,21:00,1
 1184,Avli Taverna ,Lincoln Park,"1335 W Wrightwood Ave, Chicago, IL 60614",Call: 773 857 5577,41.9286642,-87.6645628,17:00,22:00,17:00,22:00,17:00,22:00,17:00,22:00,17:00,22:00,17:00,22:00,17:00,22:00,1
 1185,Avli Taverna,River North,"702 N Wells Street, Chicago",Call: 312 643 5656,41.8949625,-87.6366881,17:00,23:00,17:00,23:00,17:00,23:00,17:00,23:00,17:00,23:00,17:00,23:00,17:00,23:00,1
-1186,"Baker Miller
-",,"4655 N Lincoln Ave, Chicago, IL 60625",https://www.eatbakermiller.com/,41.9663921,-87.6868274,8:00,15:00,8:00,15:00,8:00,15:00,8:00,15:00,8:00,15:00,8:00,15:00,8:00,15:00,1
-1187,"Bangkok Thai & Sushi
-",,"4077 W Algonquin Rd, Algonquin, IL 60102",https://www.atbangkokthaisushi.com/online-ordering,42.1742034,-88.3699904,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,22:00,11:30,22:00,12:00,21:00,1
-1188,"Bar Biscay
-",,"450 W Chicago Ave, Chicago, IL",https://www.toasttab.com/barbiscay/v3#!/q,41.8963417,-87.6644556,,,5:00,22:00,5:00,22:00,5:00,22:00,5:00,22:00,5:00,22:00,5:00,22:00,1
+1186,Baker Miller,,"4655 N Lincoln Ave, Chicago, IL 60625",https://www.eatbakermiller.com/,41.9663921,-87.6868274,8:00,15:00,8:00,15:00,8:00,15:00,8:00,15:00,8:00,15:00,8:00,15:00,8:00,15:00,1
+1187,Bangkok Thai & Sushi,,"4077 W Algonquin Rd, Algonquin, IL 60102",https://www.atbangkokthaisushi.com/online-ordering,42.1742034,-88.3699904,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,22:00,11:30,22:00,12:00,21:00,1
+1188,Bar Biscay,,"450 W Chicago Ave, Chicago, IL",https://www.toasttab.com/barbiscay/v3#!/q,41.8963417,-87.6644556,,,5:00,22:00,5:00,22:00,5:00,22:00,5:00,22:00,5:00,22:00,5:00,22:00,1
 1189,Bar Cargo,," 605 N Wells St, Chicago, IL 60654",https://ordering.chownow.com/order/16295/locations,41.8926506,-87.6339056,,,,,16:00,21:00,16:00,21:00,16:00,21:00,16:00,21:00,16:00,21:00,1
-1190,"The Bar on Buena
-",,"910 W Buena Ave, Chicago, IL 60613",https://www.toasttab.com/the-bar-on-buena/v2/online-order#!/,41.9585891,-87.6535753,16:00,21:00,16:00,21:00,16:00,21:00,16:00,21:00,12:00,21:00,12:00,21:00,12:00,21:00,1
+1190,The Bar on Buena,,"910 W Buena Ave, Chicago, IL 60613",https://www.toasttab.com/the-bar-on-buena/v2/online-order#!/,41.9585891,-87.6535753,16:00,21:00,16:00,21:00,16:00,21:00,16:00,21:00,12:00,21:00,12:00,21:00,12:00,21:00,1
 1191,Bar Roma,,"5101 N Clark St, Chicago, IL 60640",Call: (773) 942-7572,41.9744963,-87.6680821,5:00,21:00,5:00,21:00,5:00,21:00,5:00,22:00,5:00,23:00,5:00,23:00,10:00,21:00,0
 1192,Bar Takito,,"201 N Morgan St, Chicago, IL 60607",Call: 312-888-9485 ,41.8858475,-87.6519567,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,0:00,11:00,0:00,11:00,19:00,1
 1193,Barangaroos Aussie Pies,,"3208 N Sheffield Ave, Chicago, IL 60657",https://barangaroospies.square.site/,41.940317,-87.654467,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,21:00,11:00,21:00,11:00,19:00,1
@@ -1291,15 +1285,12 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1195,Bartoli's Pizzeria,West Town,"658 N. Ashland Ave Chicago, IL 60622",https://bartolispizzeria.hungerrush.com/,41.8941233,-87.6675415,15:00,21:30,15:00,21:30,15:00,21:30,15:00,21:30,11:00,22:00,11:00,22:00,11:00,21:30,1
 1196,Bayan ko,,"1810 W Montrose Ave, Chicago, IL 60613",Call: (773) 698-6373,41.96162,-87.674965, , ,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,,,1
 1197,Beatrix,Streeterville,"671 N St Clair St, Chicago, IL 60611",https://www.beatrixrestaurants.com/beatrix/streeterville/delivery/,41.8943596,-87.6225456,7:00,21:00,7:00,21:00,7:00,21:00,7:00,21:00,7:00,22:00,8:00,22:00,8:00,22:00,1
-1198,"BeeZzee Fresh Food
-",S. Wabash Ave,"424 S Wabash Ave, Chicago, IL 60605",https://themenustar3.com/webspace/menus.php?code=beezzeefreshfoodwabash.mobile-webview3.com,41.876258,-87.626311,8:00,15:00,8:00,15:00,8:00,15:00,8:00,15:00,8:00,15:00,8:00,15:00,,,1
-1199,"BeeZzee Fresh Food
-",N. Sheffield Ave,"2807 N. Sheffield Ave., Chicago, IL 60657",https://themenustar3.com/webspace/menus.php?code=beezzeefreshfoodsheffield.mobile-webview3.com,41.9330308,-87.65371,10:00,21:00,10:00,21:00,10:00,21:00,10:00,21:00,10:00,21:00,10:00,21:00,11:00,21:00,1
+1198,BeeZzee Fresh Food,S. Wabash Ave,"424 S Wabash Ave, Chicago, IL 60605",https://themenustar3.com/webspace/menus.php?code=beezzeefreshfoodwabash.mobile-webview3.com,41.876258,-87.626311,8:00,15:00,8:00,15:00,8:00,15:00,8:00,15:00,8:00,15:00,8:00,15:00,,,1
+1199,BeeZzee Fresh Food,N. Sheffield Ave,"2807 N. Sheffield Ave., Chicago, IL 60657",https://themenustar3.com/webspace/menus.php?code=beezzeefreshfoodsheffield.mobile-webview3.com,41.9330308,-87.65371,10:00,21:00,10:00,21:00,10:00,21:00,10:00,21:00,10:00,21:00,10:00,21:00,11:00,21:00,1
 1200,Belli's Juicebar & Local Foods Market,,"1307 W 18th St, Chicago, IL 60608",Call: 312-307-7305,41.8578058,-87.6592929, , ,9:00,14:30,9:00,14:30,9:00,14:30,9:00,14:30,9:00,14:30,9:00,16:00,1
 1201,Benny's Pizza,,"1244 W 18th St, Chicago, IL 60608",https://bennyspizzachicago.click4ameal.net/,41.8580439,-87.6580779,10:00,0:00,10:00,0:00,10:00,0:00,10:00,0:00,11:00,1:00,11:00,1:00,10:00,0:00,1
 1202,Best Subs #3,,"5752 W Belmont Ave, Chicago, IL 60634",https://menupages.com/best-sub-3/5752-w-belmont-ave-chicago,41.938696,-87.770939,12:00,20:00,,,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,1
-1203,"Bettie Lou’s
-",,"5633 N Ashland Ave, Chicago, IL 60660",Call: ​312-725- 2247,41.9845507,-87.6695999,,,,,16:00,22:00,16:00,22:00,16:00,22:00,12:00,22:00,12:00,17:00,1
+1203,Bettie Lou’s,,"5633 N Ashland Ave, Chicago, IL 60660",Call: ​312-725- 2247,41.9845507,-87.6695999,,,,,16:00,22:00,16:00,22:00,16:00,22:00,12:00,22:00,12:00,17:00,1
 1204,Avondale Coffee Club,,"3185 N Elston Ave, Chicago, IL 60618",https://avondalecoffee.square.site/,41.9391443,-87.6997042,7:00,11:00,7:00,11:00,7:00,11:00,7:00,11:00,7:00,11:00,8:00,12:00,8:00,12:00,1
 1205,Avondale Tap,,"3634 W Belmont Ave, Chicago, IL 60618",Call: 773-754-8341,41.939376,-87.7209636,16:00,2:00,16:00,2:00,16:00,2:00,16:00,2:00,16:00,2:00,16:00,2:00,16:00,2:00,1
 1206,Aya Bakery,,"1332 W Grand Avenue, Chicago, IL 60642",https://www.ayapastry.com/collections/all,41.8913596,-87.6603838,9:00,16:00,9:00,16:00,9:00,16:00,9:00,16:00,9:00,16:00,9:00,16:00,9:00,16:00,1
@@ -1313,12 +1304,9 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1214,Big & Little's,Logan Square,"3000 W Fullerton Ave, Chicago, IL 60647",call: (773) 687-9033,41.9250499,-87.7047666,16:00,23:30,16:00,23:30,16:00,23:30,16:00,23:30,11:00,23:30,11:00,23:30,11:00,23:30,1
 1215,Big Boss Spicy Fried Chicken,,"2520 S Halsted St, Chicago, IL 60608",https://www.chowbus.com/menu/Big%20Boss%20Spicy%20Fried%20Chicken/99,41.8464784,-87.64892,11:00,22:30,,,11:00,22:30,11:00,22:30,11:00,22:30,11:00,22:30,11:00,22:30,1
 1216,Cafe Ba-Ba-Reeba!,,"2024 N Halsted St, Chicago, IL 60614",Call: 773-935-5000,41.9189768,-87.6487012,16:00,20:00,16:00,20:00,16:00,20:00,16:00,20:00,16:00,21:00,16:00,21:00,16:00,20:00,1
-1217,"Cafe Con Leche
-",,"2714 N Milwaukee Ave, Chicago, IL 60647",Call: (773) 289-4274,41.9303478,-87.7098741,9:00,22:00,9:00,22:00,9:00,22:00,9:00,22:00,9:00,22:00,9:00,22:00,9:00,22:00,1
-1218,"Cafe Orchid
-",,"1746 W Addison St, Chicago, IL 60613",http://www.cafeorchid.com/order-online-chicago.html#/,41.9471628,-87.6731501,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,1
-1219,"Cafe Press Chicago
-",,"800 S Clark St, Chicago, IL 60605",Call: (312) 588-1101,41.8718426,-87.6310156,7:00,20:00,7:00,20:00,7:00,20:00,7:00,20:00,7:00,20:00,7:00,20:00,7:00,20:00,1
+1217,Cafe Con Leche,,"2714 N Milwaukee Ave, Chicago, IL 60647",Call: (773) 289-4274,41.9303478,-87.7098741,9:00,22:00,9:00,22:00,9:00,22:00,9:00,22:00,9:00,22:00,9:00,22:00,9:00,22:00,1
+1218,Cafe Orchid,,"1746 W Addison St, Chicago, IL 60613",http://www.cafeorchid.com/order-online-chicago.html#/,41.9471628,-87.6731501,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,1
+1219,Cafe Press Chicago,,"800 S Clark St, Chicago, IL 60605",Call: (312) 588-1101,41.8718426,-87.6310156,7:00,20:00,7:00,20:00,7:00,20:00,7:00,20:00,7:00,20:00,7:00,20:00,7:00,20:00,1
 1220,Big Bowl - Chicago,Chicago,"60 E Ohio St, Chicago, IL 60611",https://direct.chownow.com/order/17133/locations/24467,41.8926642,-87.6279607,15:00,20:00,15:00,20:00,15:00,20:00,15:00,20:00,15:00,21:00,15:00,21:00,15:00,19:00,1
 1221,Big G's Pizza,,"3716 N Clark St, Chicago, IL 60613",https://ordering.chownow.com/order/5042/locations,41.9503714,-87.6620264,11:00,0:00,11:00,0:00,11:00,0:00,11:00,2:00,11:00,4:00,12:00,5:00,12:00,3:00,1
 1222,Big Sammy's Hot Dogs,,"2490 Bushwood Dr C, Elgin, IL 60124",https://www.bigsammyshotdogs.com/,41.9794493,-87.6702762,10;30,21:00,10;30,21:00,10;30,21:00,10;30,21:00,10:30,22:00,10:30,21:00,11:00,21:00,1
@@ -1355,14 +1343,11 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1252,Bob O’Rinos,,"3435 N Central Ave, Chicago, IL 60634",Call: 773-545-7827,41.9433056,-87.7683359,10:00,20:00,10:00,20:00,10:00,20:00,10:00,20:00,10:00,20:00,10:00,19:00,10:00,18:00,1
 1253,Bob's Pizza,,"1659 W 21st St, Chicago, IL 60608",https://direct.chownow.com/order/14605/locations/20590,41.8539346,-87.6705382,16:00,22:00,16:00,22:00,16:00,22:00,16:00,22:00,16:00,23:00,11:00,23:00,11:00,23:00,1
 1254,Caffe Baci,,"2 N LaSalle St, Chicago, IL 60602",Call: (312) 629-2210,41.8820671,-87.6329382,6:00,14:00,6:00,14:00,6:00,14:00,6:00,14:00,6:00,14:00,,,,,1
-1255,"caffe De Luca
-",,"7427 Madison St, Forest Park, IL 60130",Call: (708) 366-9200,41.8797646,-87.8109168,11:00,21:00,11:00,21:00,11:00,21:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,21:00,1
-1256,"Caffe di Moda
-",,"1012 Burlington Ave, Lisle, IL 60532",https://app.upserve.com/s/caffe-di-moda-lisle,41.7986838,-88.0734669,6:00,14:00,6:00,14:00,6:00,14:00,5:30,20:00,5:30,20:00,7:00,17:00,8:00,17:00,1
+1255,caffe De Luca,,"7427 Madison St, Forest Park, IL 60130",Call: (708) 366-9200,41.8797646,-87.8109168,11:00,21:00,11:00,21:00,11:00,21:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,21:00,1
+1256,Caffe di Moda,,"1012 Burlington Ave, Lisle, IL 60532",https://app.upserve.com/s/caffe-di-moda-lisle,41.7986838,-88.0734669,6:00,14:00,6:00,14:00,6:00,14:00,5:30,20:00,5:30,20:00,7:00,17:00,8:00,17:00,1
 1257,Calo Ristorante,,"5343 N Clark St, Chicago, IL 60640",https://direct.chownow.com/order/1329/locations/1744,41.979371,-87.668082,11:00,22:30,11:00,22:30,11:00,22:30,11:00,22:30,11:00,23:00,11:00,23:00,11:00,22:00,1
 1258,Candlelite Chicago,,"7452 N Western Ave, Chicago, IL 60645",https://candlelite.hngr.co/menu/start,42.0174602,-87.6905589,5:00,14:00,5:00,14:00,5:00,14:00,5:00,14:00,4:00,14:00,11:00,15:00,11:00,14:00,1
-1259,"Capriotti's Sandwich Shop
-",,"174 N Wabash Ave, Chicago, IL 60601",https://order.capriottis.com/,41.885264,-87.626473,9:00,20:00,9:00,20:00,9:00,20:00,9:00,20:00,9:00,22:00,9:00,22:00,10:00,20:00,1
+1259,Capriotti's Sandwich Shop,,"174 N Wabash Ave, Chicago, IL 60601",https://order.capriottis.com/,41.885264,-87.626473,9:00,20:00,9:00,20:00,9:00,20:00,9:00,20:00,9:00,22:00,9:00,22:00,10:00,20:00,1
 1260,BODEGA SUR,,"3755 N Southport Ave, Chicago, IL 60613",Call: (773) 904-8656,41.9505503,-87.6659729,11:00,22:30,11:00,22:00,11:00,22:00,11:00,22:00,11:00,23:00,9:00,22:00,9:00,22:00,1
 1261,Bombay Wraps,,"122 N Wells St, Chicago, IL 60606",https://bombaywraps.com/locations/,41.8840432,-87.6362938,11:00,18:00,11:00,18:00,11:00,18:00,11:00,18:00,11:00,18:00,11:00,15:00,,,1
 1262,Bombay Wraps,,"330 E Ohio St #3308, Chicago, IL 60611",https://bombaywraps.com/locations/,41.8927867,-87.6211711,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,15:00,1
@@ -1397,10 +1382,8 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1291,Bulldog Bakery,,"3207 N Elston Ave, Chicago, IL 60618",Call: 773-539-9781 ,41.939598,-87.7006196,9:00,14:00,9:00,14:00,9:00,14:00,9:00,14:00,9:00,14:00,9:00,14:00,,,1
 1292,Bungalow by Middle Brow,,"2840 W Armitage Ave, Chicago, IL 60647",https://www.middlebrowbeer.com/,41.9177677,-87.7010687,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,1
 1293,Burger Bar Chicago,SOUTH LOOP,"1150 S Michigan Ave, Chicago, IL 60605",Call: 312-988-0162,41.8678473,-87.6266068,11:30,22:00,11:30,22:00,11:30,22:00,11:30,23:00,11:00,23:00,11:00,23:00,11:00,21:00,1
-1294,"Casa Índígō
-",,"1314 W 18th St, Chicago, IL 60608",https://direct.chownow.com/order/14785/locations/20863,41.8580106,-87.6595544,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,12:00,18:00,,,1
-1295,"Casati's Modern Italian
-",,"444 W Fullerton Pkwy, Chicago, IL 60614",Call: 773-8571237 ,41.9259348,-87.6410344,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,1
+1294,Casa Índígō,,"1314 W 18th St, Chicago, IL 60608",https://direct.chownow.com/order/14785/locations/20863,41.8580106,-87.6595544,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,12:00,18:00,,,1
+1295,Casati's Modern Italian,,"444 W Fullerton Pkwy, Chicago, IL 60614",Call: 773-8571237 ,41.9259348,-87.6410344,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,1
 1296,Luigi's Pizza,,"2127 Amsterdam Ave New York, NY 10032",https://eat.9fold.me/index.html#/10766,40.8382551,-73.9378796,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,12:00,22:00,1
 1297,Wise Bar And Grill,,"35 NEPTUNE AVENUE, BROOKLYN, NY 11235",https://eat.9fold.me/index.html#/11003,40.583134,-73.9556827,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,1
 1298,Pasta by Hudson,,"1000 8th Ave, New York, NY 10019",https://eat.9fold.me/index.html#/10973,40.7669606,-73.98298,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,18:00,1
@@ -1411,11 +1394,9 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 ","2581 Broadway (97th St.) New York, NY 10025",https://orders.9fold.me/texas-grill-uws.html,40.7955506,-73.9714911,11:00,22:30,11:00,22:30,11:00,22:30,11:00,22:30,11:00,22:30,11:00,22:30,11:00,22:30,1
 1303,Texas Rotisserie & Grill,"UPPER EAST SIDE
 ","1315 1st Ave New York , NY 10021",https://orders.9fold.me/texas-grill-ues.html,40.766938,-73.956929,10:00,22:45,10:00,22:45,10:00,22:45,10:00,22:45,10:00,22:45,11:00,21:45,11:00,21:45,1
-1304,"Manhattan Diner
-",,"2532 Broadway New York, NY 10025",https://eat.9fold.me/index.html#/10742,40.793637,-73.97215,6:00,1:00,6:00,1:00,6:00,1:00,6:00,1:00,6:00,1:00,6:00,1:00,6:00,1:00,1
+1304,Manhattan Diner,,"2532 Broadway New York, NY 10025",https://eat.9fold.me/index.html#/10742,40.793637,-73.97215,6:00,1:00,6:00,1:00,6:00,1:00,6:00,1:00,6:00,1:00,6:00,1:00,6:00,1:00,1
 1305,WAZA SUSHI & RAMEN,,"485 myrtle avenue, Brooklyn, NY 11205, US",https://order.mealkeyway.com/merchant/6c615445634761386f485a634f6f67324b53554432513d3d/main,40.6936228,-73.9657159,11:30,22:30,11:30,22:30,11:30,22:30,11:30,22:30,11:30,23:00,11:30,23:00,11:30,22:30,1
-1306,"Tasty Catering NYC
-",,"367 1st Avenue, New York, NY 10010",https://eat.9fold.me/index.html#/10759,40.7359628,-73.9794323,6:00,19:00,6:00,19:30,6:00,19:00,6:00,19:00,6:00,19:00,6:00,19:00,6:00,19:00,1
+1306,Tasty Catering NYC,,"367 1st Avenue, New York, NY 10010",https://eat.9fold.me/index.html#/10759,40.7359628,-73.9794323,6:00,19:00,6:00,19:30,6:00,19:00,6:00,19:00,6:00,19:00,6:00,19:00,6:00,19:00,1
 1307,Pumpernickel Bagel and Delicatessen,,"2310 44th Dr, Long Island City, NY 11101",https://eat.9fold.me/index.html#/67,40.7473653,-73.9446202,6:00,17:00,6:00,17:00,6:00,17:00,6:00,17:00,6:00,17:00,,,,,1
 1308,cafe plaza deli,,"11 Broadway, New York, NY 10004",Call: (212) 809-4101,40.7052172,-74.0139997,,,,,,,,,,,,,,,0
 1309,Lunetta Pizza & Restaurant,,"1162 1st Ave New York, NY 10065",https://eat.9fold.me/index.html#/10859,40.762412,-73.959599,10:00,14:00,10:00,14:00,10:00,14:00,10:00,15:00,10:00,14:00,10:00,16:00,10:00,16:00,1
@@ -1426,12 +1407,10 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1314,Kaiyo,,"92 Main St, Mineola, NY 11501",https://kaiyony.com/store/,40.7416851,-73.6384953,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,16:00,21:30,1
 1315,GINOS OF COMMACK,,"5990 Jericho Turnpike, Commack, NY 11725",https://eat.9fold.me/index.html#/10878,40.8403121,-73.3070792,10:00,22:00,10:00,22:00,10:00,22:00,10:00,22:00,10:00,23:00,10:00,22:00,10:00,21:30,1
 1316,Fresko ,,"691 Hempstead Turnpike Franklin Square, NY 11010",https://eat.9fold.me/index.html#/10867,40.7065858,-73.6653231,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:30,22:00,1
-1317,"Francesco's Pizza
-",,"186 Columbus Ave, New York, NY 10023",Call: (212) 721-0066,40.775197,-73.980691,12:00,21:30,12:00,21:30,12:00,21:30,12:00,21:30,12:00,21:30,12:00,21:30,12:00,21:30,1
+1317,Francesco's Pizza,,"186 Columbus Ave, New York, NY 10023",Call: (212) 721-0066,40.775197,-73.980691,12:00,21:30,12:00,21:30,12:00,21:30,12:00,21:30,12:00,21:30,12:00,21:30,12:00,21:30,1
 1318,Estrellita ,,1813 WESTCHESTER AVE. BRONX NY 10471,https://eat.9fold.me/index.html#/10826,40.8323155,-73.865866,10:00,23:00,10:00,23:00,10:00,23:00,10:00,23:00,10:00,23:00,10:00,23:00,10:00,23:00,1
 1319,Durian Thai Food,,"147 Chatsworth Ave. Larchmont, NY 10538",https://eat.9fold.me/index.html#/10805,40.9333111,-73.7594167,,,11:00,21:30,11:00,21:30,11:00,21:30,11:00,22:00,12:00,22:00,12:00,21:30,1
-1320,"Dominick's Pizza
-",,"4901 8th Ave, Brooklyn, NY 11220",Call: (718) 438-1700,40.6415354,-74.0030821,10:30,22:30,10:30,22:30,10:30,22:30,10:30,22:30,10:30,22:30,10:30,22:30,10:30,22:30,1
+1320,Dominick's Pizza,,"4901 8th Ave, Brooklyn, NY 11220",Call: (718) 438-1700,40.6415354,-74.0030821,10:30,22:30,10:30,22:30,10:30,22:30,10:30,22:30,10:30,22:30,10:30,22:30,10:30,22:30,1
 1321,d Elici,,"71 NASSAU ST NEW YORK, NY 10038",https://eat.9fold.me/index.html#/10760,40.7097145,-74.0083934,7:00,16:00,7:00,16:00,7:00,16:00,7:00,16:00,7:00,16:00,7:30,16:00,,,1
 1322,Buttercup Bake Shop & Bakery,,"828 7th Avenue New York, NY 10019",https://eat.9fold.me/index.html#/10755,40.7632564,-73.9819088,8:00,23:00,8:00,23:00,8:00,23:00,8:00,23:00,8:00,23:00,11:00,23:00,11:00,21:00,1
 1323,Armando's Pizza,,"1413 Rockaway Pkwy, Brooklyn, NY 11236",https://eat.9fold.me/index.html#/10747,40.645627,-73.902588,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,13:00,20:30,1
@@ -1439,12 +1418,10 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1325,Ageha Sushi,,"767 9th Ave, New York, NY 10019",https://eat.9fold.me/index.html#/450,40.7645078,-73.9885354,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,0:00,11:00,23:00,12:00,23:00,1
 1326,Smith St. Bagels,,"202 Smith St, Brooklyn, NY 11201",https://menupages.com/smith-street-bagels/202-smith-st-new-york,40.684751,-73.9919399,6:00,19:00,6:00,19:00,6:00,19:00,6:00,19:00,6:00,19:00,6:00,19:00,6:00,17:00,1
 1327,Route 66 NYC,,"858 9th Ave New York, NY 10019",https://eat.9fold.me/index.html#/77,40.7669203,-73.9861193,7:00,0:30,7:00,0:30,7:00,0:30,7:00,0:30,7:00,0:30,7:00,0:30,7:00,0:30,1
-1328,"Rocco's Pizza Joint
-",,"162 7th Ave, New York, NY 10011",Call: (212) 633 - 9555,40.742182,-73.997419,11:00,22:30,11:00,22:30,11:00,22:30,11:00,22:30,11:00,22:30,11:00,22:30,12:00,21:15,0
+1328,Rocco's Pizza Joint,,"162 7th Ave, New York, NY 10011",Call: (212) 633 - 9555,40.742182,-73.997419,11:00,22:30,11:00,22:30,11:00,22:30,11:00,22:30,11:00,22:30,11:00,22:30,12:00,21:15,0
 1329,Pizzaiola,,"1162 Deer Park Ave, North Babylon, NY 11703",https://eat.9fold.me/index.html#/10902,40.7358652,-73.3219207,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,21:00,11:00,21:00,11:00,20:00,1
 1330,Pitas & Sticks,,321 9th Street Brooklyn NY 11215,https://eat.9fold.me/index.html#/651,40.669087,-73.9856523,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,1
-1331,"Pier 69 Market
-",,"10 Bay Ridge Ave, Brooklyn, NY 11220",Call: 718-777-6969,40.638522,-74.0355686,7:00,18:00,7:00,18:00,7:00,18:00,7:00,18:00,7:00,18:00,7:00,18:00,7:00,18:00,1
+1331,Pier 69 Market,,"10 Bay Ridge Ave, Brooklyn, NY 11220",Call: 718-777-6969,40.638522,-74.0355686,7:00,18:00,7:00,18:00,7:00,18:00,7:00,18:00,7:00,18:00,7:00,18:00,7:00,18:00,1
 1332,Napoli Pastry Co,,"191 Hester Street, New York, NY 10013",https://eat.9fold.me/index.html#/10869,40.7182001,-73.9978118,9:00,23:00,9:00,23:00,9:00,23:00,9:00,23:00,9:00,23:00,9:00,23:00,9:00,23:00,1
 1333,Joseph's Restaurant,,"3 Hanover Square, New York, NY 10004",https://eat.9fold.me/index.html#/10957,40.7048499,-74.0095927,12:00,22:00,12:00,22:00,12:00,22:00,12:00,22:00,12:00,22:00,,,,,1
 1334,Acai Bowls,IN FINE FETTLE,"961 Jewett Ave, Staten Island, NY 10314",https://eat.9fold.me/index.html#/10887,40.6128743,-74.1305517,0:00,0:00,0:00,0:00,0:00,0:00,0:00,0:00,0:00,0:00,0:00,0:00,0:00,0:00,1
@@ -1475,26 +1452,21 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1359,Estrellita Poblana,LITTLE ITALY,2328 Arthur Ave. Bronx NY 10458,https://eat.9fold.me/index.html#/639,40.8539422,-73.8887928,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,1
 1360,Morning Star Cafe,,"949 2nd Avenue (bet. 50th & 51st) New York, N.Y. 10022",https://eat.9fold.me/index.html#/10738,40.7552279,-73.9686148,6:00,0:00,0:00,0:00,0:00,0:00,0:00,0:00,0:00,0:00,0:00,0:00,12:00,22:00,1
 1361,Lombardo's Dobbs Ferry,,"10 Hamilton St, Dobbs Ferry, NY 10522",https://eat.9fold.me/index.html#/10773,41.0040331,-73.8567109,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,12:00,22:00,1
-1362,"Blank Slate Tea
-",,"121 Madison Ave #3, New York, NY 10016",https://eat.9fold.me/index.html#/11035,40.7453849,-73.9845472,8:00,17:00,8:00,17:00,8:00,17:00,8:00,17:00,8:00,17:00,8:00,17:00,8:00,17:00,1
+1362,Blank Slate Tea,,"121 Madison Ave #3, New York, NY 10016",https://eat.9fold.me/index.html#/11035,40.7453849,-73.9845472,8:00,17:00,8:00,17:00,8:00,17:00,8:00,17:00,8:00,17:00,8:00,17:00,8:00,17:00,1
 1363,THEP Thai Restaurant,,"1439 2nd Ave, New York, NY 10021",https://eat.9fold.me/index.html#/627,40.7707864,-73.9572292,11:30,22:15,11:30,22:15,11:30,22:15,11:30,22:15,11:30,22:15,11:30,22:15,11:30,22:15,1
 1364,Pitagrill Kosher,2ND AVENUE,"1083 2nd Ave, New York, NY 10022",https://eat.9fold.me/index.html#/365,40.759558,-73.965436,10:00,22:45,10:00,22:45,10:00,22:45,10:00,22:45,10:00,16:00,,,10:00,22:45,1
 1365,Pitagrill Kosher,UES,"1603 2nd Avenue, New York, NY 10028",https://eat.9fold.me/index.html#/350,40.7761792,-73.9532382,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,1
 1366,DELI KASBAH,,"251 W 85th St, New York, NY 10024",https://eat.9fold.me/index.html#/556,40.7879977,-73.9774279,12:00,23:00,12:00,23:00,12:00,23:00,12:00,23:00,,,,,12:00,23:00,1
 1367,Stamina Grill & Juice Bar,,"80 Nassau St, New York, NY 10038",https://staminagrill.hngr.co/menu,40.7098437,-74.0079294,7:00,22:00,7:00,22:00,7:00,22:00,7:00,22:00,7:00,22:00,9:00,21:00,9:00,21:00,1
 1368,Spiegel,,"26 1st Avenue, New York, NY 10009,",https://eat.9fold.me/index.html#/442,40.7236947,-73.9878287,8:00,23:00,8:00,23:00,8:00,23:00,8:00,23:00,8:00,23:00,8:00,23:00,8:00,23:00,1
-1369,"Effy's Kitchen
-",,"1567 Lexington Ave, New York, NY 10029",https://menupages.com/effys-kitchen/1567-lexington-ave-new-york,40.788455,-73.948722,9:00,22:00,9:00,22:00,9:00,22:00,9:00,22:00,9:00,22:00,9:00,22:00,9:00,22:00,1
-1370,"Sunflower Cafe
-","LONG ISLAND
+1369,Effy's Kitchen,,"1567 Lexington Ave, New York, NY 10029",https://menupages.com/effys-kitchen/1567-lexington-ave-new-york,40.788455,-73.948722,9:00,22:00,9:00,22:00,9:00,22:00,9:00,22:00,9:00,22:00,9:00,22:00,9:00,22:00,1
+1370,Sunflower Cafe,"LONG ISLAND
 ",357 Central Av. Lawrence Long Island NY,https://www.sunflowerlongisland.say2eat.com/order-online,40.618126,-73.728679,9:00,21:30,9:00,21:30,9:00,21:30,9:00,21:30,9:00,21:30,,,9:00,21:30,1
-1371,"Sunflower Cafe
-",BROOKLYN,1223 Quentin Rd. Brooklyn NY,https://www.sunflowerbrooklyn.say2eat.com/,40.608222,-73.960216,9:00,23:30,9:00,23:30,9:00,23:30,9:00,23:30,9:00,14:15,10:00,2:00,9:00,23:30,1
+1371,Sunflower Cafe,BROOKLYN,1223 Quentin Rd. Brooklyn NY,https://www.sunflowerbrooklyn.say2eat.com/,40.608222,-73.960216,9:00,23:30,9:00,23:30,9:00,23:30,9:00,23:30,9:00,14:15,10:00,2:00,9:00,23:30,1
 1372,NISH NUSH,READE STREET,"88 Reade St, New York, NY 10013",https://eat.9fold.me/index.html#/10936,40.7155963,-74.0076133,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,21:00,1
 1373,NISH NUSH,JOHN STREET,"41 John St, New York, NY 10038",https://eat.9fold.me/index.html#/10954,40.709325,-74.0079889,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,20:00,11:00,20:00,1
 1374,The Mansion,,"1634 York Ave, New York, NY 10028",https://eat.9fold.me/index.html#/10924,40.7759621,-73.9467767,6:00,1:00,6:00,1:00,6:00,1:00,6:00,1:00,6:00,1:00,6:00,1:00,6:00,12:00,1
-1375,"Zona Sur Bar Bistro
-",,"4314 4th Ave, Brooklyn, NY 11220",https://eat.9fold.me/index.html#/10719,40.650248,-74.0091036,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,23:00,9:00,23:00,9:00,16:00,1
+1375,Zona Sur Bar Bistro,,"4314 4th Ave, Brooklyn, NY 11220",https://eat.9fold.me/index.html#/10719,40.650248,-74.0091036,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,23:00,9:00,23:00,9:00,16:00,1
 1376,Senor Nacho,,"31 S Middle Neck Rd Great Neck, NY 11021",https://eat.9fold.me/index.html#/253,40.786628,-73.725756,12:00,21:00,12:00,21:00,12:00,21:00,12:00,21:00,12:00,21:00,12:00,21:00,12:00,21:00,1
 1377,Coco & Cru,,"643 Broadway, New York, NY 10012",https://eat.9fold.me/index.html#/10663,40.7267509,-73.9982124,8:00,21:00,8:00,21:00,8:00,21:00,8:00,21:00,8:00,22:00,8:00,22:00,9:00,21:00,1
 1378,Carmine's Italian Restaurant - Times Square,,"200 W 44th St, New York, NY 10036",https://www.carminesnyc.com/order,40.757498,-73.9888427,12:00,22:00,12:00,22:00,12:00,22:00,12:00,22:00,12:00,22:00,12:00,22:00,12:00,22:00,1
@@ -1541,19 +1513,16 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1419,Lil Frankie’s,,"19 1st Avenue, New York, NY 10003",Call: 212-420-4900,40.7236464,-73.9884794,11:00,2:00,11:00,2:00,11:00,2:00,11:00,2:00,11:00,4:00,11:00,4:00,10:30,2:00,1
 1420,Frank,,"88 2nd Ave, New York, NY 10003",Call: 212-420-0202,40.7268777,-73.9886954,10:30,1:00,10:30,1:00,10:30,1:00,10:30,1:00,10:30,1:00,10:30,1:00,10:30,1:00,1
 1421,Black Swan,,"1048 Bedford Ave, Brooklyn, NY 11205",https://menupages.com/the-black-swan/1048-bedford-ave-brooklyn,40.6890993,-73.955244,11:00,16:00,11:00,16:00,11:00,16:00,11:00,16:00,11:00,16:00,11:00,16:00,11:00,16:00,1
-1422,"Champs Diner
-",,"197 Meserole St, Brooklyn, NY 11206",https://champsdiner.square.site/s/order,40.7084401,-73.9409005,13:00,21:00,13:00,21:00,13:00,21:00,13:00,21:00,13:00,21:00,13:00,21:00,13:00,21:00,1
+1422,Champs Diner,,"197 Meserole St, Brooklyn, NY 11206",https://champsdiner.square.site/s/order,40.7084401,-73.9409005,13:00,21:00,13:00,21:00,13:00,21:00,13:00,21:00,13:00,21:00,13:00,21:00,13:00,21:00,1
 1423,Blossom on Ninth,,"187 9th Ave, New York, NY 10011",Call: 212-875-2600,40.7455247,-74.0023575,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,1
 1424,Spicy Moon,,"328 E 6th St, New York, NY 10003",Call: 646-429-8471,40.7266901,-73.9872499,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,1
 1425,Blondies Sports,,"212 W 79th St, New York, NY 10024",https://direct.chownow.com/order/13880/locations/19473,40.7833262,-73.9792272,6:00,23:00,6:00,23:00,6:00,23:00,6:00,23:00,12:00,23:00,12:00,23:00,12:00,23:00,1
 1426,Glady's,,"788 Franklin Ave, Brooklyn, NY 11238",Call: (718) 622-0249,40.6717277,-73.9578799,12:00,23:00,12:00,23:00,12:00,23:00,12:00,23:00,12:00,23:00,12:00,23:00,12:00,23:00,1
 1427,Lighthouse Outpost,,"241 Mulberry St, New York, NY 10012",Call: (347) 789-7742,40.7228844,-73.9961448,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,,,,,1
-1428,"The Whole Bowl
-",,"488 Metropolitan Ave, Brooklyn, NY 11211",Call:  (347) 599–1717,40.7138963,-73.9527093,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,1
+1428,The Whole Bowl,,"488 Metropolitan Ave, Brooklyn, NY 11211",Call:  (347) 599–1717,40.7138963,-73.9527093,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,1
 1429,CHIKARASHI,CHINATOWN,"227 Canal Street, New York, NY 10013",https://direct.chownow.com/order/10536/locations/14424,40.7179451,-73.9994468,,,,,,,,,,,,,,,1
 1430,CHIKARASHI,NOMAD,"1158 Broadway, New York, NY 10001",https://direct.chownow.com/order/10536/locations,40.7445438,-73.9885837,,,,,,,,,,,,,,,1
-1431,"Cafe Clover
-",,"10 Downing St, New York, NY 10014",https://direct.chownow.com/order/11424/locations/15809,40.7295373,-74.0026805,11:30,23:00,11:30,23:00,11:30,23:00,11:30,23:00,11:30,23:00,11:30,23:00,11:30,23:00,1
+1431,Cafe Clover,,"10 Downing St, New York, NY 10014",https://direct.chownow.com/order/11424/locations/15809,40.7295373,-74.0026805,11:30,23:00,11:30,23:00,11:30,23:00,11:30,23:00,11:30,23:00,11:30,23:00,11:30,23:00,1
 1432,Sable's Smoked Fish,,"1489 2nd Ave, New York, NY 10075",https://sablesnyc.com/Menus/,40.7724783,-73.9581986,8:00,18:00,8:00,18:00,8:00,18:00,8:00,18:00,8:00,18:00,7:00,18:00,7:00,17:00,1
 1433,Ruby's Cafe,"SOHO, NYC","219 Mulberry St A, New York, NY 10012",https://www.rubyscafe.com/order-online,40.7223109,-73.9985113,9:00,22:30,9:00,22:30,9:00,22:30,9:00,22:30,9:00,22:30,9:00,22:30,9:00,22:30,1
 1434,Bubby’s,TRIBECA,"120 Hudson St, New York, NY 10013,",https://www.bubbys.com/delivery,40.719819,-74.0105716,8:00,22:00,8:00,22:00,8:00,22:00,8:00,22:00,8:00,23:00,8:00,23:00,8:00,22:00,1
@@ -1570,15 +1539,13 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1445,Tiny’s Giant Sandwich Shop,,"129 Rivington St, New York, NY 10002",https://menupages.com/tinys-giant-sandwich-shop/129-rivington-st-new-york,40.7195636,-73.9891384,,,8:00,21:00,8:00,21:00,8:00,21:00,8:00,21:00,8:00,21:00,8:00,21:00,1
 1446,Kopitiam,,"151 E Broadway, New York, NY 10002",Call: (646) 609-3785,40.7138286,-73.9909233,9:00,22:00,9:00,22:00,,,9:00,22:00,9:00,22:00,9:00,22:00,9:00,22:00,1
 1447,Huertas,,"107 1st Avenue, New York, NY 10003",Call: 212-228-4490,40.7268446,-73.9862162,17:30,21:00,17:30,21:00,17:30,21:00,17:30,21:00,17:30,21:00,15:00,21:00,15:00,21:00,0
-1448,"Sushi Katsuei
-",,"357 6th Ave, New York, NY 10014",Call: 917-965-2888,40.7322346,-74.000883,15:00,22:00,15:00,22:00,15:00,22:00,15:00,22:00,15:00,22:00,15:00,22:00,,,1
+1448,Sushi Katsuei,,"357 6th Ave, New York, NY 10014",Call: 917-965-2888,40.7322346,-74.000883,15:00,22:00,15:00,22:00,15:00,22:00,15:00,22:00,15:00,22:00,15:00,22:00,,,1
 1449,Patacon Pisao,,"431 W 202nd St, New York, NY 10034",https://www.pataconpisaonyc.com/location/truck/,40.8613043,-73.9223952,12:00,18:00,12:00,18:00,12:00,18:00,12:00,18:00,12:00,18:00,12:00,18:00,12:00,18:00,1
 1450,Pies ‘n’ Thighs,,"166 S 4th St, Brooklyn, NY 11211",https://www.toasttab.com/pies-n-thighs/v2/online-order#!/,40.7111784,73.9635664,10:00,23:00,10:00,23:00,10:00,23:00,10:00,23:00,10:00,0:00,9:00,0:00,9:00,23:00,1
 1451,Best Pizza,,"33 Havemeyer St, Brooklyn, NY 11211",https://www.bestpizzawilliamsburg.com/order-now/,40.7156194,-73.9556681,11:00,0:00,11:00,0:00,11:00,0:00,11:00,0:00,11:00,0:00,11:00,1:00,11:00,0:00,1
 1452,Shanghai 21,,"21 Mott St, New York, NY 10013, United States",https://simplemenu.com/simplemenu/menus/673/679/shanghai21__1544483217,40.7144148,-74.0010913,11:00,21:30,11:00,21:30,11:00,21:30,11:00,21:30,11:00,21:30,11:00,21:30,11:00,21:30,1
 1453,West New Malaysia,,"46-48, Bowery, New York, NY 10013",https://westmalaysiatogo.com/#promo-offer,40.7158107,-73.9991528,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,1
-1454,"Uncle Boons
-",,203 MOTT STREET,Call: (646)850-9480,40.7214319,-73.9956894,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,1
+1454,Uncle Boons,,203 MOTT STREET,Call: (646)850-9480,40.7214319,-73.9956894,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,1
 1455,Rezdôra,," 27 E 20th St, New York, NY 10003",https://www.rezdora.nyc/online-ordering/,40.739083,-73.989044,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,1
 1456,Fette Sau,,"354 Metropolitan Ave, Brooklyn, NY 11211",Call: (718) 963-3404,40.713883,-73.956474,12:00,23:00,12:00,23:00,12:00,23:00,12:00,23:00,12:00,23:00,12:00,23:00,12:00,23:00,1
 1457,Katz's Delicatessen,,"205 E Houston St, New York, NY 10002",https://katzsdelicatessen.com/menu_and_local-delivery,40.722233,-73.987429,8:00,22:45,8:00,22:45,8:00,22:45,8:00,2:45,8:00,22:45,0:00,0:00,12:00,22:45,1
@@ -1590,13 +1557,10 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1463,Minetta Tavern,,"113 MacDougal St, New York, NY 10012",Call: (212) 475-3850,40.7299881,-74.0028903,16:00,21:00,16:00,21:00,16:00,21:00,16:00,21:00,16:00,22:00,16:00,22:00,21:00,16:00,1
 1464,Café China,,"13 E 37th St, New York, NY 10016",https://direct.chownow.com/order/4753/locations/15772,40.7500611,-73.9843471,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:30,11:00,22:30,11:00,22:30,11:00,22:00,1
 1465,Glasserie,,"95 Commercial St, Brooklyn, NY 11222",https://glasserienyc.square.site/,40.737722,-73.9561763,17:30,23:00,17:30,23:00,11:30,23:00,11:30,23:00,11:30,23:00,10:00,23:00,10:00,23:00,1
-1466,"Birds of a Feather
-",,"191 Grand St, Brooklyn, NY 11211",https://direct.chownow.com/order/8351/locations/11243,40.7143448,-73.9605077,12:00,22:30,12:00,22:30,12:00,22:30,12:00,22:30,12:00,22:30,12:00,22:30,12:00,22:30,1
+1466,Birds of a Feather,,"191 Grand St, Brooklyn, NY 11211",https://direct.chownow.com/order/8351/locations/11243,40.7143448,-73.9605077,12:00,22:30,12:00,22:30,12:00,22:30,12:00,22:30,12:00,22:30,12:00,22:30,12:00,22:30,1
 1467,Ammazzacaffè,,"702 Grand St, Brooklyn, NY 11211",https://ammazzacaffe.nyc/mealtogo,40.7113172,-73.9446243,17:00,22:30,17:00,22:30,17:00,22:30,17:00,22:30,17:00,22:30,11:30,23:00,11:30,22:30,1
-1468,"Concord Hill
-",,"374 Graham Ave, Brooklyn, NY 11211",Call: (347) 463-9322,40.7155782,-73.9443639,12:00,22:00,12:00,22:00,12:00,22:00,12:00,22:00,12:00,22:00,12:00,22:00,12:00,22:00,1
-1469,"Paulie Gee's Slice Shop
-",,"110 Franklin St, Brooklyn, NY 11222",https://www.trycaviar.com/m/paulie-gees-slice-shop-10006?gclid=CjwKCAjw3-bzBRBhEiwAgnnLCqAnKv8xNhSrbUyxEK5g-9TEGV3IPzqUQMBVXv6sLCqdjjxLrq0b5BoCnhcQAvD_BwE&mkwid=s&pcrid=416082611031&pdv=c&pgrid=94016235592&pkw=f%3Aplacesheet%3Aentity_id%3D%2Fg%2F11g3_7s4m0&pmt=&ptaid=kwd-677137325416&slid=&utm_campaign=placepage&utm_content=416082611031&utm_matchtype=&utm_medium=paid_search&utm_mobile=n&utm_network=g&utm_placement=&utm_source=google&utm_term=f%3Aplacesheet%3Aentity_id%3D%2Fg%2F11g3_7s4m0,40.7283642,-73.957175,12:00,23:00,12:00,23:00,12:00,23:00,12:00,23:00,12:00,1:00,12:00,1:00,12:00,23:00,1
+1468,Concord Hill,,"374 Graham Ave, Brooklyn, NY 11211",Call: (347) 463-9322,40.7155782,-73.9443639,12:00,22:00,12:00,22:00,12:00,22:00,12:00,22:00,12:00,22:00,12:00,22:00,12:00,22:00,1
+1469,Paulie Gee's Slice Shop,,"110 Franklin St, Brooklyn, NY 11222",https://www.trycaviar.com/m/paulie-gees-slice-shop-10006?gclid=CjwKCAjw3-bzBRBhEiwAgnnLCqAnKv8xNhSrbUyxEK5g-9TEGV3IPzqUQMBVXv6sLCqdjjxLrq0b5BoCnhcQAvD_BwE&mkwid=s&pcrid=416082611031&pdv=c&pgrid=94016235592&pkw=f%3Aplacesheet%3Aentity_id%3D%2Fg%2F11g3_7s4m0&pmt=&ptaid=kwd-677137325416&slid=&utm_campaign=placepage&utm_content=416082611031&utm_matchtype=&utm_medium=paid_search&utm_mobile=n&utm_network=g&utm_placement=&utm_source=google&utm_term=f%3Aplacesheet%3Aentity_id%3D%2Fg%2F11g3_7s4m0,40.7283642,-73.957175,12:00,23:00,12:00,23:00,12:00,23:00,12:00,23:00,12:00,1:00,12:00,1:00,12:00,23:00,1
 1470,Nami Nori,,"33 Carmine St, New York, NY 10014",https://naminori.nyc/order-online,40.7302914,-74.0054383,,,12:00,21:30,12:00,21:30,12:00,21:30,12:00,21:30,12:00,21:30,12:00,21:30,1
 1471,L’Artusi,,"228 W 10th St, New York, NY 10014",Call: 212.255.5757,40.7338474,-74.0073305,17:30,23:00,17:30,23:00,17:30,23:00,17:30,0:00,17:30,0:00,17:30,0:00,11:00,23:00,0
 1472,Camperdown Elm,,"441 7th Ave, Brooklyn, NY 11215",http://www.camperdownelm.com/online-ordering,40.6631574,-73.9866905,,,17:30,22:00,17:30,22:00,17:30,22:00,17:30,22:00,11:00,23:00,11:00,23:00,1
@@ -1605,23 +1569,17 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1475,Risbo,,"701 Flatbush Ave, Brooklyn, NY 11225",https://order.risbobk.com/risbo/menu,40.656056,-73.9619174,17:00,22:30,17:00,22:30,17:00,22:30,17:00,22:30,17:00,22:30,17:00,22:30,17:00,22:30,1
 1476,Camillo,,"1146 Nostrand Ave, Brooklyn, NY 11225",https://www.toasttab.com/camillo/v3#!/,40.659592,-73.9529967,17:00,22:00,17:00,22:00,17:00,22:00,17:00,22:00,17:00,23:15,17:00,23:15,17:00,22:00,1
 1477,Regina’s Grocery,,"27 Orchard St, New York, NY 10002",Call: (917) 261-5792,40.715484,-73.9939619,12:00,18:00,12:00,18:00,12:00,18:00,12:00,18:00,12:00,18:00,12:00,18:00,12:00,18:00,1
-1478,"The Uptown Garrison
-",," 821 W 181st St, New York, NY 10033",https://direct.chownow.com/order/10807/locations,40.851348,-73.939392,7:00,13:00,7:00,13:00,7:00,13:00,7:00,13:00,7:00,14:00,7:00,14:00,7:00,12:00,1
+1478,The Uptown Garrison,," 821 W 181st St, New York, NY 10033",https://direct.chownow.com/order/10807/locations,40.851348,-73.939392,7:00,13:00,7:00,13:00,7:00,13:00,7:00,13:00,7:00,14:00,7:00,14:00,7:00,12:00,1
 1479,Cafe Katja,,"79 Orchard St, New York, NY 10002",Call: (212) 219-9545,40.7177239,-73.9927843,17:00,23:00,11:30,23:00,11:30,23:00,11:30,23:00,11:30,0:00,11:30,0:00,11:30,23:00,1
 1480,Cebu,,"2211 W North Ave, Chicago, IL 60647",Call: 773-799-8650,41.9102031,-87.6828753,,,5:00,20:00,5:00,20:00,5:00,20:00,5:00,20:00,5:00,20:00,5:00,20:00,1
-1481,"Cedars Mediterranean Kitchen
-",,"1206 E 53rd St, Chicago, IL 60615",https://direct.chownow.com/order/970/locations/1275,41.7999611,-87.5962829,,,11:30,20:00,11:30,20:00,11:30,20:00,11:30,21:30,11:30,21:30,11:30,20:00,1
+1481,Cedars Mediterranean Kitchen,,"1206 E 53rd St, Chicago, IL 60615",https://direct.chownow.com/order/970/locations/1275,41.7999611,-87.5962829,,,11:30,20:00,11:30,20:00,11:30,20:00,11:30,21:30,11:30,21:30,11:30,20:00,1
 1482,Cesar's Killer Margaritas,Clark,"3166 N Clark St, Chicago, IL 60657",Call: 773-248-2835,41.9394538,-87.6504922,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,23:30,11:00,23:30,11:00,22:00,1
 1483,Cesar's Killer Margaritas,Broadway,"2924 N. Broadway Chicago, IL 60657",Call: 773-296-9097,41.9357134,-87.6445331,11:00,22:00,15:00,22:00,15:00,22:00,15:00,22:00,11:00,23:00,11:00,23:00,11:00,20:00,1
-1484,"CH Distillery and Cocktail Bar
-",,"564 W Randolph St, Chicago, IL 60661",https://app.upserve.com/s/ch-distillery-chicago,41.8846389,-87.6422056,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,,,,,1
-1485,"Chant Restaurant In Hyde Park
-",,"1509 E 53rd St, Chicago, IL 60615",Call: 773-324-1999 ,41.7994306,-87.5886755,12:00,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,12:00,21:00,1
+1484,CH Distillery and Cocktail Bar,,"564 W Randolph St, Chicago, IL 60661",https://app.upserve.com/s/ch-distillery-chicago,41.8846389,-87.6422056,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,,,,,1
+1485,Chant Restaurant In Hyde Park,,"1509 E 53rd St, Chicago, IL 60615",Call: 773-324-1999 ,41.7994306,-87.5886755,12:00,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,12:00,21:00,1
 1486,Chay Fratello's Italian Restaurant and BBQ,,"2241 N Western Ave, Chicago, IL 60647",Call: 773-698-6925,41.9228821,-87.687213,16:00,22:00,16:00,22:00,16:00,22:00,16:00,22:00,16:00,22:00,16:00,22:00,16:00,22:00,1
-1487,"Chef Luciano Kitchen + Chicken
-",,"49 E Cermak Rd, Chicago, IL 60616",https://direct.chownow.com/order/16874/locations/24036,41.8526673,-87.6253187,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,,,1
-1488,"Chengdu Impression Restaurant
-",,"2545 N Halsted St, Chicago, IL 60614",https://www.slickmenus.com/restaurants/cheng-du-impression-chicago-il/menu?utm_source=google&utm_medium=website,41.9286117,-87.6487259,16:00,22:00,16:00,22:00,16:00,22:00,16:00,22:00,16:00,22:30,16:00,22:30,16:00,22:00,1
+1487,Chef Luciano Kitchen + Chicken,,"49 E Cermak Rd, Chicago, IL 60616",https://direct.chownow.com/order/16874/locations/24036,41.8526673,-87.6253187,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,,,1
+1488,Chengdu Impression Restaurant,,"2545 N Halsted St, Chicago, IL 60614",https://www.slickmenus.com/restaurants/cheng-du-impression-chicago-il/menu?utm_source=google&utm_medium=website,41.9286117,-87.6487259,16:00,22:00,16:00,22:00,16:00,22:00,16:00,22:00,16:00,22:30,16:00,22:30,16:00,22:00,1
 1489,Chez Moi,,"2100 N Halsted St, Chicago, IL 60614",Call: 347-227-8337,41.9201092,-87.6487485,17:00,21:00,17:00,21:00,17:00,21:00,17:00,21:00,11:00,22:00,10:30,22:00,10:30,21:00,0
 1490,Chicago Bagel Authority,LINCOLN PARK,"953 W Armitage Ave at Sheffield Chicago, IL 60614",https://www.toasttab.com/locations/6dc3d8b5-8e9f-4c2b-a161-7bf6be38c6c7#!/,41.9179772,-87.6529856,7:00,20:00,7:00,20:00,7:00,20:00,7:00,20:00,7:00,20:00,7:00,20:00,8:00,16:00,1
 1491,Chicago Bagel Authority,LAKEVIEW,"955 W Belmont Ave at Sheffield Chicago, IL 60657",https://www.toasttab.com/locations/6dc3d8b5-8e9f-4c2b-a161-7bf6be38c6c7#!/,41.9397914,-87.6537359,7:00,20:00,7:00,20:00,7:00,20:00,7:00,20:00,7:00,20:00,7:00,20:00,8:00,16:00,1
@@ -1630,12 +1588,9 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1494,Chicago Waffles,SOUTH LOOP,"1400 S Michigan Ave, Chicago, IL 60605",https://direct.chownow.com/order/14661/locations/20672,41.8637139,-87.6243056,7:00,15:00,7:00,15:00,7:00,15:00,7:00,15:00,7:00,21:30,7:00,21:30,7:00,21:30,1
 1495,Chicago Waffles,WEST LOOP,"1104 WEST MADISON STREET CHICAGO, IL 60607",https://direct.chownow.com/order/14661/locations/21516,41.8818977,-87.6547439,7:00,15:00,7:00,15:00,7:00,15:00,7:00,15:00,7:00,15:00,7:00,15:00,7:00,15:00,1
 1496,Chicago's Finest Beef and Brew,,"234 S Wabash Ave, Chicago, IL 60604",Call: 312-877-5754,41.8785135,-87.626447,10:00,21:00,10:00,21:00,10:00,21:00,10:00,21:00,10:00,21:00,11:00,20:00,11:00,20:00,1
-1497,"Chicago's Pizza
-",Old Irving,"4520 W Irving Park Rd, Chicago, IL 60641",https://chicagospizza-oldirving.hngr.co/menu/start,41.953784,-87.741387,11:00,0:00,11:00,0:00,11:00,0:00,11:00,0:00,11:00,1:00,11:00,1:00,11:00,0:00,1
-1498,"Chicago's Pizza
-",Ravenswood,"1919 W Montrose Ave, Chicago, IL 60613",https://chicagospizza-ravenswood.hngr.co/,41.961341,-87.676824,10:30,1:00,10:30,1:00,10:30,1:00,10:30,1:00,10:30,3:00,10:30,3:00,10:30,1:00,1
-1499,"Chicago's Pizza
-",Lakeview,"3114 N Lincoln Ave, Chicago, IL 60657",https://chicagospizza-lakeview.hngr.co/menu/start,41.9381952,-87.6668908,10:30,1:00,10:30,1:00,10:30,1:00,10:30,1:00,10:30,3:00,10:30,3:00,10:30,1:00,1
+1497,Chicago's Pizza,Old Irving,"4520 W Irving Park Rd, Chicago, IL 60641",https://chicagospizza-oldirving.hngr.co/menu/start,41.953784,-87.741387,11:00,0:00,11:00,0:00,11:00,0:00,11:00,0:00,11:00,1:00,11:00,1:00,11:00,0:00,1
+1498,Chicago's Pizza,Ravenswood,"1919 W Montrose Ave, Chicago, IL 60613",https://chicagospizza-ravenswood.hngr.co/,41.961341,-87.676824,10:30,1:00,10:30,1:00,10:30,1:00,10:30,1:00,10:30,3:00,10:30,3:00,10:30,1:00,1
+1499,Chicago's Pizza,Lakeview,"3114 N Lincoln Ave, Chicago, IL 60657",https://chicagospizza-lakeview.hngr.co/menu/start,41.9381952,-87.6668908,10:30,1:00,10:30,1:00,10:30,1:00,10:30,1:00,10:30,3:00,10:30,3:00,10:30,1:00,1
 1500,Chicken Works & Salad Company,,"3658 Irving Park Rd, Chicago, IL 60618",https://direct.chownow.com/order/11109/locations/15333,41.9539078,-87.7198929,11:00,20:30,11:00,20:30,11:00,20:30,11:00,20:30,11:00,20:30,12:00,20:00,,,1
 1501,China Express,,"4640 N Cumberland Ave, Chicago, IL 60656",https://www.chinaexpress4640.com/menu,41.9643987,-87.8374236,10:30,21:30,,,10:30,21:30,10:30,21:30,10:30,21:30,10:30,21:30,12:00,21:30,1
 1502,Chinese Kitchen Sushi,,"420 W 31st St, Chicago, IL 60616",http://www.easyordering.com/local/chinesekitchensushi,41.8384652,-87.6374362,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,1
@@ -1647,20 +1602,14 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1508,Choppers,,"1659 N Ashland Ave, Chicago, IL 60622",https://choppers.hngr.co/menu,41.912285,-87.667498,10:00,22:00,10:00,22:00,10:00,22:00,10:00,22:00,10:00,22:00,10:00,22:00,10:00,22:00,1
 1509,Chopsticks,,"28 E Roosevelt Rd, Chicago, IL 60605",https://www.beyondmenu.com/32095/chicago/chopsticks-chicago-60605.aspx?utm_source=satellite&utm_medium=menu_btn_order&pk_vid=60cfe511cf8679c11585110104606820,41.8676041,-87.6261219,10:30,21:30,10:30,21:30,10:30,21:30,10:30,21:30,10:30,21:30,10:30,21:30,10:30,21:30,1
 1510,Chuck's Southern Comforts Cafe,,"6501 W 79th St, Burbank, IL 60459",https://webordering.rmwservices.com/v19.0.webui/(S(bksgzu4lp1tqegmrrfsbszxx))/login.aspx,41.7480403,-87.7829663,,,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,1
-1511,"Cielito Lindo Cafe
-",,"612 W Lake St, Maywood, IL 60153",https://themenustar3.com/webspace/menus.php?code=cielitolindomaywood.mobile-webview3.com,41.8899304,-87.8412767,10:00,18:00,10:00,18:00,,,10:00,18:00,10:00,18:00,10:00,18:00,10:00,18:00,1
-1512,"Cilantro Taco House
-",,"3336 W Lawrence Ave, Chicago, IL 60625",https://themenustar1.com/webspace/menus.php?code=ordercilantrotacohouse.com,41.9685212,-87.7124231,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,1
-1513,"Cilantro thai kitchen
-",,"1509 W Devon Ave, Chicago, IL 60660",https://www.beyondmenu.com/22942/chicago/cilantro-thai-kitchen-chicago-60660.aspx?utm_source=satellite&utm_medium=home_order&pk_vid=26b42b098cc4de2d1585110589606820,41.9979132,-87.6683424,,,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,1
+1511,Cielito Lindo Cafe,,"612 W Lake St, Maywood, IL 60153",https://themenustar3.com/webspace/menus.php?code=cielitolindomaywood.mobile-webview3.com,41.8899304,-87.8412767,10:00,18:00,10:00,18:00,,,10:00,18:00,10:00,18:00,10:00,18:00,10:00,18:00,1
+1512,Cilantro Taco House,,"3336 W Lawrence Ave, Chicago, IL 60625",https://themenustar1.com/webspace/menus.php?code=ordercilantrotacohouse.com,41.9685212,-87.7124231,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,1
+1513,Cilantro thai kitchen,,"1509 W Devon Ave, Chicago, IL 60660",https://www.beyondmenu.com/22942/chicago/cilantro-thai-kitchen-chicago-60660.aspx?utm_source=satellite&utm_medium=home_order&pk_vid=26b42b098cc4de2d1585110589606820,41.9979132,-87.6683424,,,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,1
 1514,Circle Sushi & Grill,,"1623 N Halsted St, Chicago, IL 60614",https://qmenufood.com/#/circle-sushi-grill-chicago,41.9116383,-87.6481216,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,1
-1515,"City's Edge
-",,"5310 W Devon Ave, Chicago, IL 60646",Call:  773.930.4711,41.9974962,-87.7612262,,,11:00,0:00,11:00,0:00,11:00,0:00,11:00,0:00,11:00,0:00,11:00,0:00,1
+1515,City's Edge,,"5310 W Devon Ave, Chicago, IL 60646",Call:  773.930.4711,41.9974962,-87.7612262,,,11:00,0:00,11:00,0:00,11:00,0:00,11:00,0:00,11:00,0:00,11:00,0:00,1
 1516,Clarkes Rogers Park,,"6431 N Sheridan Rd, Chicago, IL 60626",https://www.clarkesrogerspark.com/order-now,41.9992488,-87.660346,10:00,19:00,10:00,19:00,10:00,19:00,10:00,19:00,10:00,19:00,10:00,19:00,10:00,19:00,1
-1517,"Cleo's Southern Cuisine
-",,"4248 S Cottage Grove Ave, Chicago, IL 60653",Call: 216-544-5587,41.8171428,-87.6069999,,,,,14:00,20:00,14:00,20:00,14:00,20:00,14:00,20:00,14:00,20:00,1
-1518,"Club Lucky
-",,"1824 W Wabansia Ave, Chicago, IL 60622",Call: 773-227-2300,41.9125167,-87.6736917,11:30,0:30,11:30,0:30,11:30,0:30,11:30,0:30,11:30,0:30,16:00,2:30,4:00,0:30,1
+1517,Cleo's Southern Cuisine,,"4248 S Cottage Grove Ave, Chicago, IL 60653",Call: 216-544-5587,41.8171428,-87.6069999,,,,,14:00,20:00,14:00,20:00,14:00,20:00,14:00,20:00,14:00,20:00,1
+1518,Club Lucky,,"1824 W Wabansia Ave, Chicago, IL 60622",Call: 773-227-2300,41.9125167,-87.6736917,11:30,0:30,11:30,0:30,11:30,0:30,11:30,0:30,11:30,0:30,16:00,2:30,4:00,0:30,1
 1519,Clucker's Charcoal Chicken,,"405 North Sheridan Rd, Highwood, IL 60040",https://orders.imenu360.us/cluckerslibertyville/,42.2036883,-87.809462,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,20:00,1
 1520,Coalfire Pizza,West Town,"1321 W. Grand Avenue Chicago, Illinois 60642",https://www.toasttab.com/coalfire-grand-ave/v3#!/,41.8907946,-87.6598601,,,16:00,22:00,16:00,22:00,16:00,22:00,11:30,23:00,12:00,23:00,12:00,21:00,1
 1521,Coalfire Pizza,Lakeview,"3707 N. Southport Ave. Chicago, Illinois 60613",https://www.toasttab.com/coalfire-southport-ave/v3#!/,41.949185,-87.6637704,,,16:00,22:00,16:00,22:00,16:00,22:00,11:30,23:00,12:00,23:00,12:00,21:00,1
@@ -1690,21 +1639,18 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1545,Cocina Tarascas Mexican Restaurant,,"2585 N Clark St, Chicago, IL 60614",https://www.cocinatarascastogo.com/#/,41.93,-87.6430556,16:00,23:00,16:00,23:00,16:00,23:00,16:00,23:00,16:00,0:00,9:00,0:00,9:00,23:00,1
 1546,Cocoa + Co. Coffee and Chocolate Cafe,,"1651 N Wells St, Chicago, IL 60614",Call: 312.624.8540,41.9126092,-87.6344968,7:30,15:00,7:30,15:00,7:30,15:00,7:30,15:00,7:30,15:00,7:30,15:00,7:30,15:00,1
 1547,Colletti's,,"5707 N Central Ave, Chicago, IL 60646",https://www.toasttab.com/collettis-restaurant/v3#!/,41.9852778,-87.7680556,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,0:00,12:00,22:00,11:00,23:00,1
-1548,"Coluta's Pizza
-",,"3239 N Harlem Ave, Chicago, IL 60634",Call: (773) 283-4466,41.9390817,-87.806318,12:00,22:30,11:00,22:00,11:00,22:00,11:00,22:00,11:00,23:00,11:00,23:00,12:00,22:00,1
+1548,Coluta's Pizza,,"3239 N Harlem Ave, Chicago, IL 60634",Call: (773) 283-4466,41.9390817,-87.806318,12:00,22:30,11:00,22:00,11:00,22:00,11:00,22:00,11:00,23:00,11:00,23:00,12:00,22:00,1
 1549,Commonwealth Tavern,,"2000 W Roscoe St, Chicago, IL 60618",https://menupages.com/commonwealth-tavern/2000-w-roscoe-st-chicago/#about,41.943432,-87.678595,11:00,2:00,11:00,2:00,11:00,2:00,11:00,2:00,11:00,2:00,10:00,3:00,10:00,2:00,1
 1550,Community Tavern,,"4038 N Milwaukee Ave, Chicago, IL 60641",Call: 773 - 283 - 6080,41.9541155,-87.7487216,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,1
 1551,Compass Bar,,"433 W Diversey Pkwy, Chicago, IL 60614",Call: 773-248-3230,41.9325552,-87.6407565,16:00,23:00,16:00,23:00,16:00,23:00,16:00,23:00,16:00,0:00,11:00,0:00,11:00,23:00,1
 1552,Connie's Pizza,,"2373 S Archer Ave, Chicago, IL 60616",https://connies-archer.foodtecsolutions.com/ordering/intro,41.8491836,-87.6408601,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,1
-1553,"Convito Cafe & Market
-",,"1515 Sheridan Rd #5, Wilmette, IL 60091",https://www.toasttab.com/convito-cafe/v3#!/,42.0871485,-87.7011853,10:30,18:30,10:30,18:30,10:30,18:30,10:30,18:30,10:30,18:30,10:30,18:30,11:00,18:00,1
+1553,Convito Cafe & Market,,"1515 Sheridan Rd #5, Wilmette, IL 60091",https://www.toasttab.com/convito-cafe/v3#!/,42.0871485,-87.7011853,10:30,18:30,10:30,18:30,10:30,18:30,10:30,18:30,10:30,18:30,10:30,18:30,11:00,18:00,1
 1554,Cookie Spin,,"4350 N Leavitt St, Chicago, IL 60618",Call: 773-739-9400,41.9610225,-87.6840402,12:00,22:00,12:00,22:00,12:00,22:00,12:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,1
 1555,Corcoran's Grill & Pub,,"1615 N Wells St, Chicago, IL 60614",https://www.toasttab.com/corcorans-grill-pub/v3#!/,41.9115981,-87.634594,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,1
 1556,Coronas Coffee Shop,,"909 W Irving Park Rd, Chicago, IL 60613",https://menupages.com/coronas-coffee-shop/909-w-irving-park-rd-chicago,41.954399,-87.652627,7:30,15:00,7:30,15:00,7:30,15:00,7:30,15:00,7:30,15:00,7:30,15:00,8:00,15:00,1
 1557,Corridor Brewery & Provisions,,"3446 N Southport Ave, Chicago, IL 60657",https://www.toasttab.com/corridor/v3,41.9447567,-87.6641486,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,10:00,0:00,10:00,23:00,1
 1558,Cozy Corner Restaurant and Pancake House,,"2294 N Milwaukee Ave, Chicago, IL 60647",Call: (773) 276-2215,41.9223785,-87.6970022,,,,,,,,,,,,,,,0
-1559,"Cozy Noodles n' Rice
-",,"3456 N Sheffield Ave, Chicago, IL 60657",https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=59ca3a01-a8a1-46c1-a4e2-3cf44baad96d&client_is_mobile=true&glfa_cid=1657785215.1553794809&glfa_t=1554773774757,41.9452778,-87.6544444,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:30,11:00,22:30,11:00,22:00,1
+1559,Cozy Noodles n' Rice,,"3456 N Sheffield Ave, Chicago, IL 60657",https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=59ca3a01-a8a1-46c1-a4e2-3cf44baad96d&client_is_mobile=true&glfa_cid=1657785215.1553794809&glfa_t=1554773774757,41.9452778,-87.6544444,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:30,11:00,22:30,11:00,22:00,1
 1560,Dirty Root,,"939 W Randolph St, Chicago, IL 60607",https://www.toasttab.com/dirty-root/v3,41.8841029,-87.6535761,,,12:00,18:00,,,,,,,,,,,1
 1561,Disco Taco,,"1605 W Montrose Ave, Chicago, IL 60613",https://themenustar3.com/webspace/orders.php?code=orderdiscotaco.com,41.9614123,-87.6717554,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,1
 1562,District Brew Yards,,"417 N. Ashland Ave., Chicago, IL 60622",https://www.toasttab.com/district-brew-yards/v2/online-order#!/order,41.8893958,-87.6688911,,,15:00,23:00,15:00,23:00,15:00,23:00,11:30,1:00,11:30,0:00,11:30,23:00,1
@@ -1718,22 +1664,15 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1570,Dollop Diner,,"5060 N Clark St, Chicago, IL 60640",https://menupages.com/dollop-diner/5060-n-clark-st-chicago,41.9742403,-87.6705412,8:00,16:00,8:00,16:00,8:00,16:00,8:00,16:00,8:00,16:00,8:00,17:00,8:00,17:00,1
 1571,Dos Urban Cantina,,2829 W Armitage Ave,Call: 773-661-6452,41.9173333,-87.7006081,,,17:00,21:00,17:00,21:00,17:00,21:00,17:00,23:00,17:00,23:00,17:00,21:00,1
 1572,Dough Bros,,"400 N State St. Chicago, IL 60654",Call: (312) 600-9078,41.889609,-87.6304457,11:00,0:00,11:00,0:00,11:00,0:00,11:00,2:00,11:00,16:00,11:00,16:00,11:00,0:00,1
-1573,"Cracked on Milwaukee
-",,"1359 N Milwaukee Ave, Chicago, IL 60622",Call: (312) 989-2247,41.9067149,-87.6712694,8:00,15:00,8:00,15:00,8:00,15:00,8:00,15:00,8:00,15:00,8:00,16:00,8:00,16:00,1
-1574,"Crave Kabob
-",,"1521 W Madison St, Chicago, IL 60607",https://direct.chownow.com/order/11727/locations/16297,41.881296,-87.6652473,10:00,22:00,10:00,22:00,10:00,22:00,10:00,22:00,10:00,22:00,10:00,22:00,10:00,22:00,1
-1575,"Creperia Nuevo Leon
-",,"1636 W 18th St, Chicago, IL 60608",Call: (312) 929-4252,41.85799,-87.667652,10:00,15:00,10:00,15:00,10:00,15:00,,,10:00,15:00,10:00,15:00,10:00,15:00,1
+1573,Cracked on Milwaukee,,"1359 N Milwaukee Ave, Chicago, IL 60622",Call: (312) 989-2247,41.9067149,-87.6712694,8:00,15:00,8:00,15:00,8:00,15:00,8:00,15:00,8:00,15:00,8:00,16:00,8:00,16:00,1
+1574,Crave Kabob,,"1521 W Madison St, Chicago, IL 60607",https://direct.chownow.com/order/11727/locations/16297,41.881296,-87.6652473,10:00,22:00,10:00,22:00,10:00,22:00,10:00,22:00,10:00,22:00,10:00,22:00,10:00,22:00,1
+1575,Creperia Nuevo Leon,,"1636 W 18th St, Chicago, IL 60608",Call: (312) 929-4252,41.85799,-87.667652,10:00,15:00,10:00,15:00,10:00,15:00,,,10:00,15:00,10:00,15:00,10:00,15:00,1
 1576,Crisp,,"2940 N Broadway, Chicago, IL 60657",https://crisp.cuteorder.com/,41.9361111,-87.6444389,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,1
 1577,Crosby's Kitchen,,"3455 N Southport Ave, Chicago, IL 60657",Call: 773-883-2525,41.9450804,-87.6637015,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,11:00,20:00,1
-1578,"Cruz Blanca Brewery & Taquería
-",,"904 W Randolph St, Chicago, IL 60607",https://www.toasttab.com/cruz-blanca-lena-brava/v3,41.8846118,-87.6500566,,,11:00,20:00,11:00,20:00,11:00,20:00,11:00,21:00,11:00,21:00,11:00,20:00,1
-1579,"Cuba 312
-",,"2054 W Roscoe St, Chicago, IL 60618",Call: 773-281-2822,41.9434004,-87.6806224,,,17:00,21:00,17:00,21:00,17:00,21:00,17:00,21:00,12:00,22:00,12:00,20:00,1
-1580,"Cucina Paradiso
-",,"814 North Blvd, Oak Park, IL 60301",Call: 708-848-3434,41.887346,-87.7952034,17:00,21:00,17:00,21:00,17:00,21:00,17:00,21:00,17:00,21:00,17:00,21:00,17:00,21:00,1
-1581,"Cumin Restaurant
-",,"1414 N Milwaukee Ave, Chicago, IL 60622",https://www.toasttab.com/cumin/v3,41.9075401,-87.6734211,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,1
+1578,Cruz Blanca Brewery & Taquería,,"904 W Randolph St, Chicago, IL 60607",https://www.toasttab.com/cruz-blanca-lena-brava/v3,41.8846118,-87.6500566,,,11:00,20:00,11:00,20:00,11:00,20:00,11:00,21:00,11:00,21:00,11:00,20:00,1
+1579,Cuba 312,,"2054 W Roscoe St, Chicago, IL 60618",Call: 773-281-2822,41.9434004,-87.6806224,,,17:00,21:00,17:00,21:00,17:00,21:00,17:00,21:00,12:00,22:00,12:00,20:00,1
+1580,Cucina Paradiso,,"814 North Blvd, Oak Park, IL 60301",Call: 708-848-3434,41.887346,-87.7952034,17:00,21:00,17:00,21:00,17:00,21:00,17:00,21:00,17:00,21:00,17:00,21:00,17:00,21:00,1
+1581,Cumin Restaurant,,"1414 N Milwaukee Ave, Chicago, IL 60622",https://www.toasttab.com/cumin/v3,41.9075401,-87.6734211,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,1
 1582,Cupitol Coffee & Eatery,,"455 East Illinois Street, Chicago",https://cupitol.revelup.com/weborder/?establishment=2,41.8909172,-87.6155549,8:30,17:00,7:00,20:00,8:30,17:00,8:30,17:00,8:30,17:00,8:30,17:00,8:30,17:00,1
 1583,Ema,,"74 W Illinois St, Chicago, IL 60654",https://www.abarestaurants.com/chicago/order-online/,41.8909651,-87.6330803,11:30,22:00,11:30,22:00,11:30,22:00,11:30,22:00,11:30,23:00,16:00,23:00,16:00,21:00,1
 1584,Emerald Loop,,"216 N Wabash Ave, Chicago, IL 60601",https://www.toasttab.com/emerald-loop-bar-grill/v3#!/,41.8863947,-87.6287489,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,11:30,21:00,1
@@ -1811,21 +1750,18 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1655,Frontera Grill,,445 N. Clark St.,https://eat.chownow.com/discover/restaurant/1863,41.8905206,-87.6330356,,,11:00,21:00,11:00,21:00,11:00,21:00,,,,,,,1
 1656,Galit,,"2429 N Lincoln Ave, Chicago, IL 60614",https://www.toasttab.com/galit/v2/online-order#!/,41.9262949,-87.6494902,,,11:30,20:30,11:30,20:30,11:30,20:30,11:30,20:30,11:30,20:30,,,1
 1657,Gadabout,,"5212 N Clark St, Chicago, IL 60640",Call: (773) 944-0429,41.9766591,-87.6687084,17:00,23:00,17:00,23:00,17:00,23:00,17:00,23:00,17:00,23:00,17:00,23:00,11:00,22:00,1
-1658,"Gallery Cafe
-",,"1760 W North Ave, Chicago, IL 60622",Call: (773) 252-8228,41.91066,-87.672448,7:00,19:00,7:00,19:00,7:00,19:00,7:00,19:00,7:00,19:00,7:00,19:00,7:00,19:00,1
+1658,Gallery Cafe,,"1760 W North Ave, Chicago, IL 60622",Call: (773) 252-8228,41.91066,-87.672448,7:00,19:00,7:00,19:00,7:00,19:00,7:00,19:00,7:00,19:00,7:00,19:00,7:00,19:00,1
 1659,Ganello's Pizza Company,,"1431 Peterson Rd, Libertyville, IL 60048",Call: (224) 206-8041,42.3043451,-87.9812908,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,16:00,20:00,1
 1660,Garibaldi's Italian Eatery,Arlington Heights,"1960 N. Arlington Heights Rd. Arlington Heights, IL 60004",Call: (847) 577-4000,42.1119499,-87.9814524,10:00,21:00,10:00,21:00,10:00,21:00,10:00,21:00,10:00,21:00,10:00,21:00,10:00,21:00,1
 1661,Garibaldi's Italian Eatery,Hoffman Estates,"2346 W. Higgins Rd. Hoffman Estates, IL 60169",Call: (847) 884-8663,42.0590528,-88.1372648,10:00,22:00,10:00,22:00,10:00,22:00,10:00,22:00,10:00,22:00,10:00,22:00,10:00,22:00,1
 1662,Garifuna Flava,,"2518 W 63rd St, Chicago, IL 60629",Call: (773) 776-7440,41.7794444,-87.6869444,,,,,,,12:00,20:00,12:00,22:00,12:00,22:00,12:00,20:00,1
-1663,"Geja's Cafe
-",,"340 W Armitage Ave, Chicago, IL 60614",Call: (773) 281-9101,41.9184827,-87.6380994,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,1
+1663,Geja's Cafe,,"340 W Armitage Ave, Chicago, IL 60614",Call: (773) 281-9101,41.9184827,-87.6380994,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,12:00,20:00,1
 1664,GEMINI,,"2075 N Lincoln Ave, Chicago, IL 60614",Call: (773) 525-2522,41.919968,-87.640866,16:30,22:00,16:30,22:00,16:30,22:00,16:30,22:00,16:30,22:00,10:00,22:00,10:00,21:00,1
 1665,Gene & Georgetti,Rosemont," 9421 W Higgins Rd, Rosemont, IL 60018",Call: (847) 653-3300,41.9915948,-87.862111,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,23:00,16:00,22:00,,,1
 1666,George Street Pub,,"2858 N Halsted St, Chicago, IL 60657",Call: (773) 661-6635,41.934402,-87.649221,15:00,22:00,15:00,23:00,15:00,23:00,13:00,0:00,13:00,1:00,10:00,1:00,10:00,22:00,1
 1667,George's Gyros,,"3445 S Halsted St, Chicago, IL 60608",Call: (773) 247-4770,41.831256,-87.6459722,9:00,21:00,9:00,21:00,9:00,21:00,9:00,21:00,9:00,21:00,9:00,21:00,,,1
 1668,George's Hot Dogs,,"1876 N Damen Ave, Chicago, IL 60647",Call: (773) 227-4034,41.916052,-87.6776995,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,,,1
-1669,"Georgia's food depot
-",,"7352 S Halsted St, Chicago, IL 60621",Call: (773) 952-8017,41.759994,-87.644651,8:00,19:00,8:00,19:00,8:00,19:00,8:00,19:00,8:00,19:00,8:00,19:00,8:00,19:00,1
+1669,Georgia's food depot,,"7352 S Halsted St, Chicago, IL 60621",Call: (773) 952-8017,41.759994,-87.644651,8:00,19:00,8:00,19:00,8:00,19:00,8:00,19:00,8:00,19:00,8:00,19:00,8:00,19:00,1
 1670,Geraldine's,," 4743 N Lincoln Ave, Chicago, IL 60625",Call: (773) 516-4054,41.9677908,-87.6878024,8:00,17:00,8:00,17:00,8:00,17:00,8:00,17:00,8:00,17:00,8:00,17:00,8:00,17:00,1
 1671,Gino's,East Magnificent Mile,"162 E Superior Street Chicago, IL 60611",https://direct.chownow.com/order/14172/locations/20914,41.8958861,-87.6230528,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,1
 1672,Gino's,East Of Chicago,521 S Dearborn Chicago IL 60618,https://direct.chownow.com/order/14172/locations/20004,41.8752335,-87.6289845,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,11:00,21:00,1
@@ -2021,7 +1957,7 @@ bikky_location_id,brand,name,address,url,latitude,longitude,mon_open,mon_close,t
 1862,Noodles Etc.,,1333 E. 57th Street,https://ordernow.menudrive.com/noodlesetc,41.7913666,-87.5956493,11:30,20:30,11:30,20:30,11:30,20:30,11:30,20:30,11:30,20:30,11:30,20:30,11:30,18:00,1
 1863,O’Sullivan’s Public House,,7244 Madison Street,Call: (708) 366-6667,41.8794861,-87.808997,11:00,2:00,11:00,2:00,11:00,2:00,11:00,2:00,11:00,3:00,11:00,3:00,11:00,2:00,1
 1864,Oggi Trattoria,,1118 w grand ave,Call: 312.733.0442,41.8913093,-87.6576362,11:00,21:30,11:00,21:30,11:00,21:30,11:00,21:30,11:00,22:00,15:00,22:00,14:00,21:00,1
-1865,"Old Town Restaurant (Lemont, IL)",,"113 Stephen Street Lemont, IL",Call: (630) 257-7570,41.6750889,-88.0007665,,,11:00,20:00,11:00,20:00,11:00,20:00,11:00,21:00,11:00,21:00,13:00,20:00,1
+1865,Old Town Restaurant (Lemont, IL),,"113 Stephen Street Lemont, IL",Call: (630) 257-7570,41.6750889,-88.0007665,,,11:00,20:00,11:00,20:00,11:00,20:00,11:00,21:00,11:00,21:00,13:00,20:00,1
 1866,Opart Thai,,"1371 W. Chicago Ave., Chicago Illinois 60642",https://www.opartthai.com/ssl/index.php,41.8959243,-87.6643439,11:00,21:30,11:00,21:30,11:00,21:30,11:00,21:30,11:00,22:30,11:00,22:30,11:00,21:30,1
 1867,Opart Thai House Restaurant,,"1906 S. State St., Chicago Illinois 60616",https://www.opartthai.com/ssl/index.php,41.8560821,-87.6296733,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:00,11:00,22:30,11:00,22:30,11:00,22:00,1
 1868,Open Outcry,,"10934 S. Western Ave. Chicago, IL 60643",Call: (773) 629-6055,41.694422,-87.6837387,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,11:00,23:00,1
