@@ -7,20 +7,20 @@ ActiveAdmin.register Restaurant do
   index download_links: [:csv] do
     selectable_column
     id_column
+    column "Brand", :partner do |restaurant|
+      link_to(restaurant.partner.brand, admin_partner_path(restaurant.partner))
+    end
     column "Location", :name do |restaurant|
       restaurant.name
     end
     column :address
-    column "Brand", :partner do |restaurant|
-      link_to(restaurant.partner.brand, admin_partner_path(restaurant.partner))
-    end
 
     actions
   end
 
   # Filters
-  filter :partner
-  filter :name
+  filter :partner, label: "Brand", as: :select, collection: Partner.all.sort_by{|partner| partner.brand.downcase}
+  filter :location
   filter :address
 
   # Show
@@ -108,7 +108,7 @@ ActiveAdmin.register Restaurant do
     active_admin_comments
   end
 
-  # Edit
+  # Form
   form do |f|
     f.semantic_errors *f.object.errors.keys
 

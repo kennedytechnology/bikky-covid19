@@ -3,6 +3,7 @@ ActiveAdmin.register Partner do
 
   permit_params :brand, :mood, :daypart_1, :daypart_2, :meal_size_1, :meal_size_2, :price, guide_ids: []
 
+  # Index
   index download_links: [:csv] do
     selectable_column
     id_column
@@ -19,6 +20,16 @@ ActiveAdmin.register Partner do
     actions
   end
 
+  # Filters
+  filter :brand, as: :select, collection: proc { Partner.all.collect{|partner| partner.brand}.uniq}
+  filter :mood, as: :select, collection: proc { Partner.all.collect{|partner| partner.mood}.uniq}
+  filter :daypart_1, as: :select, collection: proc { Partner.all.collect{|partner| partner.daypart_1}.uniq}
+  filter :daypart_2, as: :select, collection: proc { Partner.all.collect{|partner| partner.daypart_2}.uniq.compact}
+  filter :meal_size_1, as: :select, collection: proc { Partner.all.collect{|partner| partner.meal_size_1}.uniq}
+  filter :meal_size_2, as: :select, collection: proc { Partner.all.collect{|partner| partner.meal_size_2}.uniq.compact}
+  filter :price, as: :select, collection: {'$' => 1, '$$' => 2, '$$$' => 3, '$$$$' => 4, '$$$$$' => 5}
+
+  # Show
   show do
     attributes_table do
       row :brand
@@ -49,6 +60,7 @@ ActiveAdmin.register Partner do
     active_admin_comments
   end
 
+  # Form
   form do |f|
     f.semantic_errors
     f.inputs
