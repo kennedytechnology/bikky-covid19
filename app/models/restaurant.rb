@@ -20,6 +20,6 @@ class Restaurant < ApplicationRecord
   end
 
   def tags
-    [partner.mood, partner.daypart_1, partner.daypart_2, partner.meal_size_1, partner.meal_size_2, "$" * partner.price].reject(&:blank?)
+    [partner.mood, partner.daypart_1, partner.daypart_2, partner.meal_size_1, partner.meal_size_2, "$" * partner.price.to_i].reject(&:blank?)
   end
 end
