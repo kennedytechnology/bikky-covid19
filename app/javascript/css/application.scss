@@ -226,11 +226,16 @@ body {
 
         // Overlay effect
         .card.is-closed { 
-            @apply relative;
+            @apply relative z-40;
+
+            >* {
+                filter: blur(1.5px);
+            }
 
             .overlay-effect {
-                @apply absolute top-0 left-0 bottom-0 right-0 flex justify-center items-center;
+                @apply absolute top-0 left-0 bottom-0 right-0 flex justify-center items-center z-50;
                 background-image: linear-gradient(to top, rgba(207,217,223, 0.8) 0%, rgba(226,235,240,0.8) 100%);
+                filter: blur(0);
 
                 .notice {
                     @apply font-bold text-4xl leading-tight z-50 text-center text-gray-800 italic;
