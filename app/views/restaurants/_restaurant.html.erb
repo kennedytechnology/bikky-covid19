@@ -1,11 +1,19 @@
 <div class="card relative">
     <div class="absolute top-0 left-0 bottom-0 right-0 bg-brand-green opacity-75"></div>
-    <%= link_to restaurant.url, target: "_blank" do %>
-        <div class="card-img opacity-25" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
+    <% if restaurant.url.strip[0..3] == "http"  %>
+        <%= link_to restaurant.url, target: "_blank" do %>
+            <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
+        <% end %>
+    <% else %>
+        <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
     <% end %>
     <div class="card-content">
         <div>
-            <%= link_to restaurant.url, target: "_blank" do %>
+            <% if restaurant.url.strip[0..3] == "http"  %>
+                <%= link_to restaurant.url, target: "_blank" do %>
+                    <h1 class="card-heading"> <%= restaurant.brand %> </h1>
+                <% end %>
+            <% else %>
                 <h1 class="card-heading"> <%= restaurant.brand %> </h1>
             <% end %>
             <p class="card-description">
@@ -23,7 +31,7 @@
             <% if restaurant.url.strip[0..3] == "http"  %>
                 <%= link_to "Order Direct", restaurant.url, target: "_blank", class: "footer-item" %>
             <% else %>
-                <p class="footer-item"> <%= restaurant.url %> </p>
+                <p class="footer-item"> Call: <%= restaurant.url %> </p>
             <% end %>
         </div>
     </div>
