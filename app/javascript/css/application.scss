@@ -24,8 +24,8 @@ body {
 
             &-url { @apply italic text-sm; }
             &-link { 
-                @apply font-semibold text-xl;
-                @screen md { @apply text-2xl -mb-1; }
+                @apply font-semibold text-xl mb-2 leading-none;
+                @screen md { @apply text-2xl -mb-1 leading-normal; }
             }
             &-item-container {
                 @apply text-sm uppercase leading-none text-center;
@@ -66,8 +66,15 @@ body {
         .navbar-start {
             @apply flex mr-4;
             @screen md { @apply mr-0; }
-            img { @apply mr-2; max-width: 30px; margin-top: 6px; }
+            img { 
+                @apply mr-2;
+                max-width: 30px;
+                @screen md { margin-top: 6px; }
+            }
             .links-container { @apply flex flex-col; }
+            .powered-by-container {
+                @media screen and (max-width: 767px) { line-height: 1.10; }
+            }
         }
 
         .content {
