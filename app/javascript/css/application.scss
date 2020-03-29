@@ -234,11 +234,13 @@ body {
 
             .overlay-effect {
                 @apply absolute top-0 left-0 bottom-0 right-0 flex justify-center items-center z-50;
-                background-image: linear-gradient(to top, rgba(207,217,223, 0.8) 0%, rgba(226,235,240,0.8) 100%);
+
+                background-image: linear-gradient(135deg, rgba(245, 247, 250, 0.8) 0%, rgba(195, 207, 226, 0.8) 100%);
                 filter: blur(0);
 
                 .notice {
-                    @apply font-bold text-4xl leading-tight z-50 text-center text-gray-800 italic tracking-wide;
+                    @apply font-bold text-4xl leading-none z-50 text-center text-gray-800 italic tracking-wide;
+                    text-shadow: 2px 3px 3px rgba(0,0,0,0.4);
                 }
             }
         }
