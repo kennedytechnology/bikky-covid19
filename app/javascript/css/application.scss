@@ -238,7 +238,7 @@ body {
                 filter: blur(0);
 
                 .notice {
-                    @apply font-bold text-4xl leading-tight z-50 text-center text-gray-800 italic;
+                    @apply font-bold text-4xl leading-tight z-50 text-center text-gray-800 italic tracking-wide;
                 }
             }
         }
