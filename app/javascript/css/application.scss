@@ -223,6 +223,20 @@ body {
                 }
             }
         }
+
+        // Overlay effect
+        .card.is-closed { 
+            @apply relative;
+
+            .overlay-effect {
+                @apply absolute top-0 left-0 bottom-0 right-0 flex justify-center items-center;
+                background-image: linear-gradient(to top, rgba(207,217,223, 0.8) 0%, rgba(226,235,240,0.8) 100%);
+
+                .notice {
+                    @apply font-bold text-4xl leading-tight z-50 text-center text-gray-800 italic;
+                }
+            }
+        }
     }
 
     .interactive-button {

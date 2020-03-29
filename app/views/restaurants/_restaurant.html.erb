@@ -1,5 +1,9 @@
-<div class="card relative">
-    <div class="absolute top-0 left-0 bottom-0 right-0 bg-brand-green opacity-75"></div>
+<div class="card <%= "is-closed" if !restaurant.currently_open? %>">
+    <% if !restaurant.currently_open? %>
+        <div class="overlay-effect"> 
+            <h1 class="notice"> Temporarily <br /> closed </h1>
+        </div>
+    <% end %>
     <% if restaurant.url.strip[0..3] == "http"  %>
         <%= link_to restaurant.url, target: "_blank" do %>
             <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
