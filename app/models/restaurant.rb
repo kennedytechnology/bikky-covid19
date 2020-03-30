@@ -11,12 +11,12 @@ class Restaurant < ApplicationRecord
     if File.file?("#{Rails.root}/app/assets/images/restaurants_photos/#{image_name}.jpeg")
       return "restaurants_photos/#{image_name}.jpeg"
     else
-      return "restaurants_photos/default.jpg"
+      return "restaurants_photos/default.jpeg"
     end
   end
 
   def image_name
-    brand.parameterize.underscore
+    brand.parameterize.gsub(/[^0-9a-z]/i, '')
   end
 
   def tags
