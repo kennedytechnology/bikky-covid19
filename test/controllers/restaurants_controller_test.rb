@@ -6,7 +6,7 @@ class RestaurantsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get index" do
-    get restaurants_url
+    get restaurants_path
     assert_response :success
   end
 end
