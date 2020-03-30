@@ -2,6 +2,7 @@ require 'csv'
 
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'partners_updates.csv'))
 CSV.parse(csv_text, headers: true).each do |row|
+  row.delete('id')
   row['price'] = row['price'].length if row['price']
   Partner.create!(row.to_h)
 end
