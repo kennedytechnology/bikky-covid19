@@ -1,7 +1,8 @@
 ActiveAdmin.register Partner do
   menu priority: 2
 
-  permit_params :brand, :mood, :daypart_1, :daypart_2, :meal_size_1, :meal_size_2, :price, guide_ids: []
+  permit_params :brand, :mood, :daypart_1, :daypart_2, :meal_size_1, :meal_size_2, :price, guide_ids: [],
+                picture_attributes: [:id, :_destroy, :category, :image]
 
   index download_links: [:csv] do
     selectable_column
@@ -42,6 +43,10 @@ ActiveAdmin.register Partner do
       end
 
       row :guides
+
+      row :image do |img|
+        image_tag url_for(img.picture.image) unless img.picture.nil?
+      end
     end
 
     
@@ -53,6 +58,11 @@ ActiveAdmin.register Partner do
     f.semantic_errors
     f.inputs
     f.input :guide_ids, as: :check_boxes, collection: Guide.all
+      f.inputs do
+        f.has_many :picture, allow_destroy: true do |a|
+          a.input :image, as: :file
+        end
+      end
     f.actions 
   end
 end

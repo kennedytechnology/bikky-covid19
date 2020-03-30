@@ -91,12 +91,15 @@ ActiveRecord::Schema.define(version: 2020_03_30_181123) do
     t.string "deal"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "partner"
   end
 
   create_table "pictures", force: :cascade do |t|
     t.string "category"
+    t.bigint "partner_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["partner_id"], name: "index_pictures_on_partner_id"
   end
 
   create_table "restaurants", force: :cascade do |t|
