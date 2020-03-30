@@ -30,6 +30,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 # Faker
 gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
+# Image processing
+gem 'image_processing'
 # Geocoder
 gem 'geocoder'
 
