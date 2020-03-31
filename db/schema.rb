@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_31_074418) do
+ActiveRecord::Schema.define(version: 2020_03_31_074506) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -92,6 +92,15 @@ ActiveRecord::Schema.define(version: 2020_03_31_074418) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "partner"
+  end
+
+  create_table "pictures", force: :cascade do |t|
+    t.string "category"
+    t.string "pictureable_type", null: false
+    t.bigint "pictureable_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["pictureable_type", "pictureable_id"], name: "index_pictures_on_pictureable_type_and_pictureable_id"
   end
 
   create_table "restaurants", force: :cascade do |t|
