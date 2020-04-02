@@ -10,6 +10,7 @@ one:
   meal_size_2: MyString
   price: 1
   deal: MyString
+  partner: MyString
 
 two:
   brand: MyString
@@ -21,3 +22,4 @@ two:
   meal_size_2: MyString
   price: 1
   deal: MyString
+  partner: MyString
