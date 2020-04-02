@@ -7,7 +7,7 @@ class RestaurantsController < ApplicationController
     end
 
     if params[:q].present?
-      @restaurants = @restaurants.near(params[:q], 1.5, order: :distance)
+      @restaurants = @restaurants.near(params[:q], 50, order: :distance)
     else
       if Geocoder.search(remote_ip).first && Geocoder.search(remote_ip).first.coordinates.any?
         @restaurants = @restaurants.near(remote_ip, 100000, order: :distance)
