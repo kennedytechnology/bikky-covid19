@@ -13,7 +13,6 @@ csv.each do |row|
   row['partner'] = Partner.find_by_brand(row.delete('brand'))
   row['url'].strip!
   row['url'] = ActionController::Base.helpers.number_to_phone(row['url'].delete("^0-9"), area_code: true) unless row['url'].start_with?("http")
-    
   Restaurant.create!(row.to_h) if row['partner']
 end
 
