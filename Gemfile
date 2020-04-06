@@ -34,8 +34,6 @@ gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
 gem 'image_processing'
 # Geocoder
 gem 'geocoder'
-# Amazon S3
-gem 'aws-sdk-s3', '~> 1.61', '>= 1.61.2'
 
 # Active Admin with Devise and Formtastic
 gem 'devise'
