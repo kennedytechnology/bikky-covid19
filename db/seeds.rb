@@ -1,10 +1,25 @@
 require 'csv'
 puts "Start seeding..."
+
+def seed_image(file_name)
+  if File.file?("#{Rails.root}/app/assets/images/restaurants_photos/#{file_name}.jpeg")
+    File.open(File.join(Rails.root, "/app/assets/images/restaurants_photos/#{file_name}.jpeg"))
+  else
+    File.open(File.join(Rails.root, "/app/assets/images/restaurants_photos/default.jpeg"))
+  end
+end
+
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'partners_updates.csv'))
 CSV.parse(csv_text, headers: true).each do |row|
   row.delete('id')
   row['price'] = row['price'].length if row['price']
-  Partner.create!(row.to_h)
+  partner = Partner.create!(row.to_h)
+
+  partner_picture_name = partner.brand.parameterize.gsub(/[^0-9a-z]/i, '')
+  partner.picture.attach(
+    io: seed_image(partner_picture_name),
+    filename: "partner_#{Time.now.to_i}.jpg", content_type: "image/jpg",
+  )
 end
 
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'restaurants_updates.csv'))
@@ -13,7 +28,6 @@ csv.each do |row|
   row['partner'] = Partner.find_by_brand(row.delete('brand'))
   row['url'].strip!
   row['url'] = ActionController::Base.helpers.number_to_phone(row['url'].delete("^0-9"), area_code: true) unless row['url'].start_with?("http")
-    
   Restaurant.create!(row.to_h) if row['partner']
 end
 
