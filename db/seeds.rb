@@ -5,6 +5,13 @@ CSV.parse(csv_text, headers: true).each do |row|
   row.delete('id')
   row['price'] = row['price'].length if row['price']
   Partner.create!(row.to_h)
+  Picture.create!(partner_id: Partner.last.id)
+  photo = Partner.last.brand.parameterize.gsub(/[^0-9a-z]/i, '')
+    if File.file?("#{Rails.root}/app/assets/images/restaurants_photos/#{photo}.jpeg")
+      Picture.last.image.attach(io: File.open(Rails.root.join("app", "assets", "images", "restaurants_photos", "#{photo}.jpeg")), filename: "#{photo}.jpeg", content_type: "image/jpeg")
+    else
+      Picture.last.image.attach(io: File.open(Rails.root.join("app", "assets", "images", "restaurants_photos", "default.jpeg")), filename: "default.jpeg", content_type: "image/jpeg")
+    end
 end
 
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'restaurants_updates.csv'))
