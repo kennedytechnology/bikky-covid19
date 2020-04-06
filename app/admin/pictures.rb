@@ -6,11 +6,10 @@ ActiveAdmin.register Picture do
   index do
     selectable_column
     id_column
-    column :category
+    # column :category
     column :image do |picture|
       image_tag url_for(picture.thumb) if picture.image.attached?
     end
-    column :sign_in_count
     column :created_at
     actions
   end
