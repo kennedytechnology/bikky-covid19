@@ -55,7 +55,16 @@ ActiveAdmin.register Partner do
 
   form do |f|
     f.semantic_errors
-    f.inputs
+    f.inputs do
+      f.input :brand
+      f.input :mood
+      f.input :daypart_1
+      f.input :daypart_2
+      f.input :meal_size_1
+      f.input :meal_size_2
+      f.input :deal
+      f.input :price, as: :select, collection: {'$' => 1, '$$' => 2, '$$$' => 3, '$$$$' => 4, '$$$$$' => 5}
+    end
     f.input :guide_ids, as: :check_boxes, collection: Guide.all
       f.inputs do
         f.has_many :picture, allow_destroy: true do |a|

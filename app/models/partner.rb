@@ -5,5 +5,7 @@ class Partner < ApplicationRecord
 
   accepts_nested_attributes_for :picture, reject_if: lambda { |a| a[:image].blank? }, allow_destroy: true
 
+  validates_presence_of :brand, :price
+
   def name; brand; end;
 end
