@@ -4,12 +4,6 @@ ActiveAdmin.register Partner do
   permit_params :brand, :mood, :daypart_1, :daypart_2, :meal_size_1, :meal_size_2, :price, :picture, guide_ids: [],
                 picture_attributes: [:id, :_destroy, :category, :image]
 
-  member_action :delete_picture, method: :delete do
-    @picture = ActiveStorage::Attachment.find(params[:id])
-    @picture.purge_later
-    redirect_back(fallback_location: edit_admin_partner_path)   
-  end
-
   index download_links: [:csv] do
     selectable_column
     id_column
