@@ -27,8 +27,8 @@ ActiveAdmin.register Picture do
 
   form do |f|
     f.semantic_errors
-    f.input :category
-    f.input :partner
+    f.input :category, as: :hidden
+    f.input :partner, as: :hidden
     f.input :image, as: :file
     f.actions 
   end

@@ -44,7 +44,7 @@ ActiveAdmin.register Partner do
 
       row :guides
       row :image do |img|
-        image_tag url_for(img.picture.thumb) unless img.picture.nil?
+        link_to(image_tag(url_for(img.picture.thumb)), admin_picture_path(img.picture)) unless img.picture.nil?
       end
     end
 
