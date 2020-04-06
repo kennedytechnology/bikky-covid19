@@ -6,10 +6,10 @@
     <% end %>
     <% if restaurant.url.strip[0..3] == "http"  %>
         <%= link_to restaurant.url, target: "_blank" do %>
-            <div class="card-img" style="background-image: url('<%= url_for(restaurant.partner.picture) %>');"> </div>
+            <div class="card-img" style="background-image: url('<%= url_for(restaurant.partner.picture_url) %>');"> </div>
         <% end %>
     <% else %>
-        <div class="card-img" style="background-image: url('<%= url_for(restaurant.partner.picture) %>');"> </div>
+        <div class="card-img" style="background-image: url('<%= url_for(restaurant.partner.picture_url) %>');"> </div>
     <% end %>
     <div class="card-content">
         <div>

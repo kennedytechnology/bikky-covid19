@@ -2,11 +2,7 @@ require 'csv'
 puts "Start seeding..."
 
 def seed_image(file_name)
-  if File.file?("#{Rails.root}/app/assets/images/restaurants_photos/#{file_name}.jpeg")
-    File.open(File.join(Rails.root, "/app/assets/images/restaurants_photos/#{file_name}.jpeg"))
-  else
-    File.open(File.join(Rails.root, "/app/assets/images/restaurants_photos/default.jpeg"))
-  end
+  File.open(File.join(Rails.root, "/app/assets/images/restaurants_photos/#{file_name}.jpeg"))
 end
 
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'partners_updates.csv'))
@@ -16,10 +12,12 @@ CSV.parse(csv_text, headers: true).each do |row|
   partner = Partner.create!(row.to_h)
 
   partner_picture_name = partner.brand.parameterize.gsub(/[^0-9a-z]/i, '')
-  partner.picture.attach(
-    io: seed_image(partner_picture_name),
-    filename: "partner_#{Time.now.to_i}.jpg", content_type: "image/jpg",
-  )
+  if File.file?("#{Rails.root}/app/assets/images/restaurants_photos/#{partner_picture_name}.jpeg")
+    partner.picture.attach(
+      io: seed_image(partner_picture_name),
+      filename: "partner_#{Time.now.to_i}.jpg", content_type: "image/jpg",
+    )
+  end
 end
 
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'restaurants_updates.csv'))

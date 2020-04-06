@@ -1,8 +1,14 @@
 ActiveAdmin.register Partner do
   menu priority: 2
 
-  permit_params :brand, :mood, :daypart_1, :daypart_2, :meal_size_1, :meal_size_2, :price, guide_ids: [],
+  permit_params :brand, :mood, :daypart_1, :daypart_2, :meal_size_1, :meal_size_2, :price, :picture, guide_ids: [],
                 picture_attributes: [:id, :_destroy, :category, :image]
+
+  member_action :delete_picture, method: :delete do
+    @picture = ActiveStorage::Attachment.find(params[:id])
+    @picture.purge_later
+    redirect_back(fallback_location: edit_admin_partner_path)   
+  end
 
   index download_links: [:csv] do
     selectable_column
@@ -44,8 +50,12 @@ ActiveAdmin.register Partner do
 
       row :guides
 
-      row :image do |img|
-        image_tag url_for(img.picture.thumb) unless img.picture.nil?
+      row "Picture" do |partner|
+        if partner.picture.attached?
+          image_tag partner.picture.variant(resize_to_limit: [500, 500])
+        else
+          "No picture provided yet"
+        end
       end
     end
 
@@ -58,11 +68,17 @@ ActiveAdmin.register Partner do
     f.semantic_errors
     f.inputs
     f.input :guide_ids, as: :check_boxes, collection: Guide.all
-      f.inputs do
-        f.has_many :picture, allow_destroy: true do |a|
-          a.input :image, as: :file
-        end
+
+    if f.object.picture.attached?
+      f.input :picture, label: "Upload New Picture", 
+              as: :file, hint: image_tag(f.object.picture.variant(resize: "500x500"))
+
+      f.semantic_fields_for :picture_attributes do |picture_fields|
+        picture_fields.input :_destroy, as: :boolean, label: 'Delete Picture?'
       end
+    else 
+      f.input :picture, label: "Upload Picture", as: :file
+    end
     f.actions 
   end
 end
