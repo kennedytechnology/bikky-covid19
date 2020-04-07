@@ -34,6 +34,8 @@ gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
 gem 'geocoder'
 # Image pricessing
 gem 'image_processing'
+# Active storage validation
+gem 'active_storage_validations', '~> 0.8.8'
 # Amazon S3
 gem 'aws-sdk-s3', '~> 1.61', '>= 1.61.2'
 
