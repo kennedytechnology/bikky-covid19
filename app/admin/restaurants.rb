@@ -124,6 +124,7 @@ ActiveAdmin.register Restaurant do
           f.input :address, as: :string
           f.input :latitude
           f.input :longitude
+          f.input :currently_open
         end
       end
 

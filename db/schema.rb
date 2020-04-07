@@ -127,7 +127,7 @@ ActiveRecord::Schema.define(version: 2020_04_06_132508) do
     t.string "sat_close"
     t.string "sun_open"
     t.string "sun_close"
-    t.boolean "currently_open"
+    t.boolean "currently_open", default: true
     t.bigint "bikky_location_id"
     t.index ["partner_id"], name: "index_restaurants_on_partner_id"
   end
