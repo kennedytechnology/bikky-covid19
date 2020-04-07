@@ -1,7 +1,10 @@
 ActiveAdmin.register Restaurant do
   menu priority: 1
 
-  permit_params :name, :address, :longitude, :latitude, :partner_id, :url
+  permit_params :name, :address, :longitude, :latitude, :partner_id, :url,
+                :mon_open, :mon_close, :tue_open, :tue_close, :wed_open,
+                :wed_close, :thur_open, :thur_close, :fri_open, :fri_close,
+                :sat_open, :sat_close, :sun_open, :sun_close
 
   # Index
   index download_links: [:csv] do
@@ -119,8 +122,8 @@ ActiveAdmin.register Restaurant do
           f.input :name, as: :string
           f.input :url, label: "URL"
           f.input :address, as: :string
-          f.input :longitude
           f.input :latitude
+          f.input :longitude
         end
       end
 
