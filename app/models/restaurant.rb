@@ -1,7 +1,7 @@
 class Restaurant < ApplicationRecord
   belongs_to :partner
   geocoded_by :address
-  after_validation :geocode, if: :address_changed
+  # after_validation :geocode, if: -> { address.present? && !address.latitude? and !address.longitude? }
 
   delegate :brand, to: :partner
   delegate :deal, to: :partner
@@ -22,11 +22,5 @@ class Restaurant < ApplicationRecord
 
   def tags
     [partner.mood, partner.daypart_1, partner.daypart_2, partner.meal_size_1, partner.meal_size_2, "$" * partner.price.to_i].reject(&:blank?)
-  end
-
-  private
-
-  def address_changed
-    address.present? && address_changed?
   end
 end
