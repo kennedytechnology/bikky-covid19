@@ -4,6 +4,7 @@ ActiveAdmin.register Partner do
   permit_params :brand, :mood, :daypart_1, :daypart_2, :meal_size_1, :meal_size_2, :price, :deal, guide_ids: [],
                 picture_attributes: [:id, :_destroy, :category, :image]
 
+  # Index
   index download_links: [:csv] do
     selectable_column
     id_column
@@ -20,6 +21,16 @@ ActiveAdmin.register Partner do
     actions
   end
 
+  # Filters
+  filter :brand, as: :select, collection: proc { Partner.all.order('brand').collect{|partner| partner.brand}.uniq }
+  filter :mood, as: :select, collection: proc { Partner.all.order('mood').collect{|partner| partner.mood}.uniq.compact }
+  filter :daypart_1, as: :select, collection: proc { Partner.all.order('daypart_1').collect{|partner| partner.daypart_1}.uniq.compact }
+  filter :daypart_2, as: :select, collection: proc { Partner.all.order('daypart_2').collect{|partner| partner.daypart_2}.uniq.compact }
+  filter :meal_size_1, as: :select, collection: proc { Partner.all.order('meal_size_1').collect{|partner| partner.meal_size_1}.uniq.compact }
+  filter :meal_size_2, as: :select, collection: proc { Partner.all.order('meal_size_2').collect{|partner| partner.meal_size_2}.uniq.compact }
+  filter :price, as: :select, collection: {'$' => 1, '$$' => 2, '$$$' => 3, '$$$$' => 4, '$$$$$' => 5}
+
+  # Show
   show do
     attributes_table do
       row :brand
@@ -53,6 +64,7 @@ ActiveAdmin.register Partner do
     active_admin_comments
   end
 
+  # Form
   form do |f|
     f.semantic_errors
     f.inputs do

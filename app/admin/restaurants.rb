@@ -19,8 +19,8 @@ ActiveAdmin.register Restaurant do
   end
 
   # Filters
-  filter :partner
-  filter :name
+  filter :partner, label: "Brand", as: :select, collection: proc { Partner.all.order('brand').collect{|partner| partner.brand}.uniq}
+  filter :location
   filter :address
 
   # Show
@@ -108,7 +108,7 @@ ActiveAdmin.register Restaurant do
     active_admin_comments
   end
 
-  # Edit
+  # Form
   form do |f|
     f.semantic_errors *f.object.errors.keys
 
