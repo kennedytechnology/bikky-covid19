@@ -15,8 +15,8 @@ ActiveAdmin.register Guide do
   end
 
   # Filters
-  filter :name, as: :select, collection: proc { Guide.all.collect{|guide| guide.name}.uniq}
-  filter :partners, label: "Brands", as: :select
+  filter :name, as: :select, collection: proc { Guide.all.order('name').collect{|guide| guide.name}.uniq}
+  filter :partners, label: "Brands", as: :select, collection: proc { Partner.all.order('brand').collect{|partner| partner.brand}.uniq }
 
   # Show
   show do
