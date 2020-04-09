@@ -1,11 +1,12 @@
 class Restaurant < ApplicationRecord
   belongs_to :partner
   geocoded_by :address
+  # after_validation :geocode, if: -> { address.present? && !address.latitude? and !address.longitude? }
 
   delegate :brand, to: :partner
   delegate :deal, to: :partner
 
-  # validates_presence_of :name, :address
+  validates_presence_of :brand, :address
 
   def display_image
     if File.file?("#{Rails.root}/app/assets/images/restaurants_photos/#{image_name}.jpeg")

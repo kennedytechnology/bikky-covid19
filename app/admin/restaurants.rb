@@ -1,12 +1,18 @@
 ActiveAdmin.register Restaurant do
   menu priority: 1
 
-  permit_params :name, :address, :longitude, :latitude, :partner_id, :url
+  permit_params :name, :address, :longitude, :latitude, :partner_id, :url,
+                :mon_open, :mon_close, :tue_open, :tue_close, :wed_open,
+                :wed_close, :thur_open, :thur_close, :fri_open, :fri_close,
+                :sat_open, :sat_close, :sun_open, :sun_close
 
   # Index
   index download_links: [:csv] do
     selectable_column
     id_column
+    column "Photo", :photo do |restaurant|
+      link_to image_tag(url_for(restaurant.partner.picture.variant(resize_to_limit: [100,100]))) , admin_partner_path(restaurant.partner) if restaurant.partner.picture.attached?
+    end
     column "Location", :name do |restaurant|
       restaurant.name
     end
@@ -19,8 +25,8 @@ ActiveAdmin.register Restaurant do
   end
 
   # Filters
-  filter :partner
-  filter :name
+  filter :partner, label: "Brand", as: :select, collection: proc { Partner.all.order('brand').collect{|partner| partner.brand}.uniq}
+  filter :location
   filter :address
 
   # Show
@@ -108,19 +114,20 @@ ActiveAdmin.register Restaurant do
     active_admin_comments
   end
 
-  # Edit
+  # Form
   form do |f|
     f.semantic_errors *f.object.errors.keys
 
     tabs do
       tab "General Information" do
         f.inputs do
-          f.input :partner_id, label: "Choose Brand", as: :select, collection: Partner.all.collect {|p| [ p.brand, p.id ] }
+          f.input :partner_id, label: "Choose Brand", as: :select, collection: Partner.all.order('brand').collect{|p| [ p.brand, p.id ] }
           f.input :name, as: :string
           f.input :url, label: "URL"
-          f.input :longitude
-          f.input :latitude
           f.input :address, as: :string
+          f.input :latitude
+          f.input :longitude
+          f.input :currently_open
         end
       end
 
