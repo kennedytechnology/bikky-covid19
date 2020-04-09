@@ -6,17 +6,17 @@
     <% end %>
     <% if restaurant.url.strip[0..3] == "http"  %>
         <%= link_to restaurant.url, target: "_blank" do %>
-            <% unless restaurant.partner.picture.nil? %>
-                <div class="card-img" style="background-image: url('<%= rails_blob_url(restaurant.partner.picture.image) %>');"> </div>
+            <% if restaurant.partner.picture.attached? %>
+                <div class="card-img" style="background-image: url('<%= url_for(restaurant.partner.picture) %>');"> </div>
             <% else %>
-                <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
+                <div class="card-img" style="background-image: url(<%= image_url("restaurants_photos/default.jpeg") %>);"> </div>
             <% end %>
         <% end %>
     <% else %>
-        <% unless restaurant.partner.picture.nil? %>
-            <div class="card-img" style="background-image: url('<%= rails_blob_url(restaurant.partner.picture.image) %>');"> </div>
+        <% if restaurant.partner.picture.attached? %>
+            <div class="card-img" style="background-image: url('<%= url_for(restaurant.partner.picture) %>');"> </div>
         <% else %>
-            <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
+            <div class="card-img" style="background-image: url(<%= image_url("restaurants_photos/default.jpeg") %>);"> </div>
         <% end %>
     <% end %>
     <div class="card-content">

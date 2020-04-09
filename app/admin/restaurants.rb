@@ -10,6 +10,9 @@ ActiveAdmin.register Restaurant do
   index download_links: [:csv] do
     selectable_column
     id_column
+    column "Photo", :photo do |restaurant|
+      link_to image_tag(url_for(restaurant.partner.picture.variant(resize_to_limit: [100,100]))) , admin_partner_path(restaurant.partner) if restaurant.partner.picture.attached?
+    end
     column "Location", :name do |restaurant|
       restaurant.name
     end

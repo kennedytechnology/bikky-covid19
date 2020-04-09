@@ -1,8 +1,8 @@
 <div class="card">
-    <% unless restaurant.partner.picture.nil? %>
-        <div class="card-img" style="background-image: url('<%= rails_blob_url(restaurant.partner.picture.image) %>');"> </div>
+    <% if restaurant.partner.picture.attached? %>
+        <div class="card-img" style="background-image: url('<%= url_for(restaurant.partner.picture) %>');"> </div>
     <% else %>
-        <div class="card-img" style="background-image: url(<%= image_url(restaurant.display_image) %>);"> </div>
+        <div class="card-img" style="background-image: url(<%= image_url("restaurants_photos/default.jpeg") %>);"> </div>
     <% end %>
     <div class="card-content">
         <div>
@@ -12,9 +12,9 @@
                 <span> <%= restaurant.address.try(:titleize) %> </span>
             </p>
             <div class="flex flex-wrap w-full mb-3">
-            <% restaurant.tags.each do |tag| %>
-                <p class="tag-info"> <%= tag %> </p>
-            <% end %>
+                <% restaurant.tags.each do |tag| %>
+                    <p class="tag-info"> <%= tag %> </p>
+                <% end %>
             </div>
         </div>
 

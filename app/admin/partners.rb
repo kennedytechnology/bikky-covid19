@@ -1,13 +1,16 @@
 ActiveAdmin.register Partner do
   menu priority: 2
 
-  permit_params :brand, :mood, :daypart_1, :daypart_2, :meal_size_1, :meal_size_2, :price, :deal, guide_ids: [],
-                picture_attributes: [:id, :_destroy, :category, :image]
+  permit_params :brand, :mood, :daypart_1, :daypart_2, :meal_size_1, :meal_size_2, :price, :deal, :picture, guide_ids: []
+                
 
   # Index
   index download_links: [:csv] do
     selectable_column
     id_column
+    column "Photo", :photo do |partner|
+      link_to image_tag(url_for(partner.picture.variant(resize_to_limit: [100,100]))) , admin_partner_path(partner) if partner.picture.attached?
+    end
     column :brand
     column :mood
     column :daypart_1
@@ -54,9 +57,14 @@ ActiveAdmin.register Partner do
       end
 
       row :guides
-      row :image do |img|
-        link_to(image_tag(url_for(img.picture.thumb)), admin_picture_path(img.picture)) unless img.picture.nil?
+      row :picture do |partner|
+        # debugger
+        image_tag(url_for(partner.picture.variant(resize_to_limit: [500,500]))) if partner.picture.attached?
       end
+
+      # row :image do |img|
+      #   link_to(image_tag(url_for(img.picture.thumb)), admin_picture_path(img.picture)) unless img.picture.nil?
+      # end
     end
 
     
@@ -78,11 +86,7 @@ ActiveAdmin.register Partner do
       f.input :price, as: :select, collection: {'$' => 1, '$$' => 2, '$$$' => 3, '$$$$' => 4, '$$$$$' => 5}
     end
     f.input :guide_ids, as: :check_boxes, collection: Guide.all
-      f.inputs do
-        f.has_many :picture, allow_destroy: true do |a|
-          a.input :image, as: :file
-        end
-      end
+    f.input :picture, as: :file, hint: image_tag(f.object.picture.variant(resize: "500x500"))
     f.actions 
   end
 end
