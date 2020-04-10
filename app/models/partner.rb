@@ -8,4 +8,8 @@ class Partner < ApplicationRecord
   validates_presence_of :brand, :price
 
   def name; brand; end;
+
+  def picture_name
+    brand.parameterize.gsub(/[^0-9a-z]/i, '')
+  end
 end

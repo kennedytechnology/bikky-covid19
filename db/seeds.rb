@@ -1,14 +1,22 @@
 require 'csv'
 puts "Start seeding..."
+
+def find_picture(picture_name)
+  Rails.root.join("app", "assets", "images", "restaurants_photos", "#{picture_name}.jpeg")
+end
+
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'partners_updates.csv'))
 CSV.parse(csv_text, headers: true).each do |row|
   row.delete('id')
   row['price'] = row['price'].length if row['price']
   partner = Partner.create!(row.to_h)
-  
-  photo = partner.brand.parameterize.gsub(/[^0-9a-z]/i, '')
-  if File.file?("#{Rails.root}/app/assets/images/restaurants_photos/#{photo}.jpeg")
-    partner.picture.attach(io: File.open(Rails.root.join("app", "assets", "images", "restaurants_photos", "#{photo}.jpeg")), filename: "#{photo}.jpeg", content_type: "image/jpeg")
+
+  if File.file?(find_picture(partner.picture_name))
+    partner.picture.attach(
+      io: File.open(find_picture(partner.picture_name)),
+      filename: "#{partner.picture_name}.jpeg",
+      content_type: "image/jpeg"
+    )
   end
 end
 
