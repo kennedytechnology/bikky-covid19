@@ -34,7 +34,7 @@ ActiveAdmin.register Restaurant do
     attributes_table do
       row :name
       row "URL", :url do 
-        link_to restaurant.url, restaurant.url
+        link_to restaurant.url, restaurant.url, target: "_blank"
       end
       row :address
       row :latitude

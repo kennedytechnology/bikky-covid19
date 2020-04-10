@@ -4,6 +4,7 @@
             <h1 class="notice"> Temporarily <br /> closed </h1>
         </div>
     <% end %>
+    <%# TODO: Update logic once seeds are in place! %>
     <% if restaurant.url?  %>
         <%= link_to restaurant.url, target: "_blank" do %>
             <% if restaurant.partner.picture.attached? %>

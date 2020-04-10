@@ -15,6 +15,7 @@ end
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'restaurants_updates.csv'))
 csv = CSV.parse(csv_text, headers: true)
 csv.each do |row|
+  # Update logic once CSV files has proper URLs and phone_numbers
   row['partner'] = Partner.find_by_brand(row.delete('brand'))
   if row['url'].start_with?("http")
     row['url']
