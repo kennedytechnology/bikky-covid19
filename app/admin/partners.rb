@@ -58,13 +58,8 @@ ActiveAdmin.register Partner do
 
       row :guides
       row :picture do |partner|
-        # debugger
         image_tag(url_for(partner.picture.variant(resize_to_limit: [500,500]))) if partner.picture.attached?
       end
-
-      # row :image do |img|
-      #   link_to(image_tag(url_for(img.picture.thumb)), admin_picture_path(img.picture)) unless img.picture.nil?
-      # end
     end
 
     
