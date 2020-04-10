@@ -16,8 +16,13 @@ csv_text = File.read(Rails.root.join('lib', 'seeds', 'restaurants_updates.csv'))
 csv = CSV.parse(csv_text, headers: true)
 csv.each do |row|
   row['partner'] = Partner.find_by_brand(row.delete('brand'))
-  row['url'].strip!
-  row['url'] = ActionController::Base.helpers.number_to_phone(row['url'].delete("^0-9"), area_code: true) unless row['url'].start_with?("http")
+  if row['url'].start_with?("http")
+    row['url']
+  else
+    row['url'].strip!
+    row['phone_number'] = ActionController::Base.helpers.number_to_phone(row['url'].delete("^0-9"), area_code: true) unless row['url'].start_with?("http")
+    row['url'] = ""
+  end
   Restaurant.create!(row.to_h) if row['partner']
 end
 
