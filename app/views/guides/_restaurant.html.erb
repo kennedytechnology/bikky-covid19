@@ -1,9 +1,5 @@
 <div class="card">
-    <% if restaurant.partner.picture.attached? %>
-        <div class="card-img" style="background-image: url('<%= url_for(restaurant.partner.picture) %>');"> </div>
-    <% else %>
-        <div class="card-img" style="background-image: url(<%= image_url("restaurants_photos/default.jpeg") %>);"> </div>
-    <% end %>
+    <div class="card-img" style="background-image: url(<%= picture_url(restaurant.partner) %>);"> </div>
     <div class="card-content">
         <div>
             <h1 class="card-heading"> <%= restaurant.brand %> </h1>

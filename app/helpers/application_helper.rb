@@ -12,4 +12,12 @@ module ApplicationHelper
       return description
     end
   end
+
+  def picture_url(partner)
+    if partner.picture.attached?
+      url_for(partner.picture)
+    else
+      image_url('restaurants_photos/default.jpeg')
+    end
+  end
 end
