@@ -7,18 +7,10 @@
     <%# TODO: Update logic once seeds are in place! %>
     <% if restaurant.url?  %>
         <%= link_to restaurant.url, target: "_blank" do %>
-            <% if restaurant.partner.picture.attached? %>
-                <div class="card-img" style="background-image: url('<%= url_for(restaurant.partner.picture) %>');"> </div>
-            <% else %>
-                <div class="card-img" style="background-image: url(<%= image_url("restaurants_photos/default.jpeg") %>);"> </div>
-            <% end %>
+            <div class="card-img" style="background-image: url(<%= picture_url(restaurant.partner) %>);"> </div>
         <% end %>
     <% else %>
-        <% if restaurant.partner.picture.attached? %>
-            <div class="card-img" style="background-image: url('<%= url_for(restaurant.partner.picture) %>');"> </div>
-        <% else %>
-            <div class="card-img" style="background-image: url(<%= image_url("restaurants_photos/default.jpeg") %>);"> </div>
-        <% end %>
+        <div class="card-img" style="background-image: url(<%= picture_url(restaurant.partner) %>);"> </div>
     <% end %>
     <div class="card-content">
         <div>
