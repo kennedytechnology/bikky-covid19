@@ -11,7 +11,6 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 2020_04_10_172528) do
-
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -130,6 +129,7 @@ ActiveRecord::Schema.define(version: 2020_04_10_172528) do
     t.boolean "currently_open", default: true
     t.bigint "bikky_location_id"
     t.boolean "is_published", default: false
+    t.string "phone_number"
     t.index ["partner_id"], name: "index_restaurants_on_partner_id"
   end
 

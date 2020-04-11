@@ -1,6 +1,6 @@
 ActiveAdmin.register Restaurant do
   menu priority: 1
-
+  
   active_admin_import on_duplicate_key_update: :all,
     headers_rewrites: { 'Partner': :partner_id },
     before_batch_import: ->(importer) {
@@ -91,10 +91,13 @@ ActiveAdmin.register Restaurant do
   show do |restaurant|
     attributes_table do
       row :name
-      row :url
+      row "URL", :url do 
+        link_to restaurant.url, restaurant.url, target: "_blank"
+      end
       row :address
       row :latitude
       row :longitude
+      row :phone_number
       row :created_at
       row :updated_at
       row "Brand", :partner do 
@@ -182,6 +185,7 @@ ActiveAdmin.register Restaurant do
           f.input :partner_id, label: "Choose Brand", as: :select, collection: Partner.all.order('brand').collect{|p| [ p.brand, p.id ] }
           f.input :name, as: :string
           f.input :url, label: "URL"
+          f.input :phone_number
           f.input :address, as: :string
           f.input :latitude
           f.input :longitude
@@ -191,21 +195,47 @@ ActiveAdmin.register Restaurant do
       end
 
       tab "Working Hours" do
-        f.inputs do
-          f.input :mon_open, label: "Monday Opens at", as: :time_picker
-          f.input :mon_close, label: "Monday Closes at", as: :time_picker
-          f.input :tue_open, label: "Tuesday Opens at", as: :time_picker
-          f.input :tue_close, label: "Tuesdays Closes at", as: :time_picker
-          f.input :wed_open, label: "Wednesday Opens at", as: :time_picker
-          f.input :wed_close, label: "Wednesday Closes at", as: :time_picker
-          f.input :thur_open, label: "Thursday Opens at", as: :time_picker
-          f.input :thur_close, label: "Thursday Closes at", as: :time_picker
-          f.input :fri_open, label: "Friday Opens at", as: :time_picker
-          f.input :fri_close, label: "Friday Closes at", as: :time_picker
-          f.input :sat_open, label: "Saturday Opens at", as: :time_picker
-          f.input :sat_close, label: "Saturday Closes at", as: :time_picker
-          f.input :sun_open, label: "Sunday Opens at", as: :time_picker
-          f.input :sun_close, label: "Sunday Closes at", as: :time_picker
+        f.inputs "Monday" do
+          columns do
+            column { f.input :mon_open, label: "Opens", as: :time_picker }
+            column { f.input :mon_close, label: "Closes", as: :time_picker }
+          end
+        end
+        f.inputs "Tuesday" do
+          columns do
+            column { f.input :tue_open, label: "Opens", as: :time_picker }
+            column { f.input :tue_close, label: "Closes", as: :time_picker }
+          end
+        end
+        f.inputs "Wednesday" do
+          columns do
+            column { f.input :wed_open, label: "Opens", as: :time_picker }
+            column { f.input :wed_close, label: "Closes", as: :time_picker }
+          end
+        end
+        f.inputs "Thursday" do
+          columns do
+            column { f.input :thur_open, label: "Opens", as: :time_picker }
+            column { f.input :thur_close, label: "Closes", as: :time_picker }
+          end
+        end
+        f.inputs "Friday" do
+          columns do
+            column { f.input :fri_open, label: "Opens", as: :time_picker }
+            column { f.input :fri_close, label: "Closes", as: :time_picker }
+          end
+        end
+        f.inputs "Saturday" do
+          columns do
+            column { f.input :sat_open, label: "Opens", as: :time_picker }
+            column { f.input :sat_close, label: "Closes", as: :time_picker }
+          end
+        end
+        f.inputs "Sunday" do
+          columns do
+            column { f.input :sun_open, label: "Opens", as: :time_picker }
+            column { f.input :sun_close, label: "Closes", as: :time_picker }
+          end
         end
       end
     end

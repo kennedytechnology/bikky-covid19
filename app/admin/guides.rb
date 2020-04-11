@@ -31,7 +31,8 @@ ActiveAdmin.register Guide do
   # Form
   form do |f|
     f.input :name
-    f.input :partner_ids, as: :check_boxes, collection: Partner.all
+    f.input :partner_ids, label: "Brand", as: :check_boxes, collection: Partner.all.order('brand')
+    f.actions
   end
 
 end
