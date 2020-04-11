@@ -1,10 +1,65 @@
 ActiveAdmin.register Restaurant do
   menu priority: 1
 
+  active_admin_import on_duplicate_key_update: :all,
+    headers_rewrites: { 'Partner': :partner_id },
+    before_batch_import: ->(importer) {
+      partner_names = importer.values_at(:partner_id).uniq
+      partners = Partner.where(brand: partner_names).pluck(:brand, :id)
+      replacements = Hash[*partners.flatten]      
+      column_index = importer.headers.values.index(:partner_id)
+      importer.csv_lines.each do |line|
+        line[column_index] = replacements[line[column_index]]
+      end      
+    }
+
   permit_params :name, :address, :longitude, :latitude, :partner_id, :url,
                 :mon_open, :mon_close, :tue_open, :tue_close, :wed_open,
                 :wed_close, :thur_open, :thur_close, :fri_open, :fri_close,
-                :sat_open, :sat_close, :sun_open, :sun_close
+                :sat_open, :sat_close, :sun_open, :sun_close, :is_published,
+                :currently_open
+
+  batch_action :publish do |ids|
+    batch_action_collection.find(ids).each do |restaurant|
+      restaurant.is_published = true
+      restaurant.save
+    end
+    redirect_to collection_path, alert: "The selected restaurants were published"
+  end
+
+  batch_action :unpublish do |ids|
+    batch_action_collection.find(ids).each do |restaurant|
+      restaurant.is_published = false
+      restaurant.save
+    end
+    redirect_to collection_path, alert: "The selected restaurants were un-published"
+  end
+
+  csv do
+    column :id
+    column("bikky_location_id", humanize_name: false) 
+    column(:partner) {|restaurant| restaurant.partner.name}
+    column :description
+    column :name
+    column :url
+    column :location
+    column :address
+    column :currently_open
+    column :mon_open
+    column :mon_close
+    column :tue_open
+    column :tue_close
+    column :wed_open
+    column :wed_close
+    column :thur_open
+    column :thur_close
+    column :fri_open
+    column :fri_close
+    column :sat_open
+    column :sat_close
+    column :sun_open
+    column :sun_close
+  end
 
   # Index
   index download_links: [:csv] do
@@ -13,9 +68,11 @@ ActiveAdmin.register Restaurant do
     column "Photo", :photo do |restaurant|
       link_to image_tag(url_for(restaurant.partner.picture.variant(resize_to_limit: [100,100]))) , admin_partner_path(restaurant.partner) if restaurant.partner.picture.attached?
     end
-    column "Location", :name do |restaurant|
-      restaurant.name
-    end
+    column :is_published
+    column :currently_open
+    # column "Is Published", :is_published do |restaurant|
+    #   restaurant.name
+    # end
     column :address
     column "Brand", :partner do |restaurant|
       link_to(restaurant.partner.brand, admin_partner_path(restaurant.partner))
@@ -25,9 +82,10 @@ ActiveAdmin.register Restaurant do
   end
 
   # Filters
-  filter :partner, label: "Brand", as: :select, collection: proc { Partner.all.order('brand').collect{|partner| partner.brand}.uniq}
+  filter :partner, label: "Brand", as: :select, collection: proc {Partner.all.order('brand').uniq.collect{|partner| [partner.brand, partner.id]}}
   filter :location
   filter :address
+  filter :is_published, as: :boolean
 
   # Show
   show do |restaurant|
@@ -128,6 +186,7 @@ ActiveAdmin.register Restaurant do
           f.input :latitude
           f.input :longitude
           f.input :currently_open
+          f.input :is_published
         end
       end
 

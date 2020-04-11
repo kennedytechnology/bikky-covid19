@@ -1,9 +1,9 @@
 class RestaurantsController < ApplicationController
   def index
+
+    @restaurants = Restaurant.all.published
     if search_tags.any?
-      @restaurants = Restaurant.where(partner: matching_partners)
-    else
-      @restaurants = Restaurant.all
+      @restaurants = @restaurants.where(partner: matching_partners)
     end
 
     if params[:q].present?
