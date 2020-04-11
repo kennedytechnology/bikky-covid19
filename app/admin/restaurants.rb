@@ -4,7 +4,7 @@ ActiveAdmin.register Restaurant do
   permit_params :name, :address, :longitude, :latitude, :partner_id, :url, :currently_open,
                 :mon_open, :mon_close, :tue_open, :tue_close, :wed_open,
                 :wed_close, :thur_open, :thur_close, :fri_open, :fri_close,
-                :sat_open, :sat_close, :sun_open, :sun_close
+                :sat_open, :sat_close, :sun_open, :sun_close, :phone_number
 
   # Index
   index download_links: [:csv] do
@@ -33,10 +33,13 @@ ActiveAdmin.register Restaurant do
   show do |restaurant|
     attributes_table do
       row :name
-      row :url
+      row "URL", :url do 
+        link_to restaurant.url, restaurant.url, target: "_blank"
+      end
       row :address
       row :latitude
       row :longitude
+      row :phone_number
       row :created_at
       row :updated_at
       row "Brand", :partner do 
@@ -124,6 +127,7 @@ ActiveAdmin.register Restaurant do
           f.input :partner_id, label: "Choose Brand", as: :select, collection: Partner.all.order('brand').collect{|p| [ p.brand, p.id ] }
           f.input :name, as: :string
           f.input :url, label: "URL"
+          f.input :phone_number
           f.input :address, as: :string
           f.input :latitude
           f.input :longitude

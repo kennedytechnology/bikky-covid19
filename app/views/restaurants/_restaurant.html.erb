@@ -4,7 +4,8 @@
             <h1 class="notice"> Temporarily <br /> closed </h1>
         </div>
     <% end %>
-    <% if restaurant.url.strip[0..3] == "http"  %>
+    <%# TODO: Update logic once seeds are in place! %>
+    <% if restaurant.url?  %>
         <%= link_to restaurant.url, target: "_blank" do %>
             <% if restaurant.partner.picture.attached? %>
                 <div class="card-img" style="background-image: url('<%= url_for(restaurant.partner.picture) %>');"> </div>
@@ -21,7 +22,7 @@
     <% end %>
     <div class="card-content">
         <div>
-            <% if restaurant.url.strip[0..3] == "http"  %>
+            <% if restaurant.url? %>
                 <%= link_to restaurant.url, target: "_blank" do %>
                     <h1 class="card-heading"> <%= restaurant.brand %> </h1>
                 <% end %>
@@ -40,10 +41,10 @@
         </div>
 
         <div class="card-footer">
-            <% if restaurant.url.strip[0..3] == "http"  %>
-                <%= link_to "Order Direct", restaurant.url, target: "_blank", class: "footer-item" %>
+            <% if restaurant.phone_number?  %>
+                <p class="footer-item"> Call: <%= restaurant.phone_number %> </p>
             <% else %>
-                <p class="footer-item"> Call: <%= restaurant.url %> </p>
+                <%= link_to "Order Direct", restaurant.url, target: "_blank", class: "footer-item" %>
             <% end %>
         </div>
     </div>
