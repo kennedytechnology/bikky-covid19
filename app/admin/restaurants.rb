@@ -17,7 +17,7 @@ ActiveAdmin.register Restaurant do
                 :mon_open, :mon_close, :tue_open, :tue_close, :wed_open,
                 :wed_close, :thur_open, :thur_close, :fri_open, :fri_close,
                 :sat_open, :sat_close, :sun_open, :sun_close, :is_published,
-                :currently_open
+                :currently_open, :phone_number
 
   batch_action :publish do |ids|
     batch_action_collection.find(ids).each do |restaurant|
