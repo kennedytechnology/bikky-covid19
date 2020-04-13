@@ -200,7 +200,7 @@ ActiveAdmin.register Restaurant do
     tabs do
       tab "General Information" do
         f.inputs do
-          f.input :partner_id, label: "Choose Brand", as: :select, collection: Partner.all.order('brand').collect{|p| [ p.brand, p.id ] }
+          f.input :partner_id, label: "Choose Brand", as: :select, collection: Partner.all.order('brand').collect{|p| [ p.brand, p.id ] }, include_blank: false
           f.input :name, as: :string
           f.input :url, label: "URL"
           f.input :phone_number
