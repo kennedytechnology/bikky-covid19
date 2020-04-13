@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_10_172528) do
+ActiveRecord::Schema.define(version: 2020_04_13_150708) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -131,6 +131,10 @@ ActiveRecord::Schema.define(version: 2020_04_10_172528) do
     t.bigint "bikky_location_id"
     t.string "phone_number"
     t.boolean "is_published", default: false
+    t.string "weekday_open"
+    t.string "weekday_close"
+    t.string "weekend_open"
+    t.string "weekend_close"
     t.index ["partner_id"], name: "index_restaurants_on_partner_id"
   end
 
