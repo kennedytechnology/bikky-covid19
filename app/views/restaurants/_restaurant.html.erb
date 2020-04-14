@@ -4,21 +4,12 @@
             <h1 class="notice"> Temporarily <br /> closed </h1>
         </div>
     <% end %>
-    <%# TODO: Update logic once seeds are in place! %>
-    <% if restaurant.url?  %>
-        <%= link_to restaurant.url, target: "_blank" do %>
-            <div class="card-img" style="background-image: url(<%= picture_url(restaurant.partner) %>);"> </div>
-        <% end %>
-    <% else %>
+    <%= link_to_cond restaurant.url?, proc { restaurant.url }, target: "_blank" do %>
         <div class="card-img" style="background-image: url(<%= picture_url(restaurant.partner) %>);"> </div>
     <% end %>
     <div class="card-content">
         <div>
-            <% if restaurant.url? %>
-                <%= link_to restaurant.url, target: "_blank" do %>
-                    <h1 class="card-heading"> <%= restaurant.brand %> </h1>
-                <% end %>
-            <% else %>
+            <%= link_to_cond restaurant.url?, proc { restaurant.url }, target: "_blank" do %>
                 <h1 class="card-heading"> <%= restaurant.brand %> </h1>
             <% end %>
             <p class="card-description">
