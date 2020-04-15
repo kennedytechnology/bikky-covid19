@@ -2,20 +2,20 @@ ActiveAdmin.register Restaurant do
   menu priority: 1
 
   before_create do |restaurant|
-    restaurant.mon_open = restaurant.weekday_open
-    restaurant.mon_close = restaurant.weekday_close
-    restaurant.tue_open = restaurant.weekday_open
-    restaurant.tue_close = restaurant.weekday_close
-    restaurant.wed_open = restaurant.weekday_open
-    restaurant.wed_close = restaurant.weekday_close
-    restaurant.thur_open = restaurant.weekday_open
-    restaurant.thur_close = restaurant.weekday_close
-    restaurant.fri_open = restaurant.weekday_open
-    restaurant.fri_close = restaurant.weekday_close
-    restaurant.sat_open = restaurant.weekend_open
-    restaurant.sat_close = restaurant.weekend_close
-    restaurant.sun_open = restaurant.weekend_open
-    restaurant.sun_close = restaurant.weekend_close
+    restaurant.mon_open = restaurant.weekday_open if restaurant.mon_open.nil?
+    restaurant.mon_close = restaurant.weekday_close if restaurant.mon_close
+    restaurant.tue_open = restaurant.weekday_open if restaurant.tue_open.nil?
+    restaurant.tue_close = restaurant.weekday_close if restaurant.tue_close.nil?
+    restaurant.wed_open = restaurant.weekday_open if restaurant.wed_open.nil?
+    restaurant.wed_close = restaurant.weekday_close if restaurant.wed_close.nil?
+    restaurant.thur_open = restaurant.weekday_open if restaurant.thur_open.nil?
+    restaurant.thur_close = restaurant.weekday_close if restaurant.thur_close.nil?
+    restaurant.fri_open = restaurant.weekday_open if restaurant.fri_open.nil?
+    restaurant.fri_close = restaurant.weekday_close if restaurant.fri_close.nil?
+    restaurant.sat_open = restaurant.weekend_open if restaurant.sat_open.nil?
+    restaurant.sat_close = restaurant.weekend_close if restaurant.sat_close.nil?
+    restaurant.sun_open = restaurant.weekend_open if restaurant.sun_open.nil?
+    restaurant.sun_close = restaurant.weekend_close if restaurant.sun_close.nil?
   end
   
   active_admin_import on_duplicate_key_update: :all,
@@ -225,7 +225,7 @@ ActiveAdmin.register Restaurant do
           end
         end
       end
-      unless f.object.new_record?
+      # unless f.object.new_record?
         tab "Working Hours" do
           f.inputs "Monday" do
             columns do
@@ -270,7 +270,7 @@ ActiveAdmin.register Restaurant do
             end
           end
         end
-      end
+      # end
     end
 
     f.actions
