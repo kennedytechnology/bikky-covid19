@@ -1,7 +1,7 @@
 class Restaurant < ApplicationRecord
   belongs_to :partner
   geocoded_by :address
-  # after_validation :geocode, if: -> { address.present? && address_changed? }
+  after_validation :geocode, if: -> { address.present? && address_changed? }
   scope :published, -> {where(is_published: true)}
   delegate :brand, to: :partner
   delegate :deal, to: :partner
