@@ -41,6 +41,7 @@ ActiveAdmin.register Restaurant do
     column(:partner) {|restaurant| restaurant.partner.name}
     column :description
     column :name
+    column :phone_number
     column :url
     column :location
     column :address
