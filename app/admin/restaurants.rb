@@ -39,7 +39,6 @@ ActiveAdmin.register Restaurant do
     column :id
     column("bikky_location_id", humanize_name: false) 
     column(:partner) {|restaurant| restaurant.partner.name}
-    column :description
     column :name
     column :phone_number
     column :url
