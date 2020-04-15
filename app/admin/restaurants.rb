@@ -9,11 +9,10 @@ ActiveAdmin.register Restaurant do
       replacements = Hash[*partners.flatten]      
       column_index = importer.headers.values.index(:partner_id)
       importer.csv_lines.each do |line|
-        if !(line[5].starts_with?("http"))
-          line[4] = ActionController::Base.helpers.number_to_phone(line[5].delete("^0-9"), area_code: true)
-        end
         line[column_index] = replacements[line[column_index]]
-      end      
+      end
+      # TODO Invoke/Execute rake task here!
+      # Rake::Task["restaurants_url:extract_phone_from_url"].invoke
     }
 
   permit_params :name, :address, :longitude, :latitude, :partner_id, :url,
