@@ -1,6 +1,8 @@
 require 'csv'
 puts "Start seeding..."
 
+AdminUser.create!(email: "admin@example.com", password: "password", password_confirmation: "password")
+
 def find_picture(picture_name)
   Rails.root.join("app", "assets", "images", "restaurants_photos", "#{picture_name}.jpeg")
 end
@@ -67,6 +69,22 @@ Guide.find_by_name("Because this quarantine ain’t getting me down").partners <
 partners = Partner.where(brand: ["Raku", "Brodo Broth", "Ivan Ramen", "Springbone Kitchen"])
 Guide.find_by_name("Because you really need a cuddle").partners << partners
 
-AdminUser.create!(email: "admin@example.com", password: "password", password_confirmation: "password")
+mood = ["Chillin with homies", "Home comfort", "It's a family affair", "Keep grindin", "Oh you fancy huh", "TREAT YO SELF", "Too cool for school", "Your body is a temple"]
+mood.each { |m| Mood.create!(name: m) }
+
+daypart1 = ["", "Afternoon Delight", "Breakfast", "Dessert", "Dinner", "Lunch"]
+daypart1.each { |dp1| Daypart1.create!(name: dp1) }
+
+daypart2 = ["", "Afternoon Delight", "Breakfast", "Dessert", "Dinner", "Lunch"]
+daypart2.each { |dp2| Daypart2.create!(name: dp2) }
+
+mealsize1 = ["", "Full House", "Social Distance", "Trapped with roommate"]
+mealsize1.each { |ms1| MealSize1.create!(name: ms1) }
+
+mealsize2 = ["", "Full House", "Social Distance", "Trapped with roommate"]
+mealsize2.each { |ms2| MealSize2.create!(name: ms2) }
+
+deal = ["", "none"]
+deal.each { |d| Deal.create!(name: d) }
 
 puts "Done"
