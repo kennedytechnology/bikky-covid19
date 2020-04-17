@@ -72,12 +72,12 @@ ActiveAdmin.register Partner do
     f.semantic_errors
     f.inputs do
       f.input :brand
-      f.input :mood
-      f.input :daypart_1
-      f.input :daypart_2
-      f.input :meal_size_1
-      f.input :meal_size_2
-      f.input :deal
+      f.input :mood, as: :select, collection: Mood.all.order(:name).collect{|mood| mood.name}
+      f.input :daypart_1, as: :select, collection: Daypart1.all.order(:name).collect{|dp1| dp1.name}
+      f.input :daypart_2, as: :select, collection: Daypart2.all.order(:name).collect{|dp2| dp2.name}
+      f.input :meal_size_1, as: :select, collection: MealSize1.all.order(:name).collect{|ms1| ms1.name}
+      f.input :meal_size_2, as: :select, collection: MealSize2.all.order(:name).collect{|ms2| ms2.name}
+      f.input :deal, as: :select, collection: Deal.all.order(:name).collect{|d| d.name}
       f.input :price, as: :select, collection: {'$' => 1, '$$' => 2, '$$$' => 3, '$$$$' => 4, '$$$$$' => 5}
     end
     f.input :guide_ids, as: :check_boxes, collection: Guide.all
