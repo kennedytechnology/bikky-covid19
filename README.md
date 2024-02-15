@@ -1,3 +1,5 @@
+NOTE: We built and launched this and it went great. Unfortunately, we never got paid for it and the founder ghosted me :( 
+
 # README
 
 This README would normally document whatever steps are necessary to get the
