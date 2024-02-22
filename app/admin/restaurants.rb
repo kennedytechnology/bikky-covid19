@@ -10,7 +10,9 @@ ActiveAdmin.register Restaurant do
       column_index = importer.headers.values.index(:partner_id)
       importer.csv_lines.each do |line|
         line[column_index] = replacements[line[column_index]]
-      end      
+      end
+      # TODO Invoke/Execute rake task here!
+      # Rake::Task["restaurants_url:extract_phone_from_url"].invoke
     }
 
   permit_params :name, :address, :longitude, :latitude, :partner_id, :url,
