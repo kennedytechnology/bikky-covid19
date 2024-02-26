@@ -1,6 +1,10 @@
 ActiveAdmin.register Partner do
   menu priority: 2
 
+  active_admin_import on_duplicate_key_update: :all,
+    before_batch_import: ->(importer) {  
+    }
+
   permit_params :brand, :mood, :daypart_1, :daypart_2, :meal_size_1, :meal_size_2, :price, :deal, :picture, guide_ids: []
                 
 
